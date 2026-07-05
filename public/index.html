@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electricista de Urgencia en Santa Coloma de Gramenet | 24 Horas</title>
+<meta name="description" content="Electricista de urgencia 24h en Santa Coloma de Gramenet. Cortes de luz, cuadros eléctricos, cortocircuitos y subidas de tensión. Llegamos rápido, presupuesto antes de actuar. Llama ahora.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Electricista de Urgencia en Santa Coloma de Gramenet | 24 Horas">
+<meta property="og:description" content="Averías eléctricas resueltas 24 horas, 365 días. Cortes de luz, cuadros, cortocircuitos. Llegamos rápido a todos los barrios de Santa Coloma.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#050403">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23050403'/%3E%3Cpath d='M56 8 22 58h20L40 92l38-52H56z' fill='%23FFB100'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "name": "[NOMBRE DEL NEGOCIO]",
+  "description": "Electricista de urgencia 24 horas en Santa Coloma de Gramenet",
+  "telephone": "[TELÉFONO]",
+  "url": "[URL]",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Santa Coloma de Gramenet",
+    "addressRegion": "Barcelona",
+    "addressCountry": "ES"
+  },
+  "areaServed": ["Santa Coloma de Gramenet","Badalona","Sant Adrià de Besòs","Montcada i Reixac"],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "00:00",
+    "closes": "23:59"
+  }
+}
+</script>
+<style>
+/* ══════════════ TOKENS ══════════════ */
+:root{
+  --bg0:#050403;          /* negro azabache cálido */
+  --bg1:#0B0907;
+  --bg2:#121009;
+  --amb:#FFB100;          /* ámbar eléctrico */
+  --amb2:#FFCE55;
+  --amb-deep:#B87400;
+  --bone:#F4ECDC;         /* hueso cálido */
+  --mut:#A29685;          /* gris cálido secundario */
+  --line:rgba(255,177,0,.16);
+  --line2:rgba(244,236,220,.09);
+  --noche:#8FB8D8;        /* azul noche — solo micro-detalles */
+  --wa:#25D366;
+  --disp:'Anton',sans-serif;
+  --body:'Archivo',sans-serif;
+  --mono:'IBM Plex Mono',monospace;
+  --sh-amb:0 12px 44px -12px rgba(255,177,0,.28), 0 3px 10px rgba(0,0,0,.65);
+  --sh-soft:0 18px 50px -20px rgba(0,0,0,.85), 0 2px 6px rgba(0,0,0,.5);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --pad:clamp(20px,5vw,72px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-anchor:none}
+body{
+  background:var(--bg0);color:var(--bone);
+  font-family:var(--body);font-size:16px;line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--amb);color:#0a0800}
+img{max-width:100%;display:block}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip{position:fixed;top:-60px;left:16px;z-index:400;background:var(--amb);color:#0a0800;padding:10px 18px;font-family:var(--mono);font-size:13px;text-decoration:none;transition:transform .2s var(--ease)}
+.skip:focus-visible{top:0;transform:translateY(76px)}
+
+/* grano + viñeta global */
+body::before{
+  content:"";position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.055;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+}
+body::after{
+  content:"";position:fixed;inset:0;z-index:199;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.5) 100%);
+}
+
+/* ══════════════ PRELOADER ══════════════ */
+#boot{
+  position:fixed;inset:0;z-index:300;background:var(--bg0);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+  transition:opacity .6s ease;font-family:var(--mono);
+}
+#boot.off{opacity:0;pointer-events:none}
+#boot .bolt{width:44px;height:44px;animation:bootFlick 1.2s steps(1) infinite}
+@keyframes bootFlick{0%,100%{opacity:1}86%{opacity:1}88%{opacity:.25}90%{opacity:1}94%{opacity:.5}96%{opacity:1}}
+#boot p{font-size:12px;letter-spacing:.22em;color:var(--mut)}
+#boot p b{color:var(--amb);font-weight:500}
+#boot .bar{width:min(280px,60vw);height:2px;background:var(--line2);overflow:hidden}
+#boot .bar i{display:block;height:100%;width:0%;background:var(--amb);transition:width .3s ease}
+
+/* ══════════════ NAV ══════════════ */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:150;
+  display:flex;align-items:center;gap:22px;
+  padding:14px var(--pad);
+  background:linear-gradient(rgba(5,4,3,.88),rgba(5,4,3,.62) 70%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  transform:translateY(0);transition:transform .45s var(--ease);
+}
+nav.hide{transform:translateY(-110%)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.brand svg{width:26px;height:26px}
+.brand span{font-family:var(--disp);font-size:17px;letter-spacing:.06em;color:var(--bone)}
+.brand b{color:var(--amb);font-weight:400}
+.nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
+.nav-links a{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--mut);text-decoration:none;position:relative;padding:4px 0;
+  transition:color .25s ease;
+}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--amb);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--bone)}
+.nav-links a:hover::after,.nav-links a:focus-visible::after{transform:scaleX(1)}
+.nav-soc{display:flex;gap:14px;align-items:center;margin-left:6px}
+.nav-soc a{color:var(--mut);display:flex;transition:color .25s ease,transform .25s var(--ease)}
+.nav-soc a:hover,.nav-soc a:focus-visible{color:var(--amb);transform:translateY(-2px)}
+.nav-soc svg{width:17px;height:17px}
+.nav-links a.nav-call{
+  display:inline-flex;align-items:center;gap:9px;margin-left:10px;flex-shrink:0;
+  background:var(--amb);color:#0a0800;text-decoration:none;
+  font-family:var(--disp);font-size:15px;letter-spacing:.08em;
+  padding:10px 20px;box-shadow:var(--sh-amb);
+  transition:transform .25s var(--ease),box-shadow .25s ease,background .25s ease;
+}
+.nav-links a.nav-call::after{display:none}
+.nav-links a.nav-call:hover,.nav-links a.nav-call:focus-visible{transform:translateY(-2px);background:var(--amb2);color:#0a0800}
+.nav-links a.nav-call:active{transform:translateY(0)}
+.nav-links a.nav-call svg{width:15px;height:15px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--amb);outline-offset:3px}
+
+/* ══════════════ EXPERIENCIA (scroll-scrub) ══════════════ */
+#experiencia{height:560vh;position:relative}
+.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+#film{position:absolute;inset:0;width:100%;height:100%}
+#sparks{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:120;mix-blend-mode:screen}
+.scrim{
+  position:absolute;inset:0;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(5,4,3,.82) 0%,rgba(5,4,3,.45) 42%,rgba(5,4,3,.08) 70%),
+    linear-gradient(rgba(5,4,3,.5),transparent 26%,transparent 72%,rgba(5,4,3,.88));
+}
+.stage-ui{position:absolute;inset:0;display:grid;padding:0 var(--pad)}
+.panel{
+  grid-area:1/1;align-self:center;max-width:900px;width:100%;
+  opacity:0;visibility:hidden;transform:translateY(30px);
+  will-change:opacity,transform;
+}
+.kicker{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--amb);margin-bottom:22px;display:flex;align-items:center;gap:12px;
+}
+.kicker::before{content:"";width:34px;height:1px;background:var(--amb);flex-shrink:0}
+.flick{animation:flick 6s steps(1) infinite}
+@keyframes flick{0%,100%{opacity:1}91%{opacity:1}92%{opacity:.35}93%{opacity:1}96.5%{opacity:.6}97.5%{opacity:1}}
+h1{
+  font-family:var(--disp);font-weight:400;text-transform:uppercase;
+  font-size:clamp(36px,5.8vw,88px);line-height:.96;letter-spacing:.005em;
+  margin-bottom:26px;
+}
+h1 div{white-space:nowrap}
+h1 .l{display:inline-block;opacity:0;transform:translateY(.55em) rotate(2deg);animation:lin .7s var(--ease) forwards;animation-delay:calc(var(--i)*.028s + .15s)}
+@keyframes lin{to{opacity:1;transform:none}}
+h1 .amb{color:var(--amb);text-shadow:0 0 42px rgba(255,177,0,.45)}
+.sub{font-size:clamp(16px,1.6vw,20px);color:var(--mut);max-width:560px;margin-bottom:36px}
+.sub strong{color:var(--bone);font-weight:600}
+.cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+  font-family:var(--disp);font-size:clamp(16px,1.5vw,20px);letter-spacing:.07em;text-transform:uppercase;
+  padding:18px 34px;position:relative;
+  transition:transform .25s var(--ease),box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;
+}
+.btn:hover,.btn:focus-visible{transform:translateY(-3px)}
+.btn:active{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+.btn-amb{background:var(--amb);color:#0a0800;box-shadow:var(--sh-amb)}
+.btn-amb:hover,.btn-amb:focus-visible{background:var(--amb2);box-shadow:0 18px 54px -10px rgba(255,177,0,.4),0 3px 10px rgba(0,0,0,.65)}
+.btn-amb::after{content:"";position:absolute;inset:3px;border:1px solid rgba(10,8,0,.28);pointer-events:none}
+.btn-ghost{border:1px solid var(--line2);color:var(--bone);background:rgba(5,4,3,.35);backdrop-filter:blur(6px)}
+.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--wa);color:var(--wa)}
+.micro{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--mut);margin-top:22px}
+.micro .ph{color:var(--amb)}
+.hint{
+  position:absolute;left:50%;transform:translateX(-50%);bottom:22px;white-space:nowrap;
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;color:var(--mut);
+  display:flex;align-items:center;gap:10px;
+}
+.hint i{display:inline-block;width:1px;height:26px;background:linear-gradient(var(--amb),transparent);animation:drop 1.6s var(--ease) infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* pasos dentro del scrub */
+.step-num{
+  font-family:var(--mono);font-size:13px;letter-spacing:.3em;color:var(--noche);margin-bottom:14px;
+}
+.step-title{
+  font-family:var(--disp);font-weight:400;text-transform:uppercase;
+  font-size:clamp(52px,8.5vw,130px);line-height:.92;letter-spacing:.005em;
+}
+.step-title span{color:var(--amb)}
+.step-body{font-size:clamp(15px,1.5vw,19px);color:var(--mut);max-width:480px;margin-top:22px}
+.step-body strong{color:var(--bone)}
+.end-panel{text-align:left}
+.end-title{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(46px,7vw,104px);line-height:.95}
+.end-title span{color:var(--amb);text-shadow:0 0 60px rgba(255,177,0,.55)}
+
+/* HUD cronómetro */
+#hud{
+  position:fixed;left:var(--pad);bottom:88px;z-index:140;
+  font-family:var(--mono);color:var(--bone);
+  border:1px solid var(--line);background:rgba(5,4,3,.55);
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  padding:14px 18px;min-width:190px;
+  opacity:0;transform:translateY(14px);visibility:hidden;
+  transition:opacity .4s ease,transform .4s var(--ease),visibility 0s .4s;
+  box-shadow:var(--sh-soft);
+}
+#hud.on{opacity:1;transform:none;visibility:visible;transition:opacity .4s ease,transform .4s var(--ease)}
+#hud .row{display:flex;align-items:center;gap:8px;font-size:10.5px;letter-spacing:.2em;color:var(--mut)}
+#hud .dot{width:7px;height:7px;border-radius:50%;background:var(--amb);box-shadow:0 0 10px var(--amb);animation:flick 3.5s steps(1) infinite}
+#hud .time{font-size:34px;font-weight:600;letter-spacing:.04em;color:var(--amb);line-height:1.2;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+#hud .lbl{font-size:10px;letter-spacing:.22em;color:var(--mut)}
+#hud .bar{height:2px;background:var(--line2);margin-top:10px;overflow:hidden}
+#hud .bar i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--amb-deep),var(--amb))}
+
+/* FABs */
+.fabs{position:fixed;right:18px;bottom:18px;z-index:150;display:flex;flex-direction:column;gap:12px}
+.fab{
+  width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  text-decoration:none;position:relative;
+  transition:transform .25s var(--ease),box-shadow .25s ease;
+}
+.fab:hover,.fab:focus-visible{transform:translateY(-3px) scale(1.05)}
+.fab:active{transform:scale(.97)}
+.fab svg{width:24px;height:24px}
+.fab-tel{background:var(--amb);color:#0a0800;box-shadow:var(--sh-amb)}
+.fab-tel::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--amb);opacity:0;animation:pulse 2.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.8);opacity:.7}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+.fab-wa{background:var(--wa);color:#04220f;box-shadow:0 12px 40px -10px rgba(37,211,102,.45),0 3px 10px rgba(0,0,0,.6)}
+
+/* ══════════════ SECCIONES BASE ══════════════ */
+section.block{padding:clamp(80px,11vw,150px) var(--pad);position:relative}
+.wrap{max-width:1240px;margin:0 auto}
+.sec-head{margin-bottom:clamp(40px,6vw,72px)}
+h2{
+  font-family:var(--disp);font-weight:400;text-transform:uppercase;
+  font-size:clamp(36px,5.4vw,76px);line-height:.98;letter-spacing:.005em;
+}
+h2 .amb{color:var(--amb)}
+.sec-head p{color:var(--mut);max-width:600px;margin-top:18px;font-size:clamp(15px,1.4vw,18px)}
+.rev{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s var(--ease);transition-delay:var(--d,0s)}
+.rev.in{opacity:1;transform:none}
+
+/* franja de confianza */
+#confianza{border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);background:var(--bg1)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2)}
+.stat{background:var(--bg1);padding:clamp(28px,3.5vw,48px) clamp(18px,2.5vw,36px)}
+.stat .num{font-family:var(--disp);font-size:clamp(38px,4.6vw,64px);color:var(--amb);line-height:1;font-variant-numeric:tabular-nums}
+.stat .num small{font-size:.5em;letter-spacing:.05em}
+.stat .cap{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:10px}
+.stat .ph-note{color:var(--amb-deep)}
+
+/* servicios */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv{
+  border:1px solid var(--line2);background:linear-gradient(160deg,var(--bg1),var(--bg0) 70%);
+  padding:34px 30px 38px;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease;
+}
+.serv::before{
+  content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s ease;pointer-events:none;
+  background:radial-gradient(320px 200px at 20% 0%,rgba(255,177,0,.13),transparent 70%);
+}
+.serv:hover{transform:translateY(-6px);border-color:var(--line);box-shadow:var(--sh-soft)}
+.serv:hover::before{opacity:1}
+.serv .ico{
+  width:52px;height:52px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+  color:var(--amb);margin-bottom:24px;background:rgba(255,177,0,.06);
+  transition:transform .35s var(--ease),background .35s ease;
+}
+.serv:hover .ico{transform:translateY(-3px) rotate(-4deg);background:rgba(255,177,0,.14)}
+.serv .ico svg{width:26px;height:26px}
+.serv h3{font-family:var(--disp);font-weight:400;font-size:22px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}
+.serv p{color:var(--mut);font-size:15px}
+.serv .tag{
+  position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:10px;
+  letter-spacing:.2em;color:var(--amb);border:1px solid var(--line);padding:4px 9px;
+}
+
+/* precios */
+#precios{background:var(--bg1);border-top:1px solid var(--line2)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
+.price{
+  border:1px solid var(--line2);background:var(--bg0);padding:40px 34px;position:relative;
+  display:flex;flex-direction:column;gap:6px;
+  transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease;
+}
+.price:hover{transform:translateY(-6px);box-shadow:var(--sh-soft)}
+.price.hot{border-color:var(--amb);box-shadow:var(--sh-amb)}
+.price.hot:hover{transform:translateY(-8px)}
+.price .p-tag{
+  position:absolute;top:-13px;left:30px;background:var(--amb);color:#0a0800;
+  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.18em;padding:5px 12px;
+}
+.price h3{font-family:var(--disp);font-weight:400;font-size:21px;letter-spacing:.05em;text-transform:uppercase}
+.price .amount{font-family:var(--disp);font-size:clamp(40px,4vw,56px);color:var(--amb);line-height:1.1;margin:14px 0 4px}
+.price .amount small{font-size:.42em;color:var(--mut);letter-spacing:.05em}
+.price ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:11px}
+.price li{color:var(--mut);font-size:14.5px;padding-left:24px;position:relative}
+.price li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:2px;background:var(--amb)}
+.price .note{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--amb-deep);margin-top:auto;padding-top:20px}
+
+/* reseñas marquee */
+#opiniones{overflow:hidden}
+.mq{position:relative;margin-top:10px}
+.mq::before,.mq::after{
+  content:"";position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;
+}
+.mq::before{left:0;background:linear-gradient(90deg,var(--bg0),transparent)}
+.mq::after{right:0;background:linear-gradient(-90deg,var(--bg0),transparent)}
+.mq-track{display:flex;gap:22px;width:max-content;animation:mq 46s linear infinite;padding:10px 0 26px}
+.mq:hover .mq-track,.mq:focus-within .mq-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.rev-card{
+  width:min(360px,78vw);flex-shrink:0;border:1px solid var(--line2);
+  background:linear-gradient(165deg,var(--bg2),var(--bg0) 75%);padding:28px 26px;position:relative;
+  transition:transform .3s var(--ease),border-color .3s ease;
+}
+.rev-card:hover{transform:translateY(-4px);border-color:var(--line)}
+.rev-card .stars{color:var(--amb);letter-spacing:3px;font-size:15px;margin-bottom:14px;text-shadow:0 0 18px rgba(255,177,0,.4)}
+.rev-card p{color:var(--bone);font-size:14.5px;line-height:1.65;font-style:italic}
+.rev-card .who{display:flex;align-items:center;gap:12px;margin-top:20px}
+.rev-card .av{
+  width:38px;height:38px;border-radius:50%;background:var(--bg1);border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;font-family:var(--disp);color:var(--amb);font-size:15px;
+}
+.rev-card .who b{font-size:13.5px;font-weight:600;display:block;line-height:1.3}
+.rev-card .who span{font-family:var(--mono);font-size:11px;color:var(--mut);letter-spacing:.08em}
+.rev-card .g{margin-left:auto;font-family:var(--disp);font-size:19px;color:var(--mut);opacity:.8}
+.rev-card .demo-tag{
+  position:absolute;top:14px;right:14px;font-family:var(--mono);font-size:9px;letter-spacing:.18em;
+  color:var(--mut);border:1px solid var(--line2);padding:3px 7px;opacity:.65;
+}
+.gbp-line{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--mut);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.gbp-line a{color:var(--amb);text-decoration:none;border-bottom:1px solid var(--line);transition:color .25s ease}
+.gbp-line a:hover,.gbp-line a:focus-visible{color:var(--amb2)}
+
+/* zonas */
+#zonas{background:var(--bg1);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
+.zona-grid{display:flex;flex-wrap:wrap;gap:12px}
+.chip{
+  display:inline-flex;align-items:center;gap:9px;
+  font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--bone);
+  border:1px solid var(--line2);padding:11px 18px;background:var(--bg0);
+  transition:transform .25s var(--ease),border-color .25s ease,color .25s ease;
+}
+.chip svg{width:13px;height:13px;color:var(--amb)}
+.chip:hover{transform:translateY(-3px);border-color:var(--amb);color:var(--amb2)}
+.tambien{margin-top:28px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--mut)}
+.tambien b{color:var(--bone);font-weight:500}
+
+/* FAQ */
+.faq-list{max-width:820px}
+.faq{border-bottom:1px solid var(--line2)}
+.faq summary{
+  list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;
+  padding:26px 4px;font-family:var(--disp);font-weight:400;font-size:clamp(17px,2vw,23px);
+  letter-spacing:.04em;text-transform:uppercase;
+  transition:color .25s ease;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--amb2)}
+.faq summary .x{
+  margin-left:auto;flex-shrink:0;width:30px;height:30px;position:relative;
+  transition:transform .35s var(--ease);
+}
+.faq summary .x::before,.faq summary .x::after{
+  content:"";position:absolute;top:50%;left:50%;background:var(--amb);
+  transform:translate(-50%,-50%);
+}
+.faq summary .x::before{width:16px;height:2px}
+.faq summary .x::after{width:2px;height:16px;transition:transform .3s var(--ease)}
+.faq[open] summary{color:var(--amb)}
+.faq[open] summary .x{transform:rotate(45deg)}
+.faq .a{color:var(--mut);padding:0 44px 26px 4px;max-width:700px;font-size:15.5px}
+.faq .a strong{color:var(--bone)}
+
+/* contacto */
+#contacto{padding-bottom:0}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,4vw,60px);align-items:center}
+.contact-grid .btn{width:100%;justify-content:center}
+.c-lines{margin-top:34px;display:flex;flex-direction:column;gap:14px}
+.c-line{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:13.5px;letter-spacing:.08em;color:var(--mut)}
+.c-line svg{width:16px;height:16px;color:var(--amb);flex-shrink:0}
+.c-line .ph{color:var(--amb)}
+.map-box{
+  position:relative;border:1px solid var(--line);box-shadow:var(--sh-soft);
+  aspect-ratio:4/3.4;background:var(--bg1);
+}
+.map-box iframe{
+  position:absolute;inset:0;width:100%;height:100%;border:0;
+  filter:grayscale(1) contrast(1.08) brightness(.82) sepia(.18);
+}
+.map-box::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,177,0,.12),inset 0 0 60px rgba(0,0,0,.35)}
+.map-cap{
+  position:absolute;left:14px;bottom:14px;z-index:2;background:rgba(5,4,3,.85);border:1px solid var(--line);
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--amb);padding:8px 12px;
+  backdrop-filter:blur(6px);
+}
+
+/* footer */
+footer{margin-top:clamp(70px,9vw,120px);border-top:1px solid var(--line2);background:var(--bg1)}
+.foot-wrap{max-width:1240px;margin:0 auto;padding:54px var(--pad) 40px;display:flex;flex-wrap:wrap;gap:34px;align-items:center;justify-content:space-between}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand svg{width:22px;height:22px}
+.foot-brand span{font-family:var(--disp);font-size:15px;letter-spacing:.06em}
+.foot-links{display:flex;gap:22px;flex-wrap:wrap}
+.foot-links a{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-decoration:none;transition:color .25s ease}
+.foot-links a:hover,.foot-links a:focus-visible{color:var(--amb)}
+.foot-soc{display:flex;gap:16px}
+.foot-soc a{color:var(--mut);transition:color .25s ease,transform .25s var(--ease)}
+.foot-soc a:hover,.foot-soc a:focus-visible{color:var(--amb);transform:translateY(-2px)}
+.foot-soc svg{width:18px;height:18px}
+.foot-legal{width:100%;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;border-top:1px solid var(--line2);padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mut)}
+.foot-legal a{color:var(--mut);text-decoration:none}
+.foot-legal a:hover{color:var(--amb)}
+
+/* ══════════════ RESPONSIVE ══════════════ */
+@media (max-width:1020px){
+  .serv-grid{grid-template-columns:repeat(2,1fr)}
+  .price-grid{grid-template-columns:1fr;max-width:520px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+  .nav-links a:not(.nav-call){display:none}
+  .nav-soc{display:none}
+}
+@media (max-width:640px){
+  :root{--pad:18px}
+  .stage-ui{padding:0 var(--pad)}
+  .panel{align-self:end;padding-bottom:96px}
+  h1{font-size:clamp(40px,11.5vw,64px)}
+  .step-title{font-size:clamp(46px,14vw,76px)}
+  .cta-row{flex-direction:column;align-items:stretch;width:100%}
+  .btn{justify-content:center;padding:18px 22px}
+  .serv-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;margin:0 calc(var(--pad)*-1);padding-left:var(--pad);padding-right:var(--pad)}
+  .serv{min-width:78vw;scroll-snap-align:start}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .micro{white-space:normal;padding-right:88px;font-size:11px}
+  .step-body,.sub{max-width:calc(100% - 66px)}
+  #hud{left:auto;right:14px;top:70px;bottom:auto;min-width:140px;padding:10px 14px}
+  #hud .time{font-size:24px}
+  .fabs{right:14px;bottom:14px}
+  .hint{display:none}
+  .scrim{background:linear-gradient(rgba(5,4,3,.55),rgba(5,4,3,.18) 30%,rgba(5,4,3,.28) 55%,rgba(5,4,3,.94) 82%)}
+  .foot-wrap{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
+  html{scroll-behavior:auto}
+  #experiencia{height:auto}
+  .stage{position:relative;height:100svh}
+  .panel{opacity:1!important;visibility:visible!important;transform:none!important;position:relative;margin-bottom:40px}
+  .stage-ui{position:relative;display:block;padding-top:120px}
+  .mq-track{animation:none;flex-wrap:wrap;width:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#servicios">Saltar al contenido</a>
+
+<!-- PRELOADER -->
+<div id="boot" aria-hidden="true">
+  <svg class="bolt" viewBox="0 0 100 100" fill="none"><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#FFB100"/></svg>
+  <p>COMPROBANDO TENSIÓN <b>230V ✓</b></p>
+  <div class="bar"><i id="bootBar"></i></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" aria-label="Principal">
+  <a class="brand" href="#" aria-label="Inicio — Electricista de urgencia 24h">
+    <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="18" fill="#FFB100"/><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#050403"/></svg>
+    <span>URGENCIAS<b>·24H</b></span>
+  </a>
+  <div class="nav-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#zonas">Zonas</a>
+    <a href="#contacto">Contacto</a>
+    <div class="nav-soc">
+      <!-- TODO: sustituir por las redes reales del cliente -->
+      <a href="#" aria-label="Instagram (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+      <a href="#" aria-label="Facebook (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.3-1.5 1.6-1.5H16.7V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.5v7h3z"/></svg></a>
+    </div>
+    <a class="nav-call" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>LLAMAR</a>
+  </div>
+</nav>
+
+<!-- ══════════ EXPERIENCIA SCRUB ══════════ -->
+<section id="experiencia" aria-label="Secuencia cinematográfica: de la avería a la luz">
+  <div class="stage">
+    <canvas id="film" aria-hidden="true"></canvas>
+    <div class="scrim" aria-hidden="true"></div>
+    <div class="stage-ui">
+
+      <!-- STAGE 1 · HERO -->
+      <div class="panel" data-band="0,0.30" id="heroPanel">
+        <p class="kicker flick">SIN LUZ NO SE QUEDA NADIE — SERVICIO ACTIVO AHORA</p>
+        <h1 id="h1"><span class="sr-only">Electricista de Urgencia en Santa Coloma de Gramenet</span></h1>
+        <p class="sub">Averías eléctricas resueltas <strong>24 horas, 365 días</strong>. Cortes de luz, cuadros, cortocircuitos. <strong>Presupuesto antes de actuar.</strong></p>
+        <div class="cta-row">
+          <!-- TODO: sustituir +34600000000 por el teléfono real del cliente -->
+          <a class="btn btn-amb" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Llamar ahora · 24h</a>
+          <a class="btn btn-ghost" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg>WhatsApp</a>
+        </div>
+        <p class="micro">ATENDEMOS AHORA MISMO · <span class="ph">[TELÉFONO]</span></p>
+      </div>
+
+      <!-- STAGE 2 · LLAMAS -->
+      <div class="panel" data-band="0.35,0.455">
+        <p class="step-num">PASO 01 — 00:00</p>
+        <p class="step-title">LLAMAS<span>.</span></p>
+        <p class="step-body">Descuelga a cualquier hora. <strong>Sin contestador, sin esperas:</strong> te responde el electricista que va a venir a tu casa.</p>
+      </div>
+
+      <!-- STAGE 3 · LLEGAMOS -->
+      <div class="panel" data-band="0.505,0.615">
+        <p class="step-num">PASO 02 — EN CAMINO</p>
+        <p class="step-title">LLEGAMOS<span>.</span></p>
+        <p class="step-body">Furgoneta equipada y <strong>diagnóstico en el momento</strong>. Te decimos qué pasa y qué cuesta <strong>antes de tocar nada</strong>.</p>
+      </div>
+
+      <!-- STAGE 4 · LUZ -->
+      <div class="panel" data-band="0.675,0.845">
+        <p class="step-num">PASO 03 — RESUELTO</p>
+        <p class="step-title"><span>LUZ.</span></p>
+        <p class="step-body">El magnetotérmico sube. La nevera arranca. <strong>Tu casa vuelve a funcionar</strong> — y queda hecho para que no se repita.</p>
+      </div>
+
+      <!-- STAGE 5 · CIERRE -->
+      <div class="panel" data-band="0.9,1">
+        <p class="kicker">ASÍ DE SIMPLE</p>
+        <p class="end-title">LA LUZ<br>HA <span>VUELTO</span>.</p>
+        <div class="cta-row" style="margin-top:34px">
+          <a class="btn btn-amb" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Resolver mi avería</a>
+        </div>
+      </div>
+
+      <p class="hint"><i></i>DESLIZA PARA RESOLVER LA AVERÍA</p>
+    </div>
+  </div>
+</section>
+
+<!-- capa de chispas: del final del vídeo hasta el footer -->
+<canvas id="sparks" aria-hidden="true"></canvas>
+
+<!-- HUD -->
+<div id="hud" aria-hidden="true">
+  <div class="row"><span class="dot"></span>UNIDAD EN SERVICIO</div>
+  <div class="time" id="hudTime">00:00</div>
+  <div class="lbl">TIEMPO DE RESPUESTA</div>
+  <div class="bar"><i id="hudBar"></i></div>
+</div>
+
+<!-- FABs -->
+<div class="fabs">
+  <a class="fab fab-wa" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
+  <a class="fab fab-tel" href="tel:+34600000000" aria-label="Llamar ahora"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
+</div>
+
+<main id="main">
+
+<!-- ══════════ CONFIANZA ══════════ -->
+<section id="confianza" aria-label="Datos de confianza">
+  <div class="stats">
+    <div class="stat rev"><div class="num" data-count="24"><small>H</small></div><div class="cap">Disponibilidad real, también festivos</div></div>
+    <div class="stat rev" style="--d:.08s"><div class="num" data-count="365"></div><div class="cap">Días al año de servicio urgente</div></div>
+    <div class="stat rev" style="--d:.16s"><div class="num">[X]<small>+</small></div><div class="cap">Años de oficio <span class="ph-note">· dato del cliente</span></div></div>
+    <div class="stat rev" style="--d:.24s"><div class="num">[X.XXX]</div><div class="cap">Averías resueltas <span class="ph-note">· dato del cliente</span></div></div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICIOS ══════════ -->
+<section class="block" id="servicios">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="kicker">// SERVICIOS DE URGENCIA</p>
+      <h2>LO QUE SE ROMPE<br>DE NOCHE, <span class="amb">SE ARREGLA DE NOCHE</span></h2>
+      <p>Intervenciones urgentes en viviendas, comercios y comunidades. Material en la furgoneta y avería localizada con instrumentación — no a ojo.</p>
+    </div>
+    <div class="serv-grid">
+      <article class="serv rev">
+        <span class="tag">TOP 1</span>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/></svg></div>
+        <h3>Cortes de luz</h3>
+        <p>Te quedas a oscuras y no sube el general. Localizamos la fuga o el circuito derivado y recuperamos el suministro.</p>
+      </article>
+      <article class="serv rev" style="--d:.07s">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h3M8 11h3M8 15h3"/><circle cx="16" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/><path d="M15 15l2 3"/></svg></div>
+        <h3>Cuadros eléctricos</h3>
+        <p>Magnetotérmicos que saltan, diferenciales que no rearman, cuadros antiguos. Reparación o sustitución al momento.</p>
+      </article>
+      <article class="serv rev" style="--d:.14s">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h5l2-7 4 14 2-7h5"/></svg></div>
+        <h3>Cortocircuitos</h3>
+        <p>Olor a quemado, chispazos, un enchufe que ha hecho «pop». Aislamos el fallo y dejamos la instalación segura.</p>
+      </article>
+      <article class="serv rev" style="--d:.21s">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="9.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><path d="M12 12v4.5"/></svg></div>
+        <h3>Enchufes e interruptores</h3>
+        <p>Mecanismos quemados, sueltos o sin corriente. Sustitución con material de primeras marcas, listo en una visita.</p>
+      </article>
+      <article class="serv rev" style="--d:.28s">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16c2-6 4 2 6-4s4 2 6-4 4 2 6-4"/><path d="M4 21h16"/></svg></div>
+        <h3>Subidas de tensión</h3>
+        <p>Electrodomésticos dañados, luces que parpadean. Medimos, protegemos la instalación y tramitamos la reclamación.</p>
+      </article>
+      <article class="serv rev" style="--d:.35s">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14.5 3v4.5H19"/><path d="M9 13l2 2 4-4.5"/></svg></div>
+        <h3>Boletines eléctricos</h3>
+        <p>Certificado de instalación (CIE) para altas de luz, cambios de potencia o pisos antiguos. Trámite incluido.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PRECIOS ══════════ -->
+<section class="block" id="precios">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="kicker">// PRECIOS ORIENTATIVOS</p>
+      <h2>SIN SORPRESAS: <span class="amb">PRECIO CERRADO</span><br>ANTES DE EMPEZAR</h2>
+      <p>El precio se confirma siempre por teléfono y por escrito antes de la intervención. Lo que se acuerda es lo que se paga.</p>
+    </div>
+    <div class="price-grid">
+      <article class="price rev">
+        <h3>Desplazamiento</h3>
+        <div class="amount">[XX]<small> €</small></div>
+        <ul>
+          <li>Llegada a cualquier barrio de Santa Coloma</li>
+          <li>Se descuenta si aceptas la reparación</li>
+          <li>Horario diurno laborable</li>
+        </ul>
+        <p class="note">* Dato pendiente de confirmar con el cliente</p>
+      </article>
+      <article class="price hot rev" style="--d:.08s">
+        <span class="p-tag">LO MÁS SOLICITADO</span>
+        <h3>Diagnóstico + reparación</h3>
+        <div class="amount">[XX]<small> €/h</small></div>
+        <ul>
+          <li>Localización de avería con instrumentación</li>
+          <li>Material básico en furgoneta</li>
+          <li>Garantía por escrito de la intervención</li>
+        </ul>
+        <p class="note">* Dato pendiente de confirmar con el cliente</p>
+      </article>
+      <article class="price rev" style="--d:.16s">
+        <h3>Urgencia nocturna</h3>
+        <div class="amount">[XX]<small> €</small></div>
+        <ul>
+          <li>Noches, fines de semana y festivos</li>
+          <li>Respuesta prioritaria</li>
+          <li>Precio cerrado por teléfono antes de salir</li>
+        </ul>
+        <p class="note">* Dato pendiente de confirmar con el cliente</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ OPINIONES ══════════ -->
+<section class="block" id="opiniones">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="kicker">// OPINIONES</p>
+      <h2>LO QUE DICEN CUANDO<br><span class="amb">VUELVE LA LUZ</span></h2>
+      <p class="gbp-line" style="margin-top:18px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB100" aria-hidden="true"><path d="M12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg> Reseñas de ejemplo — se sustituirán por las <a href="#" >reseñas reales de Google del negocio</a></p>
+    </div>
+  </div>
+  <div class="mq" aria-label="Reseñas de clientes (ejemplos de demostración)">
+    <div class="mq-track" id="mqTrack">
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Se nos fue la luz un domingo a las once de la noche con el bebé en casa. En media hora estaba aquí y en una hora teníamos luz.»</p><div class="who"><span class="av">M</span><div><b>[Nombre del cliente]</b><span>Fondo · Santa Coloma</span></div><span class="g">G</span></div></article>
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«El diferencial no subía y ningún electricista cogía el teléfono. Este sí. Precio cerrado antes de venir y sin sorpresas al pagar.»</p><div class="who"><span class="av">J</span><div><b>[Nombre del cliente]</b><span>Singuerlín · Santa Coloma</span></div><span class="g">G</span></div></article>
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Olor a quemado en el cuadro a las 7 de la mañana. Vino enseguida, encontró el fallo y me explicó todo con fotos. Muy serio.»</p><div class="who"><span class="av">R</span><div><b>[Nombre del cliente]</b><span>Santa Rosa · Santa Coloma</span></div><span class="g">G</span></div></article>
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Necesitaba el boletín para dar de alta la luz del piso y me lo solucionó en dos días con el trámite incluido.»</p><div class="who"><span class="av">A</span><div><b>[Nombre del cliente]</b><span>Riu Nord · Santa Coloma</span></div><span class="g">G</span></div></article>
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Un chispazo dejó medio bar sin corriente en plena cena. Vino en 20 minutos y salvamos el servicio. No lo cambio por nada.»</p><div class="who"><span class="av">P</span><div><b>[Nombre del cliente]</b><span>Centre · Santa Coloma</span></div><span class="g">G</span></div></article>
+      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Puntual, limpio y claro con los precios. Cambió el cuadro entero y dejó la instalación como nueva. Se nota el oficio.»</p><div class="who"><span class="av">C</span><div><b>[Nombre del cliente]</b><span>Can Mariner · Santa Coloma</span></div><span class="g">G</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ZONAS ══════════ -->
+<section class="block" id="zonas">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="kicker">// ZONAS DE COBERTURA</p>
+      <h2>EN TU BARRIO<br>EN <span class="amb">MINUTOS</span></h2>
+    </div>
+    <div class="zona-grid rev">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Centre</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Fondo</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Santa Rosa</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Riu Nord</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Riu Sud</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Can Mariner</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Singuerlín</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Les Oliveres</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Can Franquesa</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>El Raval</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>El Llatí</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>La Guinardera</span>
+    </div>
+    <p class="tambien rev">TAMBIÉN URGENCIAS EN: <b>Badalona · Sant Adrià de Besòs · Montcada i Reixac</b></p>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <p class="kicker">// PREGUNTAS FRECUENTES</p>
+      <h2>ANTES DE <span class="amb">LLAMAR</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq rev">
+        <summary>¿Cuánto tardáis en llegar? <span class="x" aria-hidden="true"></span></summary>
+        <p class="a">Depende de dónde estés y de la hora, pero trabajamos solo en <strong>Santa Coloma y municipios limítrofes</strong> precisamente para llegar rápido. Al llamar te decimos el tiempo real de llegada — y lo cumplimos.</p>
+      </details>
+      <details class="faq rev" style="--d:.06s">
+        <summary>¿Trabajáis de noche y en festivos? <span class="x" aria-hidden="true"></span></summary>
+        <p class="a">Sí. El servicio de urgencia es <strong>24 horas, los 365 días</strong>: noches, fines de semana, Navidad y agosto incluidos. La tarifa nocturna/festiva se te comunica cerrada antes de salir.</p>
+      </details>
+      <details class="faq rev" style="--d:.12s">
+        <summary>¿Dais presupuesto antes de reparar? <span class="x" aria-hidden="true"></span></summary>
+        <p class="a">Siempre. Primero diagnóstico, luego <strong>precio cerrado y por escrito</strong> (WhatsApp vale), y solo si lo aceptas empezamos a reparar. Lo acordado es lo que se paga.</p>
+      </details>
+      <details class="faq rev" style="--d:.18s">
+        <summary>¿Emitís boletines eléctricos (CIE)? <span class="x" aria-hidden="true"></span></summary>
+        <p class="a">Sí, somos <strong>instaladores autorizados</strong>: emitimos el Certificado de Instalación Eléctrica para altas de suministro, cambios de potencia y regularización de instalaciones antiguas, con el trámite incluido.</p>
+      </details>
+      <details class="faq rev" style="--d:.24s">
+        <summary>¿La reparación tiene garantía? <span class="x" aria-hidden="true"></span></summary>
+        <p class="a">Toda intervención queda <strong>garantizada por escrito</strong>. Si el mismo fallo se repite dentro del periodo de garantía, volvemos sin coste.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACTO ══════════ -->
+<section class="block" id="contacto">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="rev">
+        <p class="kicker flick">// URGENCIAS 24H</p>
+        <h2>¿SIN LUZ<br><span class="amb">AHORA MISMO?</span></h2>
+        <p style="color:var(--mut);margin:20px 0 30px;max-width:440px">No esperes a mañana: una avería eléctrica no mejora sola. Llama y te decimos <strong style="color:var(--bone)">qué pasa, cuánto cuesta y cuándo llegamos.</strong></p>
+        <div class="cta-row" style="max-width:440px">
+          <a class="btn btn-amb" href="tel:+34600000000" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Llamar ahora · 24h</a>
+          <a class="btn btn-ghost" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg>Escribir por WhatsApp</a>
+        </div>
+        <div class="c-lines">
+          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span class="ph">[TELÉFONO DEL NEGOCIO]</span></p>
+          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Santa Coloma de Gramenet · Barcelona</p>
+          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg><a href="#" style="color:var(--amb);text-decoration:none">Ficha de Google Business Profile →</a> <span style="opacity:.6">· pendiente de enlazar</span></p>
+        </div>
+      </div>
+      <div class="map-box rev" style="--d:.1s">
+        <iframe src="https://maps.google.com/maps?q=Santa%20Coloma%20de%20Gramenet&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Mapa de Santa Coloma de Gramenet" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <span class="map-cap">SANTA COLOMA DE GRAMENET — ZONA DE SERVICIO</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="foot-wrap">
+      <div class="foot-brand">
+        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="18" fill="#FFB100"/><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#050403"/></svg>
+        <span>ELECTRICISTA DE URGENCIA · SANTA COLOMA</span>
+      </div>
+      <div class="foot-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#precios">Precios</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#zonas">Zonas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="foot-soc">
+        <!-- TODO: sustituir por las redes reales del cliente -->
+        <a href="#" aria-label="Instagram (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="Facebook (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.3-1.5 1.6-1.5H16.7V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.5v7h3z"/></svg></a>
+        <a href="https://wa.me/34600000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
+      </div>
+      <div class="foot-legal">
+        <span>© 2026 [NOMBRE DEL NEGOCIO] — Electricista autorizado en Santa Coloma de Gramenet</span>
+        <span><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+</section>
+
+</main>
+
+<script>
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+/* ══════════════ CONFIG ══════════════ */
+const FRAME_COUNT = 241;                 // frames extraídos del viaje (3 clips encadenados)
+const FRAME_PATH  = i => `assets/frames/f_${String(i).padStart(3,'0')}.webp`;
+const RESP_MIN    = 25;                  // el HUD cuenta 00:00 → 25:00
+
+/* ══════════════ H1 letra a letra ══════════════ */
+(() => {
+  const h1 = document.getElementById('h1');
+  const lines = ['ELECTRICISTA DE', 'URGENCIA EN', '|SANTA COLOMA', '|DE GRAMENET'];
+  let i = 0;
+  lines.forEach((line, li) => {
+    const div = document.createElement('div');
+    div.setAttribute('aria-hidden', 'true');
+    let amb = false;
+    [...line].forEach(ch => {
+      if (ch === '|') { amb = true; return; }
+      const s = document.createElement('span');
+      s.className = 'l' + (amb ? ' amb' : '');
+      s.style.setProperty('--i', i++);
+      s.textContent = ch === ' ' ? ' ' : ch;
+      div.appendChild(s);
+    });
+    h1.appendChild(div);
+  });
+})();
+
+/* ══════════════ Canvas + frames ══════════════ */
+const canvas = document.getElementById('film');
+const ctx = canvas.getContext('2d');
+const frames = new Array(FRAME_COUNT);
+let loadedCount = 0, bootDone = false;
+
+function sizeCanvas() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.round(innerWidth * dpr);
+  canvas.height = Math.round(innerHeight * dpr);
+}
+sizeCanvas();
+addEventListener('resize', () => { sizeCanvas(); dirty = true; });
+
+function loadFrame(i, cb) {
+  if (frames[i]) return;
+  const img = new Image();
+  img.decoding = 'async';
+  img.onload = () => { img.ok = true; loadedCount++; dirty = true; cb && cb(); };
+  img.onerror = () => { img.ok = false; cb && cb(); };
+  img.src = FRAME_PATH(i);
+  frames[i] = img;
+}
+
+function nearestLoaded(t) {
+  if (frames[t] && frames[t].ok) return frames[t];
+  for (let d = 1; d < FRAME_COUNT; d++) {
+    const a = frames[t - d], b = frames[t + d];
+    if (a && a.ok) return a;
+    if (b && b.ok) return b;
+  }
+  return null;
+}
+
+/* carga progresiva: pase 1 (1 de cada 8) → pase 2 (todos) */
+(() => {
+  const stride = 8;
+  const pass1 = [];
+  for (let i = 0; i < FRAME_COUNT; i += stride) pass1.push(i);
+  pass1.push(FRAME_COUNT - 1);
+  let done = 0;
+  const bar = document.getElementById('bootBar');
+  const finish = () => {
+    if (bootDone) return;
+    bootDone = true;
+    document.getElementById('boot').classList.add('off');
+    for (let i = 0; i < FRAME_COUNT; i++) loadFrame(i);
+  };
+  pass1.forEach(i => loadFrame(i, () => {
+    done++;
+    if (bar) bar.style.width = Math.round(done / pass1.length * 100) + '%';
+    if (done >= pass1.length) finish();
+  }));
+  setTimeout(finish, 4000); // failsafe
+})();
+
+/* ══════════════ Chispas del final ══════════════ */
+const sCan = document.getElementById('sparks');
+const sCtx = sCan.getContext('2d');
+let sparks = [], sparksArmed = true;
+function sizeSparks() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  sCan.width = Math.round(innerWidth * dpr);
+  sCan.height = Math.round(innerHeight * dpr);
+}
+sizeSparks();
+addEventListener('resize', sizeSparks);
+function burst(x, y, dir, n, spd = 1) {
+  const k = sCan.width / 1900;
+  for (let i = 0; i < n; i++) {
+    const a = dir + (Math.random() - .5) * 1.5;
+    const sp = (3 + Math.random() * 14) * k * spd;
+    sparks.push({
+      x, y, px: x, py: y,
+      vx: Math.cos(a) * sp, vy: Math.sin(a) * sp,
+      life: .7 + Math.random() * .5, decay: .008 + Math.random() * .016,
+      w: (Math.random() < .2 ? 2.8 : 1.5) * k, hue: Math.random()
+    });
+  }
+}
+function fireSparks() {
+  const w = sCan.width, h = sCan.height;
+  burst(-10, h * .32, -0.25, 40);
+  burst(w + 10, h * .42, Math.PI + 0.25, 40);
+  burst(w * .5, h + 10, -Math.PI / 2, 48);
+  setTimeout(() => { burst(w * .22, -10, Math.PI / 2 + .4, 26); burst(w * .8, -10, Math.PI / 2 - .4, 26); }, 300);
+}
+
+/* patrón oculto tras el fondo: circuitería que solo se ve dentro del resplandor */
+const pat = document.createElement('canvas');
+(function buildPattern() {
+  const s = 640; pat.width = s; pat.height = s;
+  const c = pat.getContext('2d');
+  const rnd = (a, b) => a + Math.random() * (b - a);
+  c.strokeStyle = 'rgba(255,177,0,0.5)'; c.fillStyle = 'rgba(255,177,0,0.5)'; c.lineWidth = 1.2;
+  for (let i = 0; i < 24; i++) {
+    let x = rnd(0, s), y = rnd(0, s);
+    c.beginPath(); c.moveTo(x, y);
+    const steps = 2 + Math.floor(Math.random() * 3);
+    for (let j = 0; j < steps; j++) {
+      if (Math.random() < .5) x += rnd(-90, 90); else y += rnd(-90, 90);
+      c.lineTo(x, y);
+    }
+    c.stroke();
+    c.beginPath(); c.arc(x, y, 2.4, 0, 7); c.fill();
+  }
+  for (let i = 0; i < 16; i++) { c.beginPath(); c.arc(rnd(0, s), rnd(0, s), 1.4, 0, 7); c.fill(); }
+})();
+let glows = [], nextPop = 0;
+
+let fxWasActive = false;
+function drawFx() {
+  const w = sCan.width, h = sCan.height;
+  if (!sparks.length && !glows.length) {
+    if (fxWasActive) { sCtx.clearRect(0, 0, w, h); fxWasActive = false; }
+    return;
+  }
+  fxWasActive = true;
+  sCtx.clearRect(0, 0, w, h);
+  sCtx.globalCompositeOperation = 'lighter';
+
+  /* resplandores que revelan la circuitería oculta */
+  glows = glows.filter(g => {
+    g.t++;
+    const k = g.t / g.dur;
+    if (k >= 1) return false;
+    const a = Math.sin(Math.PI * k);
+    const grd = sCtx.createRadialGradient(g.x, g.y, 0, g.x, g.y, g.r);
+    grd.addColorStop(0, `rgba(255,177,0,${(a * (g.pat ? 0.14 : 0.12)).toFixed(3)})`);
+    grd.addColorStop(1, 'rgba(255,177,0,0)');
+    sCtx.fillStyle = grd;
+    sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r, 0, 7); sCtx.fill();
+    if (g.pat) {
+      sCtx.save();
+      sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r * .82, 0, 7); sCtx.clip();
+      sCtx.globalAlpha = a * 0.3;
+      const ts = pat.width;
+      for (let X = Math.floor((g.x - g.r) / ts) * ts; X < g.x + g.r; X += ts)
+        for (let Y = Math.floor((g.y - g.r) / ts) * ts; Y < g.y + g.r; Y += ts)
+          sCtx.drawImage(pat, X, Y);
+      sCtx.globalAlpha = 1;
+      sCtx.restore();
+    }
+    return true;
+  });
+
+  /* chispas con estela */
+  const grav = 0.16 * (w / 1900);
+  sCtx.lineCap = 'round';
+  sparks = sparks.filter(pt => {
+    pt.vy += grav; pt.vx *= .986; pt.vy *= .992;
+    pt.x += pt.vx; pt.y += pt.vy;
+    pt.life -= pt.decay;
+    if (pt.life <= 0 || pt.y > h + 40) return false;
+    const c = pt.hue < .22 ? '255,244,214' : pt.hue < .72 ? '255,177,0' : '255,122,0';
+    sCtx.strokeStyle = `rgba(${c},${Math.min(1, pt.life).toFixed(3)})`;
+    sCtx.lineWidth = pt.w;
+    sCtx.beginPath();
+    sCtx.moveTo(pt.x - pt.vx * 2.6, pt.y - pt.vy * 2.6);
+    sCtx.lineTo(pt.x, pt.y);
+    sCtx.stroke();
+    return true;
+  });
+}
+
+/* ══════════════ Scrub ══════════════ */
+const exp = document.getElementById('experiencia');
+const hud = document.getElementById('hud');
+const hudTime = document.getElementById('hudTime');
+const hudBar = document.getElementById('hudBar');
+const panels = [...document.querySelectorAll('.panel')].map(el => {
+  const [a, b] = el.dataset.band.split(',').map(Number);
+  return { el, a, b };
+});
+let current = 0, target = 0, dirty = true;
+const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function progress() {
+  const r = exp.getBoundingClientRect();
+  const total = r.height - innerHeight;
+  return Math.min(1, Math.max(0, -r.top / total));
+}
+const smooth = (t) => t * t * (3 - 2 * t);
+
+function band(p, a, b, f = 0.022) {
+  if (p < a - f || p > b + f) return 0;
+  if (p < a + f) return smooth((p - (a - f)) / (2 * f));
+  if (p > b - f) return 1 - smooth((p - (b - f)) / (2 * f));
+  return 1;
+}
+
+function draw() {
+  const img = nearestLoaded(Math.round(current));
+  ctx.fillStyle = '#050403';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  if (!img) return;
+  const cw = canvas.width, ch = canvas.height;
+  const ir = img.naturalWidth / img.naturalHeight, cr = cw / ch;
+  let dw, dh;
+  if (cr > ir) { dw = cw; dh = cw / ir; } else { dh = ch; dw = ch * ir; }
+  ctx.drawImage(img, (cw - dw) / 2, (ch - dh) / 2, dw, dh);
+}
+
+function tick() {
+  const p = progress();
+  target = p * (FRAME_COUNT - 1);
+  const prev = current;
+  current += (target - current) * (reduced ? 1 : 0.16);
+  if (Math.abs(current - target) < 0.4) current = target;
+  if (Math.round(prev) !== Math.round(current) || dirty) { draw(); dirty = false; }
+
+  /* paneles */
+  for (const { el, a, b } of panels) {
+    const o = band(p, a, b);
+    if (o <= 0.005) { el.style.visibility = 'hidden'; el.style.opacity = 0; continue; }
+    el.style.visibility = 'visible';
+    el.style.opacity = o.toFixed(3);
+    el.style.transform = `translateY(${((1 - o) * 26).toFixed(1)}px)`;
+  }
+
+  /* HUD — el cronómetro arranca con "LLAMAS" (p>0.33) */
+  const hp = Math.max(0, Math.min(1, (p - 0.33) / 0.65));
+  const inScrub = p > 0.33 && p < 0.985;
+  hud.classList.toggle('on', inScrub);
+  if (inScrub) {
+    const secs = Math.round(hp * RESP_MIN * 60);
+    const mm = String(Math.floor(secs / 60)).padStart(2, '0');
+    const ss = String(secs % 60).padStart(2, '0');
+    hudTime.textContent = `${mm}:${ss}`;
+    hudBar.style.width = (hp * 100).toFixed(1) + '%';
+  }
+
+  /* chispas: estallido al llegar al final del viaje… */
+  if (p > 0.9 && sparksArmed && !reduced) { sparksArmed = false; fireSparks(); }
+  if (p < 0.8) sparksArmed = true;
+  /* …y después del vídeo: un chisporroteo pequeño y espaciado (cada 4-7 s)
+     en un punto aleatorio, que alumbra un poquito su zona; de vez en cuando
+     un resplandor mayor revela la circuitería oculta */
+  if (p >= 0.995 && !reduced) {
+    const now = performance.now();
+    if (now > nextPop) {
+      nextPop = now + 4000 + Math.random() * 3000;
+      const w = sCan.width, h = sCan.height;
+      const x = Math.random() * w, y = Math.random() * h * .9;
+      burst(x, y, Math.random() * Math.PI * 2, 4 + Math.floor(Math.random() * 4), 0.35);
+      const big = Math.random() < 0.28;
+      glows.push({ x, y, r: (big ? 330 + Math.random() * 170 : 130 + Math.random() * 90) * (w / 1900), t: 0, dur: big ? 150 : 75, pat: big });
+    }
+  }
+  drawFx();
+
+  requestAnimationFrame(tick);
+}
+requestAnimationFrame(tick);
+
+/* anclas del menú con scroll suave controlado */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  const id = a.getAttribute('href');
+  if (id.length < 2) return;
+  a.addEventListener('click', e => {
+    const el = document.querySelector(id);
+    if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+/* nav hide/show */
+let lastY = scrollY;
+addEventListener('scroll', () => {
+  const nav = document.getElementById('nav');
+  const y = scrollY;
+  nav.classList.toggle('hide', y > lastY && y > 300);
+  lastY = y;
+}, { passive: true });
+
+/* ══════════════ Reveals ══════════════ */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: 0.12 });
+document.querySelectorAll('.rev').forEach(el => io.observe(el));
+
+/* ══════════════ Contadores (solo datos reales: 24 / 365) ══════════════ */
+const cio = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return;
+  cio.unobserve(e.target);
+  const el = e.target, end = +el.dataset.count, suf = el.innerHTML.includes('<small>') ? el.querySelector('small').outerHTML : '';
+  const t0 = performance.now(), dur = 1400;
+  (function step(t) {
+    const k = Math.min(1, (t - t0) / dur);
+    el.innerHTML = Math.round(end * (1 - Math.pow(1 - k, 3))) + suf;
+    if (k < 1) requestAnimationFrame(step);
+  })(t0);
+}), { threshold: 0.6 });
+document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+/* marquee: duplicar pista para bucle perfecto */
+(() => {
+  const tr = document.getElementById('mqTrack');
+  tr.innerHTML += tr.innerHTML;
+  tr.querySelectorAll('.rev-card:nth-child(n+7)').forEach(c => c.setAttribute('aria-hidden', 'true'));
+})();
+</script>
+</body>
+</html>
