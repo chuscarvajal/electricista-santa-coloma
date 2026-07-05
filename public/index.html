@@ -118,7 +118,7 @@
   #hero-scrub{height:520vh;position:relative;background:#0b0c0e}
   #hero-scrub .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
   #hero-scrub canvas{position:absolute;inset:0;width:100%;height:100%}
-  #sparksfx{mix-blend-mode:screen;pointer-events:none}
+  #sparksfx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:45}
   #hero-scrub .scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(11,12,14,.84) 0%,rgba(11,12,14,.45) 42%,rgba(11,12,14,.08) 70%),linear-gradient(rgba(11,12,14,.55),transparent 26%,transparent 72%,rgba(11,12,14,.9))}
   #hero-scrub .stage-ui{position:absolute;inset:0;display:grid;padding:0 clamp(20px,6vw,80px)}
   #hero-scrub .panel{grid-area:1/1;align-self:center;max-width:880px;width:100%;opacity:0;visibility:hidden;transform:translateY(30px);will-change:opacity,transform}
@@ -317,10 +317,12 @@
       </div>
 
       <p class="hint"><i></i>DESLIZA PARA RESOLVER LA AVERÍA</p>
-      <canvas id="sparksfx" aria-hidden="true"></canvas>
     </div>
   </div>
 </section>
+
+<!-- capa de efectos: chispas y resplandores del vídeo hasta el footer -->
+<canvas id="sparksfx" aria-hidden="true"></canvas>
 
 <!-- HUD cronómetro del scrub -->
 <div id="hud" aria-hidden="true">
@@ -1204,14 +1206,33 @@
   }
   sizeSparks();
   addEventListener('resize', sizeSparks);
-  function burst(x, y, dir, n){
+  function burst(x, y, dir, n, spd){
+    spd = spd || 1;
     var k = sCan.width / 1900;
     for (var i = 0; i < n; i++) {
       var a = dir + (Math.random() - .5) * 1.5;
-      var sp = (3 + Math.random() * 14) * k;
+      var sp = (3 + Math.random() * 14) * k * spd;
       sparks.push({ x:x, y:y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp, life:.7+Math.random()*.5, decay:.008+Math.random()*.016, w:(Math.random()<.2?2.8:1.5)*k, hue:Math.random() });
     }
   }
+  // patrón de circuitería oculto que revelan los resplandores
+  var pat = document.createElement('canvas');
+  (function(){
+    var s = 640; pat.width = s; pat.height = s;
+    var c = pat.getContext('2d');
+    function rnd(a,b){ return a + Math.random() * (b - a); }
+    c.strokeStyle = 'rgba(224,161,28,0.5)'; c.fillStyle = 'rgba(224,161,28,0.5)'; c.lineWidth = 1.2;
+    for (var i = 0; i < 24; i++) {
+      var x = rnd(0,s), y = rnd(0,s);
+      c.beginPath(); c.moveTo(x,y);
+      var st = 2 + Math.floor(Math.random()*3);
+      for (var j = 0; j < st; j++) { if (Math.random() < .5) x += rnd(-90,90); else y += rnd(-90,90); c.lineTo(x,y); }
+      c.stroke();
+      c.beginPath(); c.arc(x,y,2.4,0,7); c.fill();
+    }
+    for (var i2 = 0; i2 < 16; i2++) { c.beginPath(); c.arc(rnd(0,s),rnd(0,s),1.4,0,7); c.fill(); }
+  })();
+  var glows = [], nextPop = 0;
   function fire(){
     var w = sCan.width, h = sCan.height;
     burst(-10, h*.32, -0.25, 40);
@@ -1221,10 +1242,37 @@
   }
   function drawFx(){
     var w = sCan.width, h = sCan.height;
-    if (!sparks.length) { if (fxOn) { sCtx.clearRect(0,0,w,h); fxOn = false; } return; }
+    if (!sparks.length && !glows.length) { if (fxOn) { sCtx.clearRect(0,0,w,h); fxOn = false; } return; }
     fxOn = true;
     sCtx.clearRect(0,0,w,h);
-    sCtx.globalCompositeOperation = 'lighter';
+    sCtx.globalCompositeOperation = 'source-over';
+
+    // resplandores: tiñen la zona y revelan la circuitería (visibles en claro y oscuro)
+    glows = glows.filter(function(g){
+      g.t++;
+      var k = g.t / g.dur;
+      if (k >= 1) return false;
+      var a = Math.sin(Math.PI * k);
+      var grd = sCtx.createRadialGradient(g.x, g.y, 0, g.x, g.y, g.r);
+      grd.addColorStop(0, 'rgba(247,183,47,' + (a * (g.pat ? 0.16 : 0.13)).toFixed(3) + ')');
+      grd.addColorStop(1, 'rgba(247,183,47,0)');
+      sCtx.fillStyle = grd;
+      sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r, 0, 7); sCtx.fill();
+      if (g.pat) {
+        sCtx.save();
+        sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r * .82, 0, 7); sCtx.clip();
+        sCtx.globalAlpha = a * 0.35;
+        var ts = pat.width;
+        for (var X = Math.floor((g.x - g.r) / ts) * ts; X < g.x + g.r; X += ts)
+          for (var Y = Math.floor((g.y - g.r) / ts) * ts; Y < g.y + g.r; Y += ts)
+            sCtx.drawImage(pat, X, Y);
+        sCtx.globalAlpha = 1;
+        sCtx.restore();
+      }
+      return true;
+    });
+
+    // chispas con doble trazo: borde ámbar oscuro (se ve sobre blanco) + núcleo brillante (se ve sobre oscuro)
     var grav = 0.16 * (w / 1900);
     sCtx.lineCap = 'round';
     sparks = sparks.filter(function(pt){
@@ -1232,13 +1280,15 @@
       pt.x += pt.vx; pt.y += pt.vy;
       pt.life -= pt.decay;
       if (pt.life <= 0 || pt.y > h + 40) return false;
-      var c = pt.hue < .22 ? '255,244,214' : pt.hue < .72 ? '247,183,47' : '255,122,0';
-      sCtx.strokeStyle = 'rgba(' + c + ',' + Math.min(1, pt.life).toFixed(3) + ')';
+      var al = Math.min(1, pt.life);
+      var x0 = pt.x - pt.vx * 2.6, y0 = pt.y - pt.vy * 2.6;
+      sCtx.strokeStyle = 'rgba(160,102,10,' + (al * .85).toFixed(3) + ')';
+      sCtx.lineWidth = pt.w + 2.2;
+      sCtx.beginPath(); sCtx.moveTo(x0, y0); sCtx.lineTo(pt.x, pt.y); sCtx.stroke();
+      var c = pt.hue < .22 ? '255,214,120' : pt.hue < .72 ? '247,183,47' : '255,122,0';
+      sCtx.strokeStyle = 'rgba(' + c + ',' + al.toFixed(3) + ')';
       sCtx.lineWidth = pt.w;
-      sCtx.beginPath();
-      sCtx.moveTo(pt.x - pt.vx * 2.6, pt.y - pt.vy * 2.6);
-      sCtx.lineTo(pt.x, pt.y);
-      sCtx.stroke();
+      sCtx.beginPath(); sCtx.moveTo(x0, y0); sCtx.lineTo(pt.x, pt.y); sCtx.stroke();
       return true;
     });
   }
@@ -1302,6 +1352,19 @@
     }
     if (p > 0.9 && armed && !reduced) { armed = false; fire(); }
     if (p < 0.8) armed = true;
+    /* tras el vídeo y hasta el footer: chisporroteo espaciado que alumbra un poco
+       + de vez en cuando un resplandor mayor revela la circuitería oculta */
+    if (p >= 0.995 && !reduced) {
+      var now = performance.now();
+      if (now > nextPop) {
+        nextPop = now + 4000 + Math.random() * 3000;
+        var pw = sCan.width, ph = sCan.height;
+        var px = Math.random() * pw, py = Math.random() * ph * .9;
+        burst(px, py, Math.random() * Math.PI * 2, 4 + Math.floor(Math.random() * 4), 0.38);
+        var big = Math.random() < 0.3;
+        glows.push({ x: px, y: py, r: (big ? 340 + Math.random() * 170 : 140 + Math.random() * 90) * (pw / 1900), t: 0, dur: big ? 150 : 80, pat: big });
+      }
+    }
     drawFx();
     requestAnimationFrame(tick);
   }
