@@ -722,12 +722,12 @@
       <p class="text-mute mt-4">Basados en el Barcelonès Nord, garantizamos la máxima rapidez de desplazamiento a cualquier punto del término municipal:</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08221 — Centre</p><h4 class="font-display font-700 text-ink text-xl mb-1">Centre · Vallparadís</h4><p class="text-mute text-sm">Casco urbano, ayuntamiento y parque de Vallparadís.</p></div>
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08223 — Ca n'Aurell</p><h4 class="font-display font-700 text-ink text-xl mb-1">Ca n'Aurell · La Maurina</h4><p class="text-mute text-sm">Zona residencial al oeste, pisos y unifamiliares.</p></div>
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08226 — Sant Pere</p><h4 class="font-display font-700 text-ink text-xl mb-1">Sant Pere · Can Boada</h4><p class="text-mute text-sm">Barrios del norte con instalaciones a renovar.</p></div>
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08225 — Ca n'Anglada</p><h4 class="font-display font-700 text-ink text-xl mb-1">Ca n'Anglada · Torre-sana</h4><p class="text-mute text-sm">Comunidades de vecinos y bloques de pisos.</p></div>
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08224 — Can Palet</p><h4 class="font-display font-700 text-ink text-xl mb-1">Can Palet · Les Fonts</h4><p class="text-mute text-sm">Viviendas unifamiliares y suministros a ampliar.</p></div>
-      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">Polígonos</p><h4 class="font-display font-700 text-ink text-xl mb-1">Can Petit · Els Bellots · Santa Margarida</h4><p class="text-mute text-sm">Naves, locales comerciales y oficinas.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08921 — Centre</p><h4 class="font-display font-700 text-ink text-xl mb-1">Centre · Can Mariner</h4><p class="text-mute text-sm">Casco urbano, ajuntament y mercat Sagarra.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08922 — Fondo</p><h4 class="font-display font-700 text-ink text-xl mb-1">Fondo · Santa Rosa</h4><p class="text-mute text-sm">La zona más densa: bloques con instalaciones antiguas.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08923 — Riu</p><h4 class="font-display font-700 text-ink text-xl mb-1">Riu Nord · Riu Sud · Safaretjos</h4><p class="text-mute text-sm">Junto al Besòs: pisos de los años 60-70 a renovar.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08924 — Singuerlín</p><h4 class="font-display font-700 text-ink text-xl mb-1">Singuerlín · Les Oliveres</h4><p class="text-mute text-sm">Barrios altos: unifamiliares y comunidades.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08924 — Can Franquesa</p><h4 class="font-display font-700 text-ink text-xl mb-1">Can Franquesa · La Guinardera</h4><p class="text-mute text-sm">Comunidades de vecinos y bloques de pisos.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">El Raval · Llatí</p><h4 class="font-display font-700 text-ink text-xl mb-1">El Raval · El Llatí · La Riera Alta</h4><p class="text-mute text-sm">Viviendas, locales comerciales y oficinas.</p></div>
     </div>
     <div class="mt-8 bg-ink rounded-sm p-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-white">
       <div><h4 class="font-display font-700 text-2xl mb-1">¿Estás fuera de estas zonas?</h4><p class="text-white/60 text-sm">Cubrimos todo el Barcelonès Nord: Badalona, Sant Adrià de Besòs, Montcada i Reixac y los barrios del norte de Barcelona.</p></div>
@@ -1214,7 +1214,7 @@
       var a = dir + (Math.random() - .5) * spread;
       var sp = (3 + Math.random() * 14) * k * spd;
       sparks.push({ x:x, y:y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp,
-        life:.75+Math.random()*.5, decay:.008+Math.random()*.015,
+        life:.8+Math.random()*.5, decay:.006+Math.random()*.01,
         w:(Math.random()<.22?3.2:1.8)*k, hue:Math.random(),
         ph:Math.random()*6.28, fl:5+Math.random()*8 });
     }
@@ -1283,13 +1283,13 @@
     var kids = [];
     sCtx.lineCap = 'round';
     sparks = sparks.filter(function(pt){
-      pt.vy += grav; pt.vx *= .968; pt.vy *= .975;
+      pt.vy += grav; pt.vx *= .973; pt.vy *= .981;
       pt.x += pt.vx; pt.y += pt.vy;
       pt.life -= pt.decay;
       if (pt.life <= 0 || pt.y > h + 40) return false;
       if (Math.random() < 0.014 && sparks.length + kids.length < 170) {
         kids.push({ x:pt.x, y:pt.y, vx:pt.vx*.35+(Math.random()-.5)*2.2, vy:pt.vy*.35-Math.random()*1.6,
-          life:.32+Math.random()*.2, decay:.02+Math.random()*.02, w:Math.max(1, pt.w*.65), hue:Math.random(),
+          life:.38+Math.random()*.25, decay:.014+Math.random()*.014, w:Math.max(1, pt.w*.65), hue:Math.random(),
           ph:Math.random()*6.28, fl:8+Math.random()*8 });
       }
       if (Math.random() < 0.1) return true;
@@ -1379,15 +1379,15 @@
         var px = Math.random() * pw, py = Math.random() * ph * .9;
         var baseDir = Math.random() * Math.PI * 2;
         burst(px, py, baseDir, 6 + Math.floor(Math.random() * 4), 0.46, 0.8);
-        glows.push({ x: px, y: py, r: (46 + Math.random() * 30) * (pw / 1900), t: 0, dur: 9, fa: 0.5 });
+        glows.push({ x: px, y: py, r: (46 + Math.random() * 30) * (pw / 1900), t: 0, dur: 13, fa: 0.5 });
         var big = Math.random() < 0.3;
-        glows.push({ x: px, y: py, r: (big ? 360 + Math.random() * 180 : 160 + Math.random() * 110) * (pw / 1900), t: 0, dur: big ? 150 : 90, pat: big });
+        glows.push({ x: px, y: py, r: (big ? 360 + Math.random() * 180 : 160 + Math.random() * 110) * (pw / 1900), t: 0, dur: big ? 165 : 115, pat: big });
         var echoes = Math.random() < .6 ? 1 + Math.floor(Math.random() * 2) : 0;
         for (var e = 1; e <= echoes; e++) {
           setTimeout((function(ex, ey, ed){ return function(){
             burst(ex, ey, ed + (Math.random() - .5) * .8, 3 + Math.floor(Math.random() * 3), 0.4, 0.7);
-            glows.push({ x: ex, y: ey, r: 40 * (sCan.width / 1900), t: 0, dur: 7, fa: 0.4 });
-          }; })(px + (Math.random() - .5) * 24, py + (Math.random() - .5) * 24, baseDir), 90 * e + Math.random() * 80);
+            glows.push({ x: ex, y: ey, r: 40 * (sCan.width / 1900), t: 0, dur: 10, fa: 0.4 });
+          }; })(px + (Math.random() - .5) * 24, py + (Math.random() - .5) * 24, baseDir), 110 * e + Math.random() * 110);
         }
       }
     }
