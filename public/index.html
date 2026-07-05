@@ -1,1146 +1,1311 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electricista de Urgencia en Santa Coloma de Gramenet | 24 Horas</title>
-<meta name="description" content="Electricista de urgencia 24h en Santa Coloma de Gramenet. Cortes de luz, cuadros eléctricos, cortocircuitos y subidas de tensión. Llegamos rápido, presupuesto antes de actuar. Llama ahora.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Electricista de Urgencia en Santa Coloma de Gramenet | 24 Horas">
-<meta property="og:description" content="Averías eléctricas resueltas 24 horas, 365 días. Cortes de luz, cuadros, cortocircuitos. Llegamos rápido a todos los barrios de Santa Coloma.">
-<meta property="og:image" content="assets/og.jpg">
-<meta property="og:locale" content="es_ES">
-<meta name="theme-color" content="#050403">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23050403'/%3E%3Cpath d='M56 8 22 58h20L40 92l38-52H56z' fill='%23FFB100'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Electrician",
-  "name": "[NOMBRE DEL NEGOCIO]",
-  "description": "Electricista de urgencia 24 horas en Santa Coloma de Gramenet",
-  "telephone": "[TELÉFONO]",
-  "url": "[URL]",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Santa Coloma de Gramenet",
-    "addressRegion": "Barcelona",
-    "addressCountry": "ES"
-  },
-  "areaServed": ["Santa Coloma de Gramenet","Badalona","Sant Adrià de Besòs","Montcada i Reixac"],
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-    "opens": "00:00",
-    "closes": "23:59"
-  }
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Electricista de Urgencia 24h en Santa Coloma de Gramenet, Barcelona | ElectroGramenet</title>
+<meta name="description" content="¿Necesitas un electricista de urgencia en Santa Coloma de Gramenet? Electricistas autorizados 24 horas. Apagones, averías, boletines (CIE), cuadros e iluminación. Llegamos rápido y con presupuesto sin compromiso." />
+<meta name="keywords" content="electricista Santa Coloma de Gramenet, electricista urgente Santa Coloma de Gramenet, electricista 24 horas Santa Coloma de Gramenet, lampista Santa Coloma de Gramenet, instalaciones eléctricas Santa Coloma de Gramenet, instal·lacions elèctriques Santa Coloma de Gramenet, averías eléctricas Santa Coloma de Gramenet, boletines eléctricos Santa Coloma de Gramenet, instalador autorizado Santa Coloma de Gramenet, cargador coche eléctrico Santa Coloma de Gramenet, placas solares Santa Coloma de Gramenet, climatización Santa Coloma de Gramenet, aire acondicionado Santa Coloma de Gramenet, domótica Santa Coloma de Gramenet, electricista Barcelonès Nord" />
+<link rel="canonical" href="https://electricista-santa-coloma.netlify.app/" />
+
+<!-- Geo -->
+<meta name="geo.region" content="ES-CT" />
+<meta name="geo.placename" content="Santa Coloma de Gramenet, Barcelona" />
+<meta name="geo.position" content="41.4515;2.2080" />
+<meta name="ICBM" content="41.4515, 2.2080" />
+
+<!-- Favicons -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#141619" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_ES" />
+<meta property="og:url" content="https://electricista-santa-coloma.netlify.app/" />
+<meta property="og:title" content="Electricista de Urgencia 24h en Santa Coloma de Gramenet | Llegamos rápido" />
+<meta property="og:description" content="Servicio técnico eléctrico urgente en Santa Coloma de Gramenet, Barcelona. Electricistas autorizados para cortocircuitos, apagones y boletines. Disponibles 24/7." />
+<meta property="og:image" content="/og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          gold:    { DEFAULT: '#f7b72f', dark: '#e0a11c', light: '#ffca55' },
+          ink:     { DEFAULT: '#1c1f24', deep: '#141619', soft: '#2a2e35' },
+          surface: '#f4f5f7',
+          mute:    '#6b7280',
+        },
+        fontFamily: { display: ['Lato', 'sans-serif'], body: ['Lato', 'sans-serif'] },
+        fontWeight: { 500: '500', 600: '600', 700: '700', 800: '800', 900: '900' },
+        boxShadow: {
+          card: '0 20px 45px -22px rgba(28,31,36,0.28)',
+          float: '0 34px 70px -30px rgba(28,31,36,0.40)',
+          gold: '0 18px 36px -16px rgba(247,183,47,0.55)',
+        },
+      },
+    },
+  };
 </script>
 <style>
-/* ══════════════ TOKENS ══════════════ */
-:root{
-  --bg0:#050403;          /* negro azabache cálido */
-  --bg1:#0B0907;
-  --bg2:#121009;
-  --amb:#FFB100;          /* ámbar eléctrico */
-  --amb2:#FFCE55;
-  --amb-deep:#B87400;
-  --bone:#F4ECDC;         /* hueso cálido */
-  --mut:#A29685;          /* gris cálido secundario */
-  --line:rgba(255,177,0,.16);
-  --line2:rgba(244,236,220,.09);
-  --noche:#8FB8D8;        /* azul noche — solo micro-detalles */
-  --wa:#25D366;
-  --disp:'Anton',sans-serif;
-  --body:'Archivo',sans-serif;
-  --mono:'IBM Plex Mono',monospace;
-  --sh-amb:0 12px 44px -12px rgba(255,177,0,.28), 0 3px 10px rgba(0,0,0,.65);
-  --sh-soft:0 18px 50px -20px rgba(0,0,0,.85), 0 2px 6px rgba(0,0,0,.5);
-  --ease:cubic-bezier(.22,1,.36,1);
-  --pad:clamp(20px,5vw,72px);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html,body{overflow-anchor:none}
-body{
-  background:var(--bg0);color:var(--bone);
-  font-family:var(--body);font-size:16px;line-height:1.7;
-  overflow-x:hidden;
-  -webkit-font-smoothing:antialiased;
-}
-::selection{background:var(--amb);color:#0a0800}
-img{max-width:100%;display:block}
-a{color:inherit}
-.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-.skip{position:fixed;top:-60px;left:16px;z-index:400;background:var(--amb);color:#0a0800;padding:10px 18px;font-family:var(--mono);font-size:13px;text-decoration:none;transition:transform .2s var(--ease)}
-.skip:focus-visible{top:0;transform:translateY(76px)}
+  
+  body { font-family: 'Lato', sans-serif; color: #5b6270; line-height: 1.72; }
+  h1,h2,h3,h4,h5,.font-display { font-family: 'Lato', sans-serif; }
+  .eyebrow { letter-spacing: .22em; }
+  /* bolt eyebrow */
+  .bolt { color: #f7b72f; }
+  /* 3D flip service cards (ElectroServ .sc_services_hover) — flip horizontal (eje Y) */
+  .flip3 { perspective: 600px; }
+  .flip3-inner { position:relative; width:100%; height:100%; transition: transform .6s ease; transform-style: preserve-3d; transform-origin:50% 50%; }
+  .flip3:hover .flip3-inner, .flip3:focus-within .flip3-inner, .flip3.flipped .flip3-inner { transform: rotateY(180deg); }
+  .flip3-back { pointer-events: none; }
+  .flip3:hover .flip3-back, .flip3:focus-within .flip3-back, .flip3.flipped .flip3-back { pointer-events: auto; }
+  .flip3-face { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; overflow:hidden; }
+  .flip3-back { transform: rotateY(180deg); }
+  @media (prefers-reduced-motion:reduce){ .flip3-inner{transition:none} }
+  /* HERO slider */
+  .hero-slide { position:absolute; inset:0; opacity:0; visibility:hidden; transition:opacity 1s ease; }
+  .hero-slide.active { opacity:1; visibility:visible; z-index:1; }
+  .hero-bg { position:absolute; inset:0; overflow:hidden; }
+  .hero-kb { transform:scale(1.12); transition:transform 7s ease; }
+  .hero-slide.active .hero-kb { transform:scale(1); }
+  .hero-content > * { opacity:0; transform:translateY(22px); }
+  .hero-slide.active .hero-content > * { animation:heroIn .7s cubic-bezier(.22,1,.36,1) forwards; }
+  .hero-slide.active .hero-content > *:nth-child(1){animation-delay:.15s}
+  .hero-slide.active .hero-content > *:nth-child(2){animation-delay:.28s}
+  .hero-slide.active .hero-content > *:nth-child(3){animation-delay:.41s}
+  .hero-slide.active .hero-content > *:nth-child(4){animation-delay:.54s}
+  @keyframes heroIn { to { opacity:1; transform:none; } }
+  .hero-arrow { position:absolute; top:50%; z-index:20; transform:translateY(-50%); display:grid; place-items:center; width:3rem; height:3rem; border-radius:9999px; color:#fff; background:rgba(255,255,255,.12); backdrop-filter:blur(2px); transition:background .2s ease,color .2s ease; }
+  .hero-arrow:hover { background:#f7b72f; color:#fff; }
+  .hero-dot { width:2.25rem; height:4px; border-radius:9999px; background:rgba(255,255,255,.3); transition:background .3s ease; }
+  .hero-dot.active { background:#f7b72f; }
+  @media (prefers-reduced-motion:reduce){ .hero-kb,.hero-slide{transition:none} .hero-content>*{opacity:1;transform:none;animation:none} }
+  /* nav dropdown */
+  .has-drop > .drop { opacity:0; visibility:hidden; transform:translateY(10px); transition:.22s ease; }
+  .has-drop:hover > .drop, .has-drop:focus-within > .drop { opacity:1; visibility:visible; transform:translateY(0); }
+  /* faq */
+  .faq-item .faq-a { max-height:0; overflow:hidden; transition:max-height .35s ease; }
+  .faq-item.open .faq-a { max-height:460px; }
+  .faq-item.open .faq-ic { transform:rotate(45deg); }
+  /* pulse dot */
+  @keyframes pulseDot { 0%{box-shadow:0 0 0 0 rgba(74,222,128,.55)} 70%{box-shadow:0 0 0 9px rgba(74,222,128,0)} 100%{box-shadow:0 0 0 0 rgba(74,222,128,0)} }
+  .live-dot { animation:pulseDot 2s infinite; }
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .8s cubic-bezier(.22,1,.36,1)}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  /* reviews marquee */
+  @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .marquee-track{display:flex;gap:1.75rem;width:max-content;animation:marquee 44s linear infinite}
+  .marquee-wrap:hover .marquee-track{animation-play-state:paused}
+  @media (prefers-reduced-motion:reduce){.marquee-track{animation:none}}
+  /* underline link */
+  .ul { background-image: linear-gradient(#f7b72f,#f7b72f); background-size:0% 2px; background-repeat:no-repeat; background-position:0 100%; transition: background-size .3s ease; }
+  .ul:hover { background-size:100% 2px; }
 
-/* grano + viñeta global */
-body::before{
-  content:"";position:fixed;inset:0;z-index:200;pointer-events:none;opacity:.055;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-}
-body::after{
-  content:"";position:fixed;inset:0;z-index:199;pointer-events:none;
-  background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(0,0,0,.5) 100%);
-}
-
-/* ══════════════ PRELOADER ══════════════ */
-#boot{
-  position:fixed;inset:0;z-index:300;background:var(--bg0);
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
-  transition:opacity .6s ease;font-family:var(--mono);
-}
-#boot.off{opacity:0;pointer-events:none}
-#boot .bolt{width:44px;height:44px;animation:bootFlick 1.2s steps(1) infinite}
-@keyframes bootFlick{0%,100%{opacity:1}86%{opacity:1}88%{opacity:.25}90%{opacity:1}94%{opacity:.5}96%{opacity:1}}
-#boot p{font-size:12px;letter-spacing:.22em;color:var(--mut)}
-#boot p b{color:var(--amb);font-weight:500}
-#boot .bar{width:min(280px,60vw);height:2px;background:var(--line2);overflow:hidden}
-#boot .bar i{display:block;height:100%;width:0%;background:var(--amb);transition:width .3s ease}
-
-/* ══════════════ NAV ══════════════ */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:150;
-  display:flex;align-items:center;gap:22px;
-  padding:14px var(--pad);
-  background:linear-gradient(rgba(5,4,3,.88),rgba(5,4,3,.62) 70%,transparent);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  transform:translateY(0);transition:transform .45s var(--ease);
-}
-nav.hide{transform:translateY(-110%)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
-.brand svg{width:26px;height:26px}
-.brand span{font-family:var(--disp);font-size:17px;letter-spacing:.06em;color:var(--bone)}
-.brand b{color:var(--amb);font-weight:400}
-.nav-links{display:flex;gap:26px;margin-left:auto;align-items:center}
-.nav-links a{
-  font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--mut);text-decoration:none;position:relative;padding:4px 0;
-  transition:color .25s ease;
-}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--amb);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
-.nav-links a:hover,.nav-links a:focus-visible{color:var(--bone)}
-.nav-links a:hover::after,.nav-links a:focus-visible::after{transform:scaleX(1)}
-.nav-soc{display:flex;gap:14px;align-items:center;margin-left:6px}
-.nav-soc a{color:var(--mut);display:flex;transition:color .25s ease,transform .25s var(--ease)}
-.nav-soc a:hover,.nav-soc a:focus-visible{color:var(--amb);transform:translateY(-2px)}
-.nav-soc svg{width:17px;height:17px}
-.nav-links a.nav-call{
-  display:inline-flex;align-items:center;gap:9px;margin-left:10px;flex-shrink:0;
-  background:var(--amb);color:#0a0800;text-decoration:none;
-  font-family:var(--disp);font-size:15px;letter-spacing:.08em;
-  padding:10px 20px;box-shadow:var(--sh-amb);
-  transition:transform .25s var(--ease),box-shadow .25s ease,background .25s ease;
-}
-.nav-links a.nav-call::after{display:none}
-.nav-links a.nav-call:hover,.nav-links a.nav-call:focus-visible{transform:translateY(-2px);background:var(--amb2);color:#0a0800}
-.nav-links a.nav-call:active{transform:translateY(0)}
-.nav-links a.nav-call svg{width:15px;height:15px}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--amb);outline-offset:3px}
-
-/* ══════════════ EXPERIENCIA (scroll-scrub) ══════════════ */
-#experiencia{height:560vh;position:relative}
-.stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
-#film{position:absolute;inset:0;width:100%;height:100%}
-#sparks{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:120;mix-blend-mode:screen}
-.scrim{
-  position:absolute;inset:0;pointer-events:none;
-  background:
-    linear-gradient(90deg,rgba(5,4,3,.82) 0%,rgba(5,4,3,.45) 42%,rgba(5,4,3,.08) 70%),
-    linear-gradient(rgba(5,4,3,.5),transparent 26%,transparent 72%,rgba(5,4,3,.88));
-}
-.stage-ui{position:absolute;inset:0;display:grid;padding:0 var(--pad)}
-.panel{
-  grid-area:1/1;align-self:center;max-width:900px;width:100%;
-  opacity:0;visibility:hidden;transform:translateY(30px);
-  will-change:opacity,transform;
-}
-.kicker{
-  font-family:var(--mono);font-size:12.5px;letter-spacing:.26em;text-transform:uppercase;
-  color:var(--amb);margin-bottom:22px;display:flex;align-items:center;gap:12px;
-}
-.kicker::before{content:"";width:34px;height:1px;background:var(--amb);flex-shrink:0}
-.flick{animation:flick 6s steps(1) infinite}
-@keyframes flick{0%,100%{opacity:1}91%{opacity:1}92%{opacity:.35}93%{opacity:1}96.5%{opacity:.6}97.5%{opacity:1}}
-h1{
-  font-family:var(--disp);font-weight:400;text-transform:uppercase;
-  font-size:clamp(36px,5.8vw,88px);line-height:.96;letter-spacing:.005em;
-  margin-bottom:26px;
-}
-h1 div{white-space:nowrap}
-h1 .l{display:inline-block;opacity:0;transform:translateY(.55em) rotate(2deg);animation:lin .7s var(--ease) forwards;animation-delay:calc(var(--i)*.028s + .15s)}
-@keyframes lin{to{opacity:1;transform:none}}
-h1 .amb{color:var(--amb);text-shadow:0 0 42px rgba(255,177,0,.45)}
-.sub{font-size:clamp(16px,1.6vw,20px);color:var(--mut);max-width:560px;margin-bottom:36px}
-.sub strong{color:var(--bone);font-weight:600}
-.cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
-.btn{
-  display:inline-flex;align-items:center;gap:12px;text-decoration:none;
-  font-family:var(--disp);font-size:clamp(16px,1.5vw,20px);letter-spacing:.07em;text-transform:uppercase;
-  padding:18px 34px;position:relative;
-  transition:transform .25s var(--ease),box-shadow .25s ease,background .25s ease,color .25s ease,border-color .25s ease;
-}
-.btn:hover,.btn:focus-visible{transform:translateY(-3px)}
-.btn:active{transform:translateY(-1px)}
-.btn svg{width:20px;height:20px;flex-shrink:0}
-.btn-amb{background:var(--amb);color:#0a0800;box-shadow:var(--sh-amb)}
-.btn-amb:hover,.btn-amb:focus-visible{background:var(--amb2);box-shadow:0 18px 54px -10px rgba(255,177,0,.4),0 3px 10px rgba(0,0,0,.65)}
-.btn-amb::after{content:"";position:absolute;inset:3px;border:1px solid rgba(10,8,0,.28);pointer-events:none}
-.btn-ghost{border:1px solid var(--line2);color:var(--bone);background:rgba(5,4,3,.35);backdrop-filter:blur(6px)}
-.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--wa);color:var(--wa)}
-.micro{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--mut);margin-top:22px}
-.micro .ph{color:var(--amb)}
-.hint{
-  position:absolute;left:50%;transform:translateX(-50%);bottom:22px;white-space:nowrap;
-  font-family:var(--mono);font-size:11.5px;letter-spacing:.24em;color:var(--mut);
-  display:flex;align-items:center;gap:10px;
-}
-.hint i{display:inline-block;width:1px;height:26px;background:linear-gradient(var(--amb),transparent);animation:drop 1.6s var(--ease) infinite}
-@keyframes drop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
-
-/* pasos dentro del scrub */
-.step-num{
-  font-family:var(--mono);font-size:13px;letter-spacing:.3em;color:var(--noche);margin-bottom:14px;
-}
-.step-title{
-  font-family:var(--disp);font-weight:400;text-transform:uppercase;
-  font-size:clamp(52px,8.5vw,130px);line-height:.92;letter-spacing:.005em;
-}
-.step-title span{color:var(--amb)}
-.step-body{font-size:clamp(15px,1.5vw,19px);color:var(--mut);max-width:480px;margin-top:22px}
-.step-body strong{color:var(--bone)}
-.end-panel{text-align:left}
-.end-title{font-family:var(--disp);font-weight:400;text-transform:uppercase;font-size:clamp(46px,7vw,104px);line-height:.95}
-.end-title span{color:var(--amb);text-shadow:0 0 60px rgba(255,177,0,.55)}
-
-/* HUD cronómetro */
-#hud{
-  position:fixed;left:var(--pad);bottom:88px;z-index:140;
-  font-family:var(--mono);color:var(--bone);
-  border:1px solid var(--line);background:rgba(5,4,3,.55);
-  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
-  padding:14px 18px;min-width:190px;
-  opacity:0;transform:translateY(14px);visibility:hidden;
-  transition:opacity .4s ease,transform .4s var(--ease),visibility 0s .4s;
-  box-shadow:var(--sh-soft);
-}
-#hud.on{opacity:1;transform:none;visibility:visible;transition:opacity .4s ease,transform .4s var(--ease)}
-#hud .row{display:flex;align-items:center;gap:8px;font-size:10.5px;letter-spacing:.2em;color:var(--mut)}
-#hud .dot{width:7px;height:7px;border-radius:50%;background:var(--amb);box-shadow:0 0 10px var(--amb);animation:flick 3.5s steps(1) infinite}
-#hud .time{font-size:34px;font-weight:600;letter-spacing:.04em;color:var(--amb);line-height:1.2;margin:4px 0 2px;font-variant-numeric:tabular-nums}
-#hud .lbl{font-size:10px;letter-spacing:.22em;color:var(--mut)}
-#hud .bar{height:2px;background:var(--line2);margin-top:10px;overflow:hidden}
-#hud .bar i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--amb-deep),var(--amb))}
-
-/* FABs */
-.fabs{position:fixed;right:18px;bottom:18px;z-index:150;display:flex;flex-direction:column;gap:12px}
-.fab{
-  width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-  text-decoration:none;position:relative;
-  transition:transform .25s var(--ease),box-shadow .25s ease;
-}
-.fab:hover,.fab:focus-visible{transform:translateY(-3px) scale(1.05)}
-.fab:active{transform:scale(.97)}
-.fab svg{width:24px;height:24px}
-.fab-tel{background:var(--amb);color:#0a0800;box-shadow:var(--sh-amb)}
-.fab-tel::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:2px solid var(--amb);opacity:0;animation:pulse 2.2s ease-out infinite}
-@keyframes pulse{0%{transform:scale(.8);opacity:.7}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
-.fab-wa{background:var(--wa);color:#04220f;box-shadow:0 12px 40px -10px rgba(37,211,102,.45),0 3px 10px rgba(0,0,0,.6)}
-
-/* ══════════════ SECCIONES BASE ══════════════ */
-section.block{padding:clamp(80px,11vw,150px) var(--pad);position:relative}
-.wrap{max-width:1240px;margin:0 auto}
-.sec-head{margin-bottom:clamp(40px,6vw,72px)}
-h2{
-  font-family:var(--disp);font-weight:400;text-transform:uppercase;
-  font-size:clamp(36px,5.4vw,76px);line-height:.98;letter-spacing:.005em;
-}
-h2 .amb{color:var(--amb)}
-.sec-head p{color:var(--mut);max-width:600px;margin-top:18px;font-size:clamp(15px,1.4vw,18px)}
-.rev{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s var(--ease);transition-delay:var(--d,0s)}
-.rev.in{opacity:1;transform:none}
-
-/* franja de confianza */
-#confianza{border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);background:var(--bg1)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2)}
-.stat{background:var(--bg1);padding:clamp(28px,3.5vw,48px) clamp(18px,2.5vw,36px)}
-.stat .num{font-family:var(--disp);font-size:clamp(38px,4.6vw,64px);color:var(--amb);line-height:1;font-variant-numeric:tabular-nums}
-.stat .num small{font-size:.5em;letter-spacing:.05em}
-.stat .cap{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin-top:10px}
-.stat .ph-note{color:var(--amb-deep)}
-
-/* servicios */
-.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.serv{
-  border:1px solid var(--line2);background:linear-gradient(160deg,var(--bg1),var(--bg0) 70%);
-  padding:34px 30px 38px;position:relative;overflow:hidden;
-  transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease;
-}
-.serv::before{
-  content:"";position:absolute;inset:0;opacity:0;transition:opacity .4s ease;pointer-events:none;
-  background:radial-gradient(320px 200px at 20% 0%,rgba(255,177,0,.13),transparent 70%);
-}
-.serv:hover{transform:translateY(-6px);border-color:var(--line);box-shadow:var(--sh-soft)}
-.serv:hover::before{opacity:1}
-.serv .ico{
-  width:52px;height:52px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
-  color:var(--amb);margin-bottom:24px;background:rgba(255,177,0,.06);
-  transition:transform .35s var(--ease),background .35s ease;
-}
-.serv:hover .ico{transform:translateY(-3px) rotate(-4deg);background:rgba(255,177,0,.14)}
-.serv .ico svg{width:26px;height:26px}
-.serv h3{font-family:var(--disp);font-weight:400;font-size:22px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}
-.serv p{color:var(--mut);font-size:15px}
-.serv .tag{
-  position:absolute;top:20px;right:20px;font-family:var(--mono);font-size:10px;
-  letter-spacing:.2em;color:var(--amb);border:1px solid var(--line);padding:4px 9px;
-}
-
-/* precios */
-#precios{background:var(--bg1);border-top:1px solid var(--line2)}
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;align-items:stretch}
-.price{
-  border:1px solid var(--line2);background:var(--bg0);padding:40px 34px;position:relative;
-  display:flex;flex-direction:column;gap:6px;
-  transition:transform .35s var(--ease),border-color .35s ease,box-shadow .35s ease;
-}
-.price:hover{transform:translateY(-6px);box-shadow:var(--sh-soft)}
-.price.hot{border-color:var(--amb);box-shadow:var(--sh-amb)}
-.price.hot:hover{transform:translateY(-8px)}
-.price .p-tag{
-  position:absolute;top:-13px;left:30px;background:var(--amb);color:#0a0800;
-  font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.18em;padding:5px 12px;
-}
-.price h3{font-family:var(--disp);font-weight:400;font-size:21px;letter-spacing:.05em;text-transform:uppercase}
-.price .amount{font-family:var(--disp);font-size:clamp(40px,4vw,56px);color:var(--amb);line-height:1.1;margin:14px 0 4px}
-.price .amount small{font-size:.42em;color:var(--mut);letter-spacing:.05em}
-.price ul{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:11px}
-.price li{color:var(--mut);font-size:14.5px;padding-left:24px;position:relative}
-.price li::before{content:"";position:absolute;left:0;top:8px;width:12px;height:2px;background:var(--amb)}
-.price .note{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--amb-deep);margin-top:auto;padding-top:20px}
-
-/* reseñas marquee */
-#opiniones{overflow:hidden}
-.mq{position:relative;margin-top:10px}
-.mq::before,.mq::after{
-  content:"";position:absolute;top:0;bottom:0;width:120px;z-index:2;pointer-events:none;
-}
-.mq::before{left:0;background:linear-gradient(90deg,var(--bg0),transparent)}
-.mq::after{right:0;background:linear-gradient(-90deg,var(--bg0),transparent)}
-.mq-track{display:flex;gap:22px;width:max-content;animation:mq 46s linear infinite;padding:10px 0 26px}
-.mq:hover .mq-track,.mq:focus-within .mq-track{animation-play-state:paused}
-@keyframes mq{to{transform:translateX(-50%)}}
-.rev-card{
-  width:min(360px,78vw);flex-shrink:0;border:1px solid var(--line2);
-  background:linear-gradient(165deg,var(--bg2),var(--bg0) 75%);padding:28px 26px;position:relative;
-  transition:transform .3s var(--ease),border-color .3s ease;
-}
-.rev-card:hover{transform:translateY(-4px);border-color:var(--line)}
-.rev-card .stars{color:var(--amb);letter-spacing:3px;font-size:15px;margin-bottom:14px;text-shadow:0 0 18px rgba(255,177,0,.4)}
-.rev-card p{color:var(--bone);font-size:14.5px;line-height:1.65;font-style:italic}
-.rev-card .who{display:flex;align-items:center;gap:12px;margin-top:20px}
-.rev-card .av{
-  width:38px;height:38px;border-radius:50%;background:var(--bg1);border:1px solid var(--line);
-  display:flex;align-items:center;justify-content:center;font-family:var(--disp);color:var(--amb);font-size:15px;
-}
-.rev-card .who b{font-size:13.5px;font-weight:600;display:block;line-height:1.3}
-.rev-card .who span{font-family:var(--mono);font-size:11px;color:var(--mut);letter-spacing:.08em}
-.rev-card .g{margin-left:auto;font-family:var(--disp);font-size:19px;color:var(--mut);opacity:.8}
-.rev-card .demo-tag{
-  position:absolute;top:14px;right:14px;font-family:var(--mono);font-size:9px;letter-spacing:.18em;
-  color:var(--mut);border:1px solid var(--line2);padding:3px 7px;opacity:.65;
-}
-.gbp-line{font-family:var(--mono);font-size:12.5px;letter-spacing:.12em;color:var(--mut);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.gbp-line a{color:var(--amb);text-decoration:none;border-bottom:1px solid var(--line);transition:color .25s ease}
-.gbp-line a:hover,.gbp-line a:focus-visible{color:var(--amb2)}
-
-/* zonas */
-#zonas{background:var(--bg1);border-top:1px solid var(--line2);border-bottom:1px solid var(--line2)}
-.zona-grid{display:flex;flex-wrap:wrap;gap:12px}
-.chip{
-  display:inline-flex;align-items:center;gap:9px;
-  font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--bone);
-  border:1px solid var(--line2);padding:11px 18px;background:var(--bg0);
-  transition:transform .25s var(--ease),border-color .25s ease,color .25s ease;
-}
-.chip svg{width:13px;height:13px;color:var(--amb)}
-.chip:hover{transform:translateY(-3px);border-color:var(--amb);color:var(--amb2)}
-.tambien{margin-top:28px;font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;color:var(--mut)}
-.tambien b{color:var(--bone);font-weight:500}
-
-/* FAQ */
-.faq-list{max-width:820px}
-.faq{border-bottom:1px solid var(--line2)}
-.faq summary{
-  list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;
-  padding:26px 4px;font-family:var(--disp);font-weight:400;font-size:clamp(17px,2vw,23px);
-  letter-spacing:.04em;text-transform:uppercase;
-  transition:color .25s ease;
-}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary:hover{color:var(--amb2)}
-.faq summary .x{
-  margin-left:auto;flex-shrink:0;width:30px;height:30px;position:relative;
-  transition:transform .35s var(--ease);
-}
-.faq summary .x::before,.faq summary .x::after{
-  content:"";position:absolute;top:50%;left:50%;background:var(--amb);
-  transform:translate(-50%,-50%);
-}
-.faq summary .x::before{width:16px;height:2px}
-.faq summary .x::after{width:2px;height:16px;transition:transform .3s var(--ease)}
-.faq[open] summary{color:var(--amb)}
-.faq[open] summary .x{transform:rotate(45deg)}
-.faq .a{color:var(--mut);padding:0 44px 26px 4px;max-width:700px;font-size:15.5px}
-.faq .a strong{color:var(--bone)}
-
-/* contacto */
-#contacto{padding-bottom:0}
-.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,4vw,60px);align-items:center}
-.contact-grid .btn{width:100%;justify-content:center}
-.c-lines{margin-top:34px;display:flex;flex-direction:column;gap:14px}
-.c-line{display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:13.5px;letter-spacing:.08em;color:var(--mut)}
-.c-line svg{width:16px;height:16px;color:var(--amb);flex-shrink:0}
-.c-line .ph{color:var(--amb)}
-.map-box{
-  position:relative;border:1px solid var(--line);box-shadow:var(--sh-soft);
-  aspect-ratio:4/3.4;background:var(--bg1);
-}
-.map-box iframe{
-  position:absolute;inset:0;width:100%;height:100%;border:0;
-  filter:grayscale(1) contrast(1.08) brightness(.82) sepia(.18);
-}
-.map-box::after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 0 1px rgba(255,177,0,.12),inset 0 0 60px rgba(0,0,0,.35)}
-.map-cap{
-  position:absolute;left:14px;bottom:14px;z-index:2;background:rgba(5,4,3,.85);border:1px solid var(--line);
-  font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--amb);padding:8px 12px;
-  backdrop-filter:blur(6px);
-}
-
-/* footer */
-footer{margin-top:clamp(70px,9vw,120px);border-top:1px solid var(--line2);background:var(--bg1)}
-.foot-wrap{max-width:1240px;margin:0 auto;padding:54px var(--pad) 40px;display:flex;flex-wrap:wrap;gap:34px;align-items:center;justify-content:space-between}
-.foot-brand{display:flex;align-items:center;gap:10px}
-.foot-brand svg{width:22px;height:22px}
-.foot-brand span{font-family:var(--disp);font-size:15px;letter-spacing:.06em}
-.foot-links{display:flex;gap:22px;flex-wrap:wrap}
-.foot-links a{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);text-decoration:none;transition:color .25s ease}
-.foot-links a:hover,.foot-links a:focus-visible{color:var(--amb)}
-.foot-soc{display:flex;gap:16px}
-.foot-soc a{color:var(--mut);transition:color .25s ease,transform .25s var(--ease)}
-.foot-soc a:hover,.foot-soc a:focus-visible{color:var(--amb);transform:translateY(-2px)}
-.foot-soc svg{width:18px;height:18px}
-.foot-legal{width:100%;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;border-top:1px solid var(--line2);padding-top:24px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--mut)}
-.foot-legal a{color:var(--mut);text-decoration:none}
-.foot-legal a:hover{color:var(--amb)}
-
-/* ══════════════ RESPONSIVE ══════════════ */
-@media (max-width:1020px){
-  .serv-grid{grid-template-columns:repeat(2,1fr)}
-  .price-grid{grid-template-columns:1fr;max-width:520px}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr}
-  .nav-links a:not(.nav-call){display:none}
-  .nav-soc{display:none}
-}
-@media (max-width:640px){
-  :root{--pad:18px}
-  .stage-ui{padding:0 var(--pad)}
-  .panel{align-self:end;padding-bottom:96px}
-  h1{font-size:clamp(40px,11.5vw,64px)}
-  .step-title{font-size:clamp(46px,14vw,76px)}
-  .cta-row{flex-direction:column;align-items:stretch;width:100%}
-  .btn{justify-content:center;padding:18px 22px}
-  .serv-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;margin:0 calc(var(--pad)*-1);padding-left:var(--pad);padding-right:var(--pad)}
-  .serv{min-width:78vw;scroll-snap-align:start}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .micro{white-space:normal;padding-right:88px;font-size:11px}
-  .step-body,.sub{max-width:calc(100% - 66px)}
-  #hud{left:auto;right:14px;top:70px;bottom:auto;min-width:140px;padding:10px 14px}
-  #hud .time{font-size:24px}
-  .fabs{right:14px;bottom:14px}
-  .hint{display:none}
-  .scrim{background:linear-gradient(rgba(5,4,3,.55),rgba(5,4,3,.18) 30%,rgba(5,4,3,.28) 55%,rgba(5,4,3,.94) 82%)}
-  .foot-wrap{flex-direction:column;align-items:flex-start}
-}
-@media (prefers-reduced-motion:reduce){
-  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important}
-  html{scroll-behavior:auto}
-  #experiencia{height:auto}
-  .stage{position:relative;height:100svh}
-  .panel{opacity:1!important;visibility:visible!important;transform:none!important;position:relative;margin-bottom:40px}
-  .stage-ui{position:relative;display:block;padding-top:120px}
-  .mq-track{animation:none;flex-wrap:wrap;width:auto}
-}
+  /* ══ HERO cinematográfico scroll-scrub (solo home) ══ */
+  html,body{overflow-anchor:none}
+  #hero-scrub{height:520vh;position:relative;background:#0b0c0e}
+  #hero-scrub .stage{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+  #hero-scrub canvas{position:absolute;inset:0;width:100%;height:100%}
+  #sparksfx{mix-blend-mode:screen;pointer-events:none}
+  #hero-scrub .scrim{position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(11,12,14,.84) 0%,rgba(11,12,14,.45) 42%,rgba(11,12,14,.08) 70%),linear-gradient(rgba(11,12,14,.55),transparent 26%,transparent 72%,rgba(11,12,14,.9))}
+  #hero-scrub .stage-ui{position:absolute;inset:0;display:grid;padding:0 clamp(20px,6vw,80px)}
+  #hero-scrub .panel{grid-area:1/1;align-self:center;max-width:880px;width:100%;opacity:0;visibility:hidden;transform:translateY(30px);will-change:opacity,transform}
+  #hero-scrub .kick{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.26em;color:#f7b72f;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+  #hero-scrub .kick::before{content:"";width:34px;height:1px;background:#f7b72f;flex-shrink:0}
+  #hero-scrub h1{font-weight:900;text-transform:uppercase;color:#fff;line-height:.98;letter-spacing:-.01em;font-size:clamp(33px,5.3vw,74px);margin-bottom:22px}
+  #hero-scrub h1 div{white-space:nowrap}
+  #hero-scrub h1 .l{display:inline-block;opacity:0;transform:translateY(.55em) rotate(2deg);animation:hsIn .7s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--i)*.026s + .15s)}
+  @keyframes hsIn{to{opacity:1;transform:none}}
+  #hero-scrub h1 .g{color:#f7b72f;text-shadow:0 0 42px rgba(247,183,47,.45)}
+  #hero-scrub .sub{font-size:clamp(15px,1.5vw,19px);color:rgba(255,255,255,.75);max-width:540px;margin-bottom:32px;line-height:1.65}
+  #hero-scrub .sub strong{color:#fff}
+  #hero-scrub .num{font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:.3em;color:#9ec5e8;margin-bottom:12px}
+  #hero-scrub .sh{font-weight:900;text-transform:uppercase;color:#fff;line-height:.94;letter-spacing:-.01em;font-size:clamp(48px,8vw,118px)}
+  #hero-scrub .sh span{color:#f7b72f;text-shadow:0 0 50px rgba(247,183,47,.5)}
+  #hero-scrub .sb{font-size:clamp(14.5px,1.5vw,18px);color:rgba(255,255,255,.72);max-width:460px;margin-top:20px;line-height:1.65}
+  #hero-scrub .sb strong{color:#fff}
+  #hero-scrub .hint{position:absolute;left:50%;transform:translateX(-50%);bottom:20px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;color:rgba(255,255,255,.55);display:flex;align-items:center;gap:10px;white-space:nowrap}
+  #hero-scrub .hint i{display:inline-block;width:1px;height:24px;background:linear-gradient(#f7b72f,transparent);animation:hsDrop 1.6s cubic-bezier(.22,1,.36,1) infinite}
+  @keyframes hsDrop{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+  #hud{position:fixed;left:24px;bottom:24px;z-index:60;font-family:'IBM Plex Mono',monospace;color:#fff;border:1px solid rgba(247,183,47,.3);background:rgba(11,12,14,.62);backdrop-filter:blur(8px);padding:12px 16px;min-width:170px;opacity:0;transform:translateY(14px);visibility:hidden;transition:opacity .4s ease,transform .4s cubic-bezier(.22,1,.36,1),visibility 0s .4s}
+  #hud.on{opacity:1;transform:none;visibility:visible;transition:opacity .4s ease,transform .4s cubic-bezier(.22,1,.36,1)}
+  #hud .r{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.2em;color:rgba(255,255,255,.6)}
+  #hud .d{width:7px;height:7px;border-radius:50%;background:#f7b72f;box-shadow:0 0 10px #f7b72f}
+  #hud .t{font-size:30px;font-weight:600;letter-spacing:.04em;color:#f7b72f;line-height:1.2;margin:3px 0 2px;font-variant-numeric:tabular-nums}
+  #hud .l2{font-size:9.5px;letter-spacing:.22em;color:rgba(255,255,255,.55)}
+  #hud .b{height:2px;background:rgba(255,255,255,.14);margin-top:9px;overflow:hidden}
+  #hud .b i{display:block;height:100%;width:0%;background:linear-gradient(90deg,#b57f14,#f7b72f)}
+  #boot{position:fixed;inset:0;z-index:200;background:#0b0c0e;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;transition:opacity .5s ease;font-family:'IBM Plex Mono',monospace}
+  #boot.off{opacity:0;pointer-events:none}
+  #boot p{font-size:11px;letter-spacing:.22em;color:rgba(255,255,255,.55)}
+  #boot p b{color:#f7b72f;font-weight:500}
+  #boot .bar{width:min(260px,60vw);height:2px;background:rgba(255,255,255,.12);overflow:hidden}
+  #boot .bar i{display:block;height:100%;width:0%;background:#f7b72f;transition:width .3s ease}
+  @media (max-width:640px){
+    #hero-scrub .panel{align-self:end;padding-bottom:110px}
+    #hero-scrub .cta-scrub{flex-direction:column;align-items:stretch}
+    #hero-scrub .cta-scrub a{justify-content:center}
+    #hero-scrub .sub,#hero-scrub .sb{max-width:calc(100% - 60px)}
+    #hud{left:auto;right:14px;top:104px;bottom:auto;min-width:135px;padding:9px 12px}
+    #hud .t{font-size:22px}
+    #hero-scrub .hint{display:none}
+    #hero-scrub .scrim{background:linear-gradient(rgba(11,12,14,.55),rgba(11,12,14,.18) 30%,rgba(11,12,14,.3) 55%,rgba(11,12,14,.94) 84%)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    #hero-scrub{height:auto}
+    #hero-scrub .stage{position:relative}
+    #hero-scrub .panel{opacity:1!important;visibility:visible!important;transform:none!important;position:relative;margin:40px 0}
+    #hero-scrub .stage-ui{position:relative;display:block;padding-top:120px}
+  }
 </style>
 </head>
-<body>
-<a class="skip" href="#servicios">Saltar al contenido</a>
-
-<!-- PRELOADER -->
+<body class="bg-white antialiased">
+<!-- preloader del scrub -->
 <div id="boot" aria-hidden="true">
-  <svg class="bolt" viewBox="0 0 100 100" fill="none"><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#FFB100"/></svg>
+  <svg viewBox="0 0 64 64" class="w-11 h-11"><rect width="64" height="64" rx="14" fill="#141619"/><path fill="#F5A623" d="M32 12a15 15 0 0 0-9 27v5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5a15 15 0 0 0-9-27z"/><path fill="#141619" d="M26 40h12v2a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2z"/><path fill="#141619" d="M33 20 24 34h6l-2 10 12-16h-7z"/></svg>
   <p>COMPROBANDO TENSIÓN <b>230V ✓</b></p>
   <div class="bar"><i id="bootBar"></i></div>
 </div>
 
-<!-- NAV -->
-<nav id="nav" aria-label="Principal">
-  <a class="brand" href="#" aria-label="Inicio — Electricista de urgencia 24h">
-    <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="18" fill="#FFB100"/><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#050403"/></svg>
-    <span>URGENCIAS<b>·24H</b></span>
-  </a>
-  <div class="nav-links">
-    <a href="#servicios">Servicios</a>
-    <a href="#precios">Precios</a>
-    <a href="#opiniones">Opiniones</a>
-    <a href="#zonas">Zonas</a>
-    <a href="#contacto">Contacto</a>
-    <div class="nav-soc">
-      <!-- TODO: sustituir por las redes reales del cliente -->
-      <a href="#" aria-label="Instagram (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-      <a href="#" aria-label="Facebook (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.3-1.5 1.6-1.5H16.7V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.5v7h3z"/></svg></a>
-    </div>
-    <a class="nav-call" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>LLAMAR</a>
-  </div>
-</nav>
 
-<!-- ══════════ EXPERIENCIA SCRUB ══════════ -->
-<section id="experiencia" aria-label="Secuencia cinematográfica: de la avería a la luz">
+<!-- ===================== STRIP GUARDIA ===================== -->
+<div class="bg-ink-deep text-white text-[13px]">
+  <div class="max-w-7xl mx-auto px-6 py-2.5 flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-2 text-center">
+    <p class="flex items-center gap-2.5"><span class="size-2 rounded-full bg-green-400 live-dot shrink-0"></span><strong class="font-600 text-white">SERVICIO DE GUARDIA ACTIVO</strong> <span class="text-white/60">·</span> <span class="text-white/70">Electricistas por todo Santa Coloma de Gramenet. Presupuesto sin compromiso.</span></p>
+    <div class="hidden sm:flex items-center gap-4 text-white/70">
+      <a href="#" aria-label="Facebook" class="hover:text-gold transition-colors"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.75-1.6 1.5v1.8H16l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="#" aria-label="Instagram" class="hover:text-gold transition-colors"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.42.42.68.82.9 1.4.17.4.36 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2a3.8 3.8 0 0 1-.9 1.4c-.42.42-.82.68-1.4.9-.4.17-1 .36-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.48-1 .9-1.4.42-.42.82-.68 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.07-.9.04-1.4.2-1.7.32-.43.17-.74.37-1.06.7-.32.31-.52.62-.7 1.05-.12.3-.28.8-.32 1.7C3.25 8.5 3.25 8.9 3.25 12s0 3.5.07 4.7c.04.9.2 1.4.32 1.7.17.43.37.74.7 1.06.31.32.62.52 1.05.7.3.12.8.28 1.7.32 1.2.06 1.6.07 4.7.07s3.5 0 4.7-.07c.9-.04 1.4-.2 1.7-.32.43-.17.74-.37 1.06-.7.32-.31.52-.62.7-1.05.12-.3.28-.8.32-1.7.06-1.2.07-1.6.07-4.7s0-3.5-.07-4.7c-.04-.9-.2-1.4-.32-1.7a2.8 2.8 0 0 0-.7-1.06 2.8 2.8 0 0 0-1.05-.7c-.3-.12-.8-.28-1.7-.32C15.5 4 15.1 4 12 4zm0 3.06A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.88zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.14-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="bg-white sticky top-0 z-50 shadow-[0_1px_0_rgba(0,0,0,0.06)]">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-[86px]">
+    <!-- logo -->
+    <a href="/" class="flex items-center" aria-label="ElectroGramenet — Electricista 24h en Santa Coloma de Gramenet">
+      <span class="inline-flex items-center gap-2"><svg viewBox="0 0 64 64" class="h-9 w-9 shrink-0" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#141619"/><path fill="#F5A623" d="M32 12a15 15 0 0 0-9 27v5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5a15 15 0 0 0-9-27z"/><path fill="#141619" d="M26 40h12v2a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2z"/><path fill="#141619" d="M33 20 24 34h6l-2 10 12-16h-7z"/></svg><span class="font-display font-900 text-xl leading-none text-ink">Electro<span class="text-gold">Gramenet</span></span></span>
+    </a>
+    <!-- nav -->
+    <nav class="hidden lg:flex items-center gap-8 text-[13px] font-display font-600 tracking-wide text-ink">
+      <a href="/" class="text-gold py-2">INICIO</a>
+      <a href="#urgencias" class="hover:text-gold transition-colors py-2">URGENCIAS</a>
+      <div class="has-drop relative">
+        <a href="#servicios" class="inline-flex items-center gap-1 hover:text-gold transition-colors py-2">SERVICIOS <span class="text-[9px]">▼</span></a>
+        <div class="drop absolute left-0 top-full pt-3 w-72">
+          <div class="bg-white rounded-lg shadow-float overflow-hidden border-t-2 border-gold text-[13px]">
+            <a href="/averias-electricas-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Averías y urgencias 24h</a>
+            <a href="/instalacion-electrica-vivienda-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Instalación de viviendas</a>
+            <a href="/boletin-electrico-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Boletín eléctrico (CIE/BRIE)</a>
+            <a href="/cuadros-electricos-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Cuadros eléctricos</a>
+            <a href="/enchufes-iluminacion-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Enchufes e iluminación</a>
+            <a href="/aumento-de-potencia-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Aumento de potencia</a>
+            <a href="/comunidades-vecinos-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Comunidades de vecinos</a>
+            <a href="/locales-negocios-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Locales y negocios</a>
+            <a href="/cargador-coche-electrico-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Cargador coche eléctrico</a>
+            <a href="/placas-solares-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Placas solares</a>
+            <a href="/climatizacion-aire-acondicionado-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors border-b border-surface">Climatización y aire acond.</a>
+            <a href="/domotica-santa-coloma/" class="block px-5 py-3 hover:bg-surface hover:text-gold transition-colors">Domótica</a>
+          </div>
+        </div>
+      </div>
+      <a href="#zonas" class="hover:text-gold transition-colors py-2">ZONAS</a>
+      <a href="/blog/" class="hover:text-gold transition-colors py-2">CONSEJOS</a>
+      <a href="#opiniones" class="hover:text-gold transition-colors py-2">OPINIONES</a>
+      <a href="#faqs" class="hover:text-gold transition-colors py-2">FAQ</a>
+      <a href="#contacto" class="hover:text-gold transition-colors py-2">CONTACTO</a>
+    </nav>
+    <!-- phone + social -->
+    <div class="flex items-center gap-5">
+      <div class="hidden xl:flex items-center gap-3">
+        <span class="grid place-items-center size-11 rounded-full bg-gold/12 text-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span>
+        <div class="leading-tight">
+          <p class="text-[11px] text-mute font-500">Urgencias 24/7</p>
+          <!-- PLACEHOLDER: sustituir teléfono real del cliente -->
+          <a href="tel:+34677654821" class="font-display font-800 text-lg text-ink hover:text-gold transition-colors">677 654 821</a>
+        </div>
+      </div>
+      <a href="tel:+34677654821" class="hidden sm:inline-flex xl:hidden bg-gold text-white font-display font-700 text-sm px-5 py-3 rounded-md hover:bg-gold-dark transition-colors">Llamar</a>
+      <button id="burger" class="lg:hidden grid place-items-center size-11 rounded-md bg-ink text-white" aria-label="Menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-6 h-6"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <!-- mobile menu -->
+  <div id="mobile-menu" class="lg:hidden hidden border-t border-surface bg-white">
+    <nav class="px-6 py-4 flex flex-col text-ink font-display font-600 text-sm">
+      <a href="/" class="py-3 border-b border-surface text-gold">INICIO</a>
+      <a href="#urgencias" class="py-3 border-b border-surface">URGENCIAS</a>
+      <div class="border-b border-surface">
+        <button type="button" id="m-svc-btn" class="w-full flex items-center justify-between py-3 text-left" aria-expanded="false" aria-controls="m-svc"><span>SERVICIOS</span><span id="m-svc-ic" class="text-gold text-xl leading-none w-5 text-center transition-transform">+</span></button>
+        <div id="m-svc" class="hidden pb-2 -mt-1">
+          <a href="/averias-electricas-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Averías y urgencias 24h</a>
+          <a href="/instalacion-electrica-vivienda-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Instalación de viviendas</a>
+          <a href="/boletin-electrico-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Boletines (CIE/BRIE)</a>
+          <a href="/cuadros-electricos-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Cuadros eléctricos</a>
+          <a href="/enchufes-iluminacion-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Enchufes e iluminación</a>
+          <a href="/aumento-de-potencia-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Aumento de potencia</a>
+          <a href="/comunidades-vecinos-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Comunidades de vecinos</a>
+          <a href="/locales-negocios-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Locales y negocios</a>
+          <a href="/cargador-coche-electrico-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Cargador coche eléctrico</a>
+          <a href="/placas-solares-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Placas solares</a>
+          <a href="/climatizacion-aire-acondicionado-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Climatización y aire acond.</a>
+          <a href="/domotica-santa-coloma/" class="block py-2 pl-3 text-mute font-500 text-[13px] hover:text-gold transition-colors">Domótica</a>
+        </div>
+      </div>
+      <a href="#zonas" class="py-3 border-b border-surface">ZONAS</a>
+      <a href="/blog/" class="py-3 border-b border-surface">CONSEJOS</a>
+      <a href="#opiniones" class="py-3 border-b border-surface">OPINIONES</a>
+      <a href="#faqs" class="py-3 border-b border-surface">FAQ</a>
+      <a href="#contacto" class="py-3">CONTACTO</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO CINEMATOGRÁFICO (scroll-scrub) ===================== -->
+<section id="hero-scrub" aria-label="Secuencia cinematográfica: de la avería a la luz">
   <div class="stage">
     <canvas id="film" aria-hidden="true"></canvas>
     <div class="scrim" aria-hidden="true"></div>
     <div class="stage-ui">
 
-      <!-- STAGE 1 · HERO -->
-      <div class="panel" data-band="0,0.30" id="heroPanel">
-        <p class="kicker flick">SIN LUZ NO SE QUEDA NADIE — SERVICIO ACTIVO AHORA</p>
-        <h1 id="h1"><span class="sr-only">Electricista de Urgencia en Santa Coloma de Gramenet</span></h1>
+      <div class="panel" data-band="0,0.30">
+        <p class="kick">SIN LUZ NO SE QUEDA NADIE — SERVICIO ACTIVO AHORA</p>
+        <h1 id="hs-h1"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Electricista de Urgencia en Santa Coloma de Gramenet</span></h1>
         <p class="sub">Averías eléctricas resueltas <strong>24 horas, 365 días</strong>. Cortes de luz, cuadros, cortocircuitos. <strong>Presupuesto antes de actuar.</strong></p>
-        <div class="cta-row">
-          <!-- TODO: sustituir +34600000000 por el teléfono real del cliente -->
-          <a class="btn btn-amb" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Llamar ahora · 24h</a>
-          <a class="btn btn-ghost" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg>WhatsApp</a>
+        <div class="cta-scrub flex flex-wrap items-center gap-4">
+          <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-9 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AHORA · 24H</a>
+          <a href="https://wa.me/34677654821?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-8 py-4 rounded-md text-sm"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.2 4.74 1.2h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7z"/></svg> WhatsApp</a>
         </div>
-        <p class="micro">ATENDEMOS AHORA MISMO · <span class="ph">[TELÉFONO]</span></p>
       </div>
 
-      <!-- STAGE 2 · LLAMAS -->
       <div class="panel" data-band="0.35,0.455">
-        <p class="step-num">PASO 01 — 00:00</p>
-        <p class="step-title">LLAMAS<span>.</span></p>
-        <p class="step-body">Descuelga a cualquier hora. <strong>Sin contestador, sin esperas:</strong> te responde el electricista que va a venir a tu casa.</p>
+        <p class="num">PASO 01 — 00:00</p>
+        <p class="sh">LLAMAS<span>.</span></p>
+        <p class="sb">Descuelga a cualquier hora. <strong>Sin contestador, sin esperas:</strong> te responde el electricista que va a venir a tu casa.</p>
       </div>
 
-      <!-- STAGE 3 · LLEGAMOS -->
       <div class="panel" data-band="0.505,0.615">
-        <p class="step-num">PASO 02 — EN CAMINO</p>
-        <p class="step-title">LLEGAMOS<span>.</span></p>
-        <p class="step-body">Furgoneta equipada y <strong>diagnóstico en el momento</strong>. Te decimos qué pasa y qué cuesta <strong>antes de tocar nada</strong>.</p>
+        <p class="num">PASO 02 — EN CAMINO</p>
+        <p class="sh">LLEGAMOS<span>.</span></p>
+        <p class="sb">Furgoneta equipada y <strong>diagnóstico en el momento</strong>. Te decimos qué pasa y qué cuesta <strong>antes de tocar nada</strong>.</p>
       </div>
 
-      <!-- STAGE 4 · LUZ -->
       <div class="panel" data-band="0.675,0.845">
-        <p class="step-num">PASO 03 — RESUELTO</p>
-        <p class="step-title"><span>LUZ.</span></p>
-        <p class="step-body">El magnetotérmico sube. La nevera arranca. <strong>Tu casa vuelve a funcionar</strong> — y queda hecho para que no se repita.</p>
+        <p class="num">PASO 03 — RESUELTO</p>
+        <p class="sh"><span>LUZ.</span></p>
+        <p class="sb">El magnetotérmico sube. La nevera arranca. <strong>Tu casa vuelve a funcionar</strong> — y queda hecho para que no se repita.</p>
       </div>
 
-      <!-- STAGE 5 · CIERRE -->
       <div class="panel" data-band="0.9,1">
-        <p class="kicker">ASÍ DE SIMPLE</p>
-        <p class="end-title">LA LUZ<br>HA <span>VUELTO</span>.</p>
-        <div class="cta-row" style="margin-top:34px">
-          <a class="btn btn-amb" href="tel:+34600000000"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Resolver mi avería</a>
+        <p class="kick">ASÍ DE SIMPLE</p>
+        <p class="sh" style="font-size:clamp(40px,6.4vw,96px)">LA LUZ HA <span>VUELTO</span>.</p>
+        <div class="cta-scrub flex flex-wrap items-center gap-4" style="margin-top:30px">
+          <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-9 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> RESOLVER MI AVERÍA</a>
+          <a href="#servicios" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-8 py-4 rounded-md text-sm">VER SERVICIOS →</a>
         </div>
       </div>
 
       <p class="hint"><i></i>DESLIZA PARA RESOLVER LA AVERÍA</p>
+      <canvas id="sparksfx" aria-hidden="true"></canvas>
     </div>
   </div>
 </section>
 
-<!-- capa de chispas: del final del vídeo hasta el footer -->
-<canvas id="sparks" aria-hidden="true"></canvas>
-
-<!-- HUD -->
+<!-- HUD cronómetro del scrub -->
 <div id="hud" aria-hidden="true">
-  <div class="row"><span class="dot"></span>UNIDAD EN SERVICIO</div>
-  <div class="time" id="hudTime">00:00</div>
-  <div class="lbl">TIEMPO DE RESPUESTA</div>
-  <div class="bar"><i id="hudBar"></i></div>
+  <div class="r"><span class="d"></span>UNIDAD EN SERVICIO</div>
+  <div class="t" id="hudTime">00:00</div>
+  <div class="l2">TIEMPO DE RESPUESTA</div>
+  <div class="b"><i id="hudBar"></i></div>
 </div>
 
-<!-- FABs -->
-<div class="fabs">
-  <a class="fab fab-wa" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
-  <a class="fab fab-tel" href="tel:+34600000000" aria-label="Llamar ahora"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></a>
-</div>
-
-<main id="main">
-
-<!-- ══════════ CONFIANZA ══════════ -->
-<section id="confianza" aria-label="Datos de confianza">
-  <div class="stats">
-    <div class="stat rev"><div class="num" data-count="24"><small>H</small></div><div class="cap">Disponibilidad real, también festivos</div></div>
-    <div class="stat rev" style="--d:.08s"><div class="num" data-count="365"></div><div class="cap">Días al año de servicio urgente</div></div>
-    <div class="stat rev" style="--d:.16s"><div class="num">[X]<small>+</small></div><div class="cap">Años de oficio <span class="ph-note">· dato del cliente</span></div></div>
-    <div class="stat rev" style="--d:.24s"><div class="num">[X.XXX]</div><div class="cap">Averías resueltas <span class="ph-note">· dato del cliente</span></div></div>
-  </div>
-</section>
-
-<!-- ══════════ SERVICIOS ══════════ -->
-<section class="block" id="servicios">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <p class="kicker">// SERVICIOS DE URGENCIA</p>
-      <h2>LO QUE SE ROMPE<br>DE NOCHE, <span class="amb">SE ARREGLA DE NOCHE</span></h2>
-      <p>Intervenciones urgentes en viviendas, comercios y comunidades. Material en la furgoneta y avería localizada con instrumentación — no a ojo.</p>
+<!-- ===================== BAND: QUOTE + FORM ===================== -->
+<section class="relative bg-white">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2">
+    <!-- quote -->
+    <div class="bg-surface px-8 lg:px-14 py-12 lg:py-14 flex flex-col justify-center">
+      <p class="font-display font-700 italic text-ink text-2xl lg:text-[28px] leading-snug mb-5">"Reparamos averías, hacemos instalaciones nuevas y mantenimiento eléctrico en Santa Coloma de Gramenet."</p>
+      <p class="text-mute leading-relaxed mb-7 max-w-md">Instaladores autorizados con amplia experiencia en el sector residencial y comercial del Barcelonès Nord. Rápidos en la urgencia y meticulosos en la obra.</p>
+      <a href="#nosotros" class="self-start border-2 border-ink/15 hover:border-gold hover:text-gold text-ink font-display font-700 text-xs tracking-widest px-8 py-3.5 rounded-md transition-colors">CONÓCENOS</a>
     </div>
-    <div class="serv-grid">
-      <article class="serv rev">
-        <span class="tag">TOP 1</span>
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4.5 13.5H11L9.5 22 19 9.5h-6.5L13 2z"/></svg></div>
-        <h3>Cortes de luz</h3>
-        <p>Te quedas a oscuras y no sube el general. Localizamos la fuga o el circuito derivado y recuperamos el suministro.</p>
-      </article>
-      <article class="serv rev" style="--d:.07s">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 7h3M8 11h3M8 15h3"/><circle cx="16" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="16" cy="11" r="1" fill="currentColor" stroke="none"/><path d="M15 15l2 3"/></svg></div>
-        <h3>Cuadros eléctricos</h3>
-        <p>Magnetotérmicos que saltan, diferenciales que no rearman, cuadros antiguos. Reparación o sustitución al momento.</p>
-      </article>
-      <article class="serv rev" style="--d:.14s">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h5l2-7 4 14 2-7h5"/></svg></div>
-        <h3>Cortocircuitos</h3>
-        <p>Olor a quemado, chispazos, un enchufe que ha hecho «pop». Aislamos el fallo y dejamos la instalación segura.</p>
-      </article>
-      <article class="serv rev" style="--d:.21s">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="9.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><path d="M12 12v4.5"/></svg></div>
-        <h3>Enchufes e interruptores</h3>
-        <p>Mecanismos quemados, sueltos o sin corriente. Sustitución con material de primeras marcas, listo en una visita.</p>
-      </article>
-      <article class="serv rev" style="--d:.28s">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 16c2-6 4 2 6-4s4 2 6-4 4 2 6-4"/><path d="M4 21h16"/></svg></div>
-        <h3>Subidas de tensión</h3>
-        <p>Electrodomésticos dañados, luces que parpadean. Medimos, protegemos la instalación y tramitamos la reclamación.</p>
-      </article>
-      <article class="serv rev" style="--d:.35s">
-        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14.5 3v4.5H19"/><path d="M9 13l2 2 4-4.5"/></svg></div>
-        <h3>Boletines eléctricos</h3>
-        <p>Certificado de instalación (CIE) para altas de luz, cambios de potencia o pisos antiguos. Trámite incluido.</p>
-      </article>
+    <!-- form -->
+    <div class="bg-gold px-8 lg:px-14 py-12 lg:py-14 text-white">
+      <h2 class="font-display font-800 text-3xl mb-1">¿Te llamamos gratis?</h2>
+      <p class="text-white/85 mb-7 text-sm">Déjanos tu teléfono y un técnico autorizado te llama para darte presupuesto sin compromiso.</p>
+      <form class="grid sm:grid-cols-2 gap-4" onsubmit="return false;">
+        <input type="text" placeholder="Tu nombre *" class="bg-white/15 placeholder-white/70 text-white rounded-md px-4 py-3.5 outline-none focus:bg-white/25 transition-colors" />
+        <input type="tel" placeholder="Teléfono *" class="bg-white/15 placeholder-white/70 text-white rounded-md px-4 py-3.5 outline-none focus:bg-white/25 transition-colors" />
+        <input type="email" placeholder="Email" class="bg-white/15 placeholder-white/70 text-white rounded-md px-4 py-3.5 outline-none focus:bg-white/25 transition-colors" />
+        <select class="bg-white/15 text-white rounded-md px-4 py-3.5 outline-none focus:bg-white/25 transition-colors [&>option]:text-ink">
+          <option>Tipo de servicio…</option>
+          <option>Apagón / Falta de luz</option>
+          <option>Salta el diferencial</option>
+          <option>Boletín eléctrico (CIE)</option>
+          <option>Avería en cuadro / enchufes</option>
+          <option>Instalación / reforma</option>
+        </select>
+        <p class="sm:col-span-2 flex items-center gap-2 text-white/85 text-xs mt-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Tus datos están seguros con nosotros.</p>
+        <button type="submit" class="sm:col-span-2 bg-ink hover:bg-ink-deep transition-colors text-white font-display font-700 text-sm tracking-wide rounded-md px-6 py-4">ENVIAR SOLICITUD</button>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- ══════════ PRECIOS ══════════ -->
-<section class="block" id="precios">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <p class="kicker">// PRECIOS ORIENTATIVOS</p>
-      <h2>SIN SORPRESAS: <span class="amb">PRECIO CERRADO</span><br>ANTES DE EMPEZAR</h2>
-      <p>El precio se confirma siempre por teléfono y por escrito antes de la intervención. Lo que se acuerda es lo que se paga.</p>
+<!-- ===================== BENEFITS ===================== -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> NUESTRAS VENTAJAS</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl leading-tight">Por qué somos tu mejor opción<br class="hidden sm:block"> en Santa Coloma de Gramenet</h2>
     </div>
-    <div class="price-grid">
-      <article class="price rev">
-        <h3>Desplazamiento</h3>
-        <div class="amount">[XX]<small> €</small></div>
-        <ul>
-          <li>Llegada a cualquier barrio de Santa Coloma</li>
-          <li>Se descuenta si aceptas la reparación</li>
-          <li>Horario diurno laborable</li>
-        </ul>
-        <p class="note">* Dato pendiente de confirmar con el cliente</p>
-      </article>
-      <article class="price hot rev" style="--d:.08s">
-        <span class="p-tag">LO MÁS SOLICITADO</span>
-        <h3>Diagnóstico + reparación</h3>
-        <div class="amount">[XX]<small> €/h</small></div>
-        <ul>
-          <li>Localización de avería con instrumentación</li>
-          <li>Material básico en furgoneta</li>
-          <li>Garantía por escrito de la intervención</li>
-        </ul>
-        <p class="note">* Dato pendiente de confirmar con el cliente</p>
-      </article>
-      <article class="price rev" style="--d:.16s">
-        <h3>Urgencia nocturna</h3>
-        <div class="amount">[XX]<small> €</small></div>
-        <ul>
-          <li>Noches, fines de semana y festivos</li>
-          <li>Respuesta prioritaria</li>
-          <li>Precio cerrado por teléfono antes de salir</li>
-        </ul>
-        <p class="note">* Dato pendiente de confirmar con el cliente</p>
-      </article>
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-5">
+      <div class="reveal group border border-ink/10 hover:border-gold hover:shadow-card transition-all rounded-sm p-7 text-center bg-white">
+        <div class="mx-auto mb-5 text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3 class="font-display font-700 text-ink text-sm leading-tight">Urgencias 24 h · 365 días</h3>
+      </div>
+      <div class="reveal group border border-ink/10 hover:border-gold hover:shadow-card transition-all rounded-sm p-7 text-center bg-white" style="transition-delay:.05s">
+        <div class="mx-auto mb-5 text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12 mx-auto"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M10 12h5M10 15.5h3"/><circle cx="9" cy="12" r=".4"/></svg></div>
+        <h3 class="font-display font-700 text-ink text-sm leading-tight">Electricistas autorizados</h3>
+      </div>
+      <div class="reveal group border border-ink/10 hover:border-gold hover:shadow-card transition-all rounded-sm p-7 text-center bg-white" style="transition-delay:.1s">
+        <div class="mx-auto mb-5 text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12 mx-auto"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg></div>
+        <h3 class="font-display font-700 text-ink text-sm leading-tight">Con experiencia y cercanos</h3>
+      </div>
+      <div class="reveal group border border-ink/10 hover:border-gold hover:shadow-card transition-all rounded-sm p-7 text-center bg-white" style="transition-delay:.15s">
+        <div class="mx-auto mb-5 text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12 mx-auto"><path d="M8 21h8M12 17v4M6 4h12v4a6 6 0 0 1-12 0V4z"/><path d="M6 5H4v2a3 3 0 0 0 2 2.8M18 5h2v2a3 3 0 0 1-2 2.8"/></svg></div>
+        <h3 class="font-display font-700 text-ink text-sm leading-tight">Garantía por escrito</h3>
+      </div>
+      <div class="reveal group border border-ink/10 hover:border-gold hover:shadow-card transition-all rounded-sm p-7 text-center bg-white" style="transition-delay:.2s">
+        <div class="mx-auto mb-5 text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-12 h-12 mx-auto"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/></svg></div>
+        <h3 class="font-display font-700 text-ink text-sm leading-tight">+15 años de experiencia</h3>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="#nosotros" class="inline-block bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-xs tracking-widest px-9 py-4 rounded-md shadow-gold">MÁS VENTAJAS</a>
     </div>
   </div>
 </section>
 
-<!-- ══════════ OPINIONES ══════════ -->
-<section class="block" id="opiniones">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <p class="kicker">// OPINIONES</p>
-      <h2>LO QUE DICEN CUANDO<br><span class="amb">VUELVE LA LUZ</span></h2>
-      <p class="gbp-line" style="margin-top:18px"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FFB100" aria-hidden="true"><path d="M12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg> Reseñas de ejemplo — se sustituirán por las <a href="#" >reseñas reales de Google del negocio</a></p>
-    </div>
-  </div>
-  <div class="mq" aria-label="Reseñas de clientes (ejemplos de demostración)">
-    <div class="mq-track" id="mqTrack">
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Se nos fue la luz un domingo a las once de la noche con el bebé en casa. En media hora estaba aquí y en una hora teníamos luz.»</p><div class="who"><span class="av">M</span><div><b>[Nombre del cliente]</b><span>Fondo · Santa Coloma</span></div><span class="g">G</span></div></article>
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«El diferencial no subía y ningún electricista cogía el teléfono. Este sí. Precio cerrado antes de venir y sin sorpresas al pagar.»</p><div class="who"><span class="av">J</span><div><b>[Nombre del cliente]</b><span>Singuerlín · Santa Coloma</span></div><span class="g">G</span></div></article>
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Olor a quemado en el cuadro a las 7 de la mañana. Vino enseguida, encontró el fallo y me explicó todo con fotos. Muy serio.»</p><div class="who"><span class="av">R</span><div><b>[Nombre del cliente]</b><span>Santa Rosa · Santa Coloma</span></div><span class="g">G</span></div></article>
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Necesitaba el boletín para dar de alta la luz del piso y me lo solucionó en dos días con el trámite incluido.»</p><div class="who"><span class="av">A</span><div><b>[Nombre del cliente]</b><span>Riu Nord · Santa Coloma</span></div><span class="g">G</span></div></article>
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Un chispazo dejó medio bar sin corriente en plena cena. Vino en 20 minutos y salvamos el servicio. No lo cambio por nada.»</p><div class="who"><span class="av">P</span><div><b>[Nombre del cliente]</b><span>Centre · Santa Coloma</span></div><span class="g">G</span></div></article>
-      <article class="rev-card"><span class="demo-tag">EJEMPLO</span><div class="stars" aria-label="5 estrellas">★★★★★</div><p>«Puntual, limpio y claro con los precios. Cambió el cuadro entero y dejó la instalación como nueva. Se nota el oficio.»</p><div class="who"><span class="av">C</span><div><b>[Nombre del cliente]</b><span>Can Mariner · Santa Coloma</span></div><span class="g">G</span></div></article>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ ZONAS ══════════ -->
-<section class="block" id="zonas">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <p class="kicker">// ZONAS DE COBERTURA</p>
-      <h2>EN TU BARRIO<br>EN <span class="amb">MINUTOS</span></h2>
-    </div>
-    <div class="zona-grid rev">
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Centre</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Fondo</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Santa Rosa</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Riu Nord</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Riu Sud</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Can Mariner</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Singuerlín</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Les Oliveres</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Can Franquesa</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>El Raval</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>El Llatí</span>
-      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>La Guinardera</span>
-    </div>
-    <p class="tambien rev">TAMBIÉN URGENCIAS EN: <b>Badalona · Sant Adrià de Besòs · Montcada i Reixac</b></p>
-  </div>
-</section>
-
-<!-- ══════════ FAQ ══════════ -->
-<section class="block" id="faq">
-  <div class="wrap">
-    <div class="sec-head rev">
-      <p class="kicker">// PREGUNTAS FRECUENTES</p>
-      <h2>ANTES DE <span class="amb">LLAMAR</span></h2>
-    </div>
-    <div class="faq-list">
-      <details class="faq rev">
-        <summary>¿Cuánto tardáis en llegar? <span class="x" aria-hidden="true"></span></summary>
-        <p class="a">Depende de dónde estés y de la hora, pero trabajamos solo en <strong>Santa Coloma y municipios limítrofes</strong> precisamente para llegar rápido. Al llamar te decimos el tiempo real de llegada — y lo cumplimos.</p>
-      </details>
-      <details class="faq rev" style="--d:.06s">
-        <summary>¿Trabajáis de noche y en festivos? <span class="x" aria-hidden="true"></span></summary>
-        <p class="a">Sí. El servicio de urgencia es <strong>24 horas, los 365 días</strong>: noches, fines de semana, Navidad y agosto incluidos. La tarifa nocturna/festiva se te comunica cerrada antes de salir.</p>
-      </details>
-      <details class="faq rev" style="--d:.12s">
-        <summary>¿Dais presupuesto antes de reparar? <span class="x" aria-hidden="true"></span></summary>
-        <p class="a">Siempre. Primero diagnóstico, luego <strong>precio cerrado y por escrito</strong> (WhatsApp vale), y solo si lo aceptas empezamos a reparar. Lo acordado es lo que se paga.</p>
-      </details>
-      <details class="faq rev" style="--d:.18s">
-        <summary>¿Emitís boletines eléctricos (CIE)? <span class="x" aria-hidden="true"></span></summary>
-        <p class="a">Sí, somos <strong>instaladores autorizados</strong>: emitimos el Certificado de Instalación Eléctrica para altas de suministro, cambios de potencia y regularización de instalaciones antiguas, con el trámite incluido.</p>
-      </details>
-      <details class="faq rev" style="--d:.24s">
-        <summary>¿La reparación tiene garantía? <span class="x" aria-hidden="true"></span></summary>
-        <p class="a">Toda intervención queda <strong>garantizada por escrito</strong>. Si el mismo fallo se repite dentro del periodo de garantía, volvemos sin coste.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<!-- ══════════ CONTACTO ══════════ -->
-<section class="block" id="contacto">
-  <div class="wrap">
-    <div class="contact-grid">
-      <div class="rev">
-        <p class="kicker flick">// URGENCIAS 24H</p>
-        <h2>¿SIN LUZ<br><span class="amb">AHORA MISMO?</span></h2>
-        <p style="color:var(--mut);margin:20px 0 30px;max-width:440px">No esperes a mañana: una avería eléctrica no mejora sola. Llama y te decimos <strong style="color:var(--bone)">qué pasa, cuánto cuesta y cuándo llegamos.</strong></p>
-        <div class="cta-row" style="max-width:440px">
-          <a class="btn btn-amb" href="tel:+34600000000" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>Llamar ahora · 24h</a>
-          <a class="btn btn-ghost" href="https://wa.me/34600000000?text=Hola%2C%20tengo%20una%20aver%C3%ADa%20el%C3%A9ctrica%20en%20Santa%20Coloma" target="_blank" rel="noopener" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg>Escribir por WhatsApp</a>
-        </div>
-        <div class="c-lines">
-          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.8 21 3 13.2 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg><span class="ph">[TELÉFONO DEL NEGOCIO]</span></p>
-          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>Santa Coloma de Gramenet · Barcelona</p>
-          <p class="c-line"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6L12 2l2.9 6.6 7.1.6-5.4 4.8 1.6 7z"/></svg><a href="#" style="color:var(--amb);text-decoration:none">Ficha de Google Business Profile →</a> <span style="opacity:.6">· pendiente de enlazar</span></p>
+<!-- ===================== 3 SERVICE FLIP CARDS ===================== -->
+<section class="grid md:grid-cols-3">
+  <!-- card 1 -->
+  <div class="flip3 relative h-[380px] cursor-pointer" role="button" tabindex="0" aria-label="Averías y urgencias — toca para ver más">
+    <div class="flip3-inner">
+      <!-- front -->
+      <div class="flip3-face">
+        <img src="/img/electricista-averia-nocturna-cuadro-santa-coloma.webp" alt="Electricista de urgencias reparando de noche un cuadro eléctrico que ha saltado en Santa Coloma de Gramenet" class="absolute inset-0 w-full h-full object-cover object-center" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-deep via-ink-deep/55 to-ink-deep/25"></div>
+        <div class="relative h-full flex flex-col justify-between p-8 text-white">
+          <h3 class="font-display font-900 text-2xl leading-tight max-w-[16ch]">Averías y urgencias 24h</h3>
+          <p class="border-l-2 border-gold pl-4 text-sm text-white/80 max-w-xs">Sin luz, salta el diferencial o huele a quemado. Lo resolvemos en el día.</p>
         </div>
       </div>
-      <div class="map-box rev" style="--d:.1s">
-        <iframe src="https://maps.google.com/maps?q=Santa%20Coloma%20de%20Gramenet&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Mapa de Santa Coloma de Gramenet" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <span class="map-cap">SANTA COLOMA DE GRAMENET — ZONA DE SERVICIO</span>
+      <!-- back (enlace al servicio) -->
+      <a href="/averias-electricas-santa-coloma/" class="flip3-face flip3-back bg-gold text-ink flex flex-col justify-center p-9">
+        <h3 class="font-display font-900 text-2xl leading-tight mb-3">Averías y urgencias 24h</h3>
+        <p class="text-ink/80 text-sm mb-6">Localizamos cualquier avería urgente —apagones, cortocircuitos, fugas del diferencial— y la resolvemos con presupuesto cerrado y garantía.</p>
+        <span class="self-start inline-flex items-center gap-2 bg-ink hover:bg-ink-deep transition-colors text-white font-display font-900 text-xs tracking-widest px-5 py-3 rounded-md">VER URGENCIAS <span class="text-base">→</span></span>
+      </a>
+    </div>
+  </div>
+  <!-- card 2 -->
+  <div class="flip3 relative h-[380px] cursor-pointer" role="button" tabindex="0" aria-label="Instalación y reforma — toca para ver más">
+    <div class="flip3-inner">
+      <div class="flip3-face">
+        <img src="/img/instalacion-mantenimiento-electrico-santa-coloma.webp" alt="Instalación y reforma eléctrica de viviendas en Santa Coloma de Gramenet" class="absolute inset-0 w-full h-full object-cover object-[center_30%]" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-deep via-ink-deep/55 to-ink-deep/25"></div>
+        <div class="relative h-full flex flex-col justify-between p-8 text-white">
+          <h3 class="font-display font-900 text-2xl leading-tight max-w-[16ch]">Instalación y reforma eléctrica</h3>
+          <p class="border-l-2 border-gold pl-4 text-sm text-white/80 max-w-xs">Cableado, cuadro, toma de tierra y boletín a normativa.</p>
+        </div>
+      </div>
+      <a href="/instalacion-electrica-vivienda-santa-coloma/" class="flip3-face flip3-back bg-gold text-ink flex flex-col justify-center p-9">
+        <h3 class="font-display font-900 text-2xl leading-tight mb-3">Instalación y reforma</h3>
+        <p class="text-ink/80 text-sm mb-6">Instalación nueva o reforma completa de tu vivienda o local: proyecto, ejecución a normativa y boletín eléctrico oficial.</p>
+        <span class="self-start inline-flex items-center gap-2 bg-ink hover:bg-ink-deep transition-colors text-white font-display font-900 text-xs tracking-widest px-5 py-3 rounded-md">VER SERVICIOS <span class="text-base">→</span></span>
+      </a>
+    </div>
+  </div>
+  <!-- card 3 -->
+  <div class="flip3 relative h-[380px] cursor-pointer" role="button" tabindex="0" aria-label="Comercios y comunidades — toca para ver más">
+    <div class="flip3-inner">
+      <div class="flip3-face">
+        <img src="/img/electricista-comunidad-portal-santa-coloma.webp" alt="Servicio eléctrico para comercios y comunidades de vecinos en Santa Coloma de Gramenet" class="absolute inset-0 w-full h-full object-cover object-[center_30%]" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink-deep via-ink-deep/55 to-ink-deep/25"></div>
+        <div class="relative h-full flex flex-col justify-between p-8 text-white">
+          <h3 class="font-display font-900 text-2xl leading-tight max-w-[16ch]">Comercios y comunidades</h3>
+          <p class="border-l-2 border-gold pl-4 text-sm text-white/80 max-w-xs">Locales, oficinas y fincas con factura en regla.</p>
+        </div>
+      </div>
+      <a href="/locales-negocios-santa-coloma/" class="flip3-face flip3-back bg-gold text-ink flex flex-col justify-center p-9">
+        <h3 class="font-display font-900 text-2xl leading-tight mb-3">Comercios y comunidades</h3>
+        <p class="text-ink/80 text-sm mb-6">Reparación exprés en locales, cuadro general de comunidades, mantenimiento de fincas y boletines de apertura de actividad.</p>
+        <span class="self-start inline-flex items-center gap-2 bg-ink hover:bg-ink-deep transition-colors text-white font-display font-900 text-xs tracking-widest px-5 py-3 rounded-md">VER SERVICIOS <span class="text-base">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="nosotros" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
+    <div class="relative reveal">
+      <img src="/img/electricista-santa-coloma-confianza.webp" alt="Electricista autorizado de confianza revisando el cuadro eléctrico de una vivienda en Santa Coloma de Gramenet" class="rounded-sm w-full h-[480px] object-cover object-center shadow-card" />
+      <div class="absolute -bottom-7 left-6 sm:left-10 w-56 rounded-sm overflow-hidden shadow-float">
+        <img src="/img/electricista-detalle-cuadro-santa-coloma.webp" alt="Detalle de las manos de un electricista trabajando en un cuadro eléctrico en Santa Coloma de Gramenet" class="w-full h-36 object-cover" />
+      </div>
+      <div class="absolute -top-5 -right-2 sm:right-6 bg-ink text-white rounded-sm shadow-float px-6 py-4 flex items-center gap-3">
+        <span class="font-display font-800 text-3xl text-gold">24h</span>
+        <span class="text-xs leading-tight">De guardia en Santa Coloma de Gramenet<br><span class="text-white/55">Festivos y fines de semana</span></span>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> SOBRE NOSOTROS</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl leading-[1.08] mb-6">Electricistas homologados en Santa Coloma de Gramenet de confianza</h2>
+      <p class="text-mute leading-relaxed mb-6">Cuando tienes una urgencia eléctrica necesitas a alguien rápido pero, sobre todo, profesional. Evita riesgos de incendio y averías mayores con un instalador autorizado, registrado en la Generalitat de Catalunya y con garantía escrita.</p>
+      <ul class="space-y-4 mb-9">
+        <li class="flex gap-3.5"><span class="size-8 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><div><p class="font-display font-700 text-ink">Autorizados por Industria</p><p class="text-mute text-sm">Firmamos boletines y certificados oficiales (CIE/BRIE).</p></div></li>
+        <li class="flex gap-3.5"><span class="size-8 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><div><p class="font-display font-700 text-ink">Presupuesto cerrado sin compromiso</p><p class="text-mute text-sm">Te informamos del coste antes de empezar. Sin sorpresas.</p></div></li>
+        <li class="flex gap-3.5"><span class="size-8 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><div><p class="font-display font-700 text-ink">Garantía escrita de 12 meses</p><p class="text-mute text-sm">Materiales de primeras marcas: Schneider, Simon y Legrand.</p></div></li>
+      </ul>
+      <a href="tel:+34677654821" class="inline-flex items-center gap-2.5 bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-9 py-4 rounded-md shadow-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AL TÉCNICO</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES (tabs) ===================== -->
+<section id="servicios" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> SERVICIOS</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Nuestros servicios eléctricos en Santa Coloma de Gramenet</h2>
+      <p class="text-mute mt-4">Cumplimos las medidas de seguridad exigidas en toda instalación y reparación. Respondemos a las urgencias tan rápido como podemos, en todo Santa Coloma de Gramenet.</p>
+    </div>
+    <!-- tab buttons -->
+    <div class="flex justify-center mb-12">
+      <div class="inline-flex rounded-md overflow-hidden border border-ink/10">
+        <button class="svc-tab is-active font-display font-700 text-xs tracking-widest px-8 py-4" data-tab="res">ELÉCTRICA RESIDENCIAL</button>
+        <button class="svc-tab font-display font-700 text-xs tracking-widest px-8 py-4" data-tab="com">ELÉCTRICA COMERCIAL</button>
+      </div>
+    </div>
+    <!-- residential -->
+    <div class="svc-panel grid lg:grid-cols-[1fr_auto] gap-12 items-center" data-panel="res">
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <a href="/averias-electricas-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Averías y urgencias 24h <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">¿Sin luz, salta el diferencial o huele a quemado? Lo resolvemos en el día.</p></a>
+        <a href="/enchufes-iluminacion-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Enchufes e iluminación <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Puntos de luz nuevos, LED de bajo consumo y mecanismos estropeados.</p></a>
+        <a href="/instalacion-electrica-vivienda-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Instalación de viviendas <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Instalación nueva o reforma completa: cableado, cuadro y toma de tierra.</p></a>
+        <a href="/cuadros-electricos-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Cuadros eléctricos <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Renovamos cuadros antiguos e instalamos diferenciales superinmunizados.</p></a>
+        <a href="/boletin-electrico-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Boletines (CIE y BRIE) <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Alta de luz o aumento de potencia con certificados oficiales en tiempo récord.</p></a>
+        <a href="/aumento-de-potencia-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Aumento de potencia <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Si el ICP salta al juntar electrodomésticos, adaptamos tu instalación.</p></a>
+        <a href="/cargador-coche-electrico-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Cargador coche eléctrico <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Punto de recarga en casa, garaje o comunidad, con boletín y ayudas MOVES.</p></a>
+        <a href="/placas-solares-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Placas solares (autoconsumo) <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Fotovoltaica para bajar tu factura de la luz, con opción de baterías.</p></a>
+        <a href="/climatizacion-aire-acondicionado-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Climatización y aire acond. <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Aire acondicionado, conductos y aerotermia con la parte eléctrica a normativa.</p></a>
+        <a href="/domotica-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Domótica y hogar conectado <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Luces, persianas, clima y seguridad controlados desde el móvil o la voz.</p></a>
+      </div>
+      <img src="/img/electricista-instalacion-residencial-santa-coloma.webp" alt="Electricista instalando un mecanismo eléctrico en una vivienda de Santa Coloma de Gramenet" class="rounded-sm w-full lg:w-80 h-72 object-cover shadow-card" />
+    </div>
+    <!-- commercial -->
+    <div class="svc-panel hidden grid-cols-1 lg:grid-cols-[1fr_auto] gap-12 items-center" data-panel="com">
+      <div class="grid sm:grid-cols-2 gap-x-10 gap-y-8">
+        <a href="/locales-negocios-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Locales y negocios <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Tu local sin luz es dinero perdido. Reparación exprés en horario laboral.</p></a>
+        <a href="/comunidades-vecinos-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Comunidades de vecinos <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Luz del portal, cuadro general y averías de escalera con factura en regla.</p></a>
+        <a href="/boletin-electrico-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Boletines de apertura <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Certificados de instalación para la apertura y licencia de tu actividad.</p></a>
+        <a href="/cuadros-electricos-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Cuadros y potencia trifásica <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Cuadros para actividad comercial y aumentos de potencia con tu compañía.</p></a>
+        <a href="/enchufes-iluminacion-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Iluminación comercial LED <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Rótulos, escaparates y naves con iluminación eficiente de bajo consumo.</p></a>
+        <a href="/comunidades-vecinos-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Mantenimiento de fincas <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Contratos de mantenimiento eléctrico recurrente para edificios y oficinas.</p></a>
+        <a href="/climatizacion-aire-acondicionado-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Climatización de locales <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Aire acondicionado y aerotermia para oficinas, comercios y naves.</p></a>
+        <a href="/placas-solares-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Placas solares para empresa <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Autoconsumo fotovoltaico que reduce el mayor gasto del negocio: la luz.</p></a>
+        <a href="/cargador-coche-electrico-santa-coloma/" class="group block"><h4 class="flex items-center gap-2 font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Puntos de recarga VE <span class="text-gold opacity-0 group-hover:opacity-100 transition-opacity">→</span></h4><p class="text-mute text-sm pl-6">Cargadores para flotas, aparcamientos de empresa y parkings comunitarios.</p></a>
+      </div>
+      <img src="/img/electricista-instalacion-comercial-santa-coloma.webp" alt="Electricista trabajando en el cuadro eléctrico de un local comercial en Santa Coloma de Gramenet" class="rounded-sm w-full lg:w-80 h-72 object-cover shadow-card" />
+    </div>
+
+    <!-- servicios destacados / modernos -->
+    <div class="mt-16 pt-14 border-t border-ink/10">
+      <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+        <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> TAMBIÉN EN SANTA COLOMA</p>
+        <h3 class="font-display font-800 text-ink text-3xl lg:text-4xl">Instalaciones que dan un paso más</h3>
+        <p class="text-mute mt-3">Somos tu electricista, pero también instalamos lo que hace tu hogar más eficiente y conectado.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <a href="/cargador-coche-electrico-santa-coloma/" class="group bg-surface hover:bg-white border border-transparent hover:border-gold hover:shadow-card transition-all rounded-sm p-7">
+          <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><rect x="3" y="6" width="12" height="14" rx="2"/><path d="M3 10h12"/><path d="M18 9l3 3v6a2 2 0 0 1-2 2"/><path d="M15 13h3"/><path d="M8 2 6 6h4l-2 4"/></svg></div>
+          <h4 class="font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors">Cargador coche eléctrico</h4>
+          <p class="text-mute text-sm">Punto de recarga en casa, garaje o comunidad. Con boletín y ayudas MOVES.</p>
+        </a>
+        <a href="/placas-solares-santa-coloma/" class="group bg-surface hover:bg-white border border-transparent hover:border-gold hover:shadow-card transition-all rounded-sm p-7">
+          <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></div>
+          <h4 class="font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors">Placas solares</h4>
+          <p class="text-mute text-sm">Autoconsumo fotovoltaico para bajar tu factura. Con baterías opcionales.</p>
+        </a>
+        <a href="/climatizacion-aire-acondicionado-santa-coloma/" class="group bg-surface hover:bg-white border border-transparent hover:border-gold hover:shadow-card transition-all rounded-sm p-7">
+          <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><rect x="2" y="5" width="20" height="8" rx="2"/><path d="M6 9h.01M10 9h4"/><path d="M7 17c0 1.5-1 2-1 3M12 17c0 1.5-1 2-1 3M17 17c0 1.5-1 2-1 3"/></svg></div>
+          <h4 class="font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors">Climatización y aire acond.</h4>
+          <p class="text-mute text-sm">Aire acondicionado, conductos y aerotermia, con la parte eléctrica a normativa.</p>
+        </a>
+        <a href="/domotica-santa-coloma/" class="group bg-surface hover:bg-white border border-transparent hover:border-gold hover:shadow-card transition-all rounded-sm p-7">
+          <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><path d="M10 15h4v4h-4z"/><path d="M12 9h.01"/></svg></div>
+          <h4 class="font-display font-700 text-ink text-lg mb-1 group-hover:text-gold transition-colors">Domótica</h4>
+          <p class="text-mute text-sm">Luces, persianas, clima y seguridad controlados desde el móvil o la voz.</p>
+        </a>
       </div>
     </div>
   </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="foot-wrap">
-      <div class="foot-brand">
-        <svg viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="18" fill="#FFB100"/><path d="M56 8 22 58h20L40 92l38-52H56z" fill="#050403"/></svg>
-        <span>ELECTRICISTA DE URGENCIA · SANTA COLOMA</span>
-      </div>
-      <div class="foot-links">
-        <a href="#servicios">Servicios</a>
-        <a href="#precios">Precios</a>
-        <a href="#opiniones">Opiniones</a>
-        <a href="#zonas">Zonas</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div class="foot-soc">
-        <!-- TODO: sustituir por las redes reales del cliente -->
-        <a href="#" aria-label="Instagram (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor" stroke="none"/></svg></a>
-        <a href="#" aria-label="Facebook (pendiente de enlazar)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7h2.6l.4-3h-3V9.1c0-.9.3-1.5 1.6-1.5H16.7V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V11H8v3h2.5v7h3z"/></svg></a>
-        <a href="https://wa.me/34600000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.4-.5.1-1.1.2-3.4-.7-2.9-1.2-4.7-4.1-4.9-4.3-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.4-.1.7.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.6.4 0 .1 0 .7-.2 1.3z"/></svg></a>
-      </div>
-      <div class="foot-legal">
-        <span>© 2026 [NOMBRE DEL NEGOCIO] — Electricista autorizado en Santa Coloma de Gramenet</span>
-        <span><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></span>
-      </div>
-    </div>
-  </footer>
 </section>
 
-</main>
+<!-- ===================== URGENCIAS / SÍNTOMAS ===================== -->
+<section id="urgencias" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ¿QUÉ TE ESTÁ PASANDO?</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Averías urgentes que resolvemos en el día</h2>
+      <p class="text-mute mt-4">Identifica tu avería y llámanos. Te decimos qué hacer mientras llegamos a Santa Coloma de Gramenet.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <article class="bg-white rounded-sm p-8 border-l-4 border-gold shadow-card">
+        <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M7 3h10l-1.5 4.5h-7L7 3z"/><path d="M9 7.5V18a3 3 0 0 0 6 0V7.5"/><path d="M12 12v2"/></svg></div>
+        <h3 class="font-display font-700 text-2xl text-ink mb-3">Se ha ido la luz y no vuelve</h3>
+        <p class="text-mute mb-5 text-sm leading-relaxed">Si te quedas sin luz en toda la casa o en algunas estancias y no vuelve al subir el interruptor, suele ser una sobrecarga, una fuga o un fallo del cuadro. <strong class="text-ink">No fuerces el automático una y otra vez:</strong> localizamos la causa en minutos.</p>
+        <div class="flex flex-wrap items-center gap-4"><a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-600 text-sm px-6 py-3 rounded-md inline-flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Llamar ahora</a><a href="https://wa.me/34677654821?text=Hola%2C%20me%20he%20quedado%20sin%20luz%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="text-ink font-600 text-sm ul">o por WhatsApp →</a></div>
+      </article>
+      <article class="bg-white rounded-sm p-8 border-l-4 border-gold shadow-card">
+        <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M13 3 5 13h5l-1 8 8-11h-5l1-7z"/></svg></div>
+        <h3 class="font-display font-700 text-2xl text-ink mb-3">El diferencial salta y no sube</h3>
+        <p class="text-mute mb-5 text-sm leading-relaxed">Cuando el diferencial salta y no se deja subir, hay una fuga de corriente en algún circuito o aparato. Desenchufa los electrodomésticos uno a uno; si aun así no sube, <strong class="text-ink">no lo fuerces.</strong> Vamos, medimos la fuga con equipo y la aislamos.</p>
+        <div class="flex flex-wrap items-center gap-4"><a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-600 text-sm px-6 py-3 rounded-md inline-flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Llamar ahora</a><a href="https://wa.me/34677654821?text=Hola%2C%20me%20salta%20el%20diferencial%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="text-ink font-600 text-sm ul">o por WhatsApp →</a></div>
+      </article>
+      <article class="bg-red-50 rounded-sm p-8 border-l-4 border-red-500 shadow-card">
+        <div class="flex items-center justify-between mb-4"><div class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M12 3c.8 3 3.5 4 3.5 7.5a3.5 3.5 0 0 1-7 0C8.5 9.2 9 8.5 9.8 8 11 9 12 8.2 12 3z"/></svg></div><span class="text-[11px] font-700 bg-red-500 text-white px-3 py-1 rounded-full">Riesgo de incendio</span></div>
+        <h3 class="font-display font-700 text-2xl text-ink mb-3">Huele a quemado o saltan chispas</h3>
+        <p class="text-mute mb-5 text-sm leading-relaxed">Olor a quemado en un enchufe o en el cuadro, o chispas al conectar algo, es la urgencia más seria. <strong class="text-ink">Corta la corriente en el cuadro general y llámanos de inmediato.</strong> Salimos hacia tu domicilio ahora mismo.</p>
+        <div class="flex flex-wrap items-center gap-4"><a href="tel:+34677654821" class="bg-red-500 hover:bg-red-600 transition-colors text-white font-600 text-sm px-6 py-3 rounded-md inline-flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Llamar urgencia</a><a href="https://wa.me/34677654821?text=Hola%2C%20huele%20a%20quemado%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="text-ink font-600 text-sm ul">o por WhatsApp →</a></div>
+      </article>
+      <article class="bg-white rounded-sm p-8 border-l-4 border-gold shadow-card">
+        <div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
+        <h3 class="font-display font-700 text-2xl text-ink mb-3">Se va la luz pero no salta el diferencial</h3>
+        <p class="text-mute mb-5 text-sm leading-relaxed">Si la luz se va sola y el diferencial no ha saltado, suele ser un problema en el contador, la acometida o una conexión floja. Es difícil de diagnosticar sin instrumentos: lo medimos y restablecemos el suministro con seguridad.</p>
+        <div class="flex flex-wrap items-center gap-4"><a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-600 text-sm px-6 py-3 rounded-md inline-flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Llamar ahora</a><a href="https://wa.me/34677654821?text=Hola%2C%20se%20va%20la%20luz%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="text-ink font-600 text-sm ul">o por WhatsApp →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESO ===================== -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Cómo resolvemos tu urgencia</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
+      <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">01</span><h3 class="font-display font-700 text-lg text-ink mb-2">Llamada de teléfono</h3><p class="text-mute text-sm">Llámanos o escríbenos. Un técnico analiza tu avería en la primera llamada.</p></div>
+      <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">02</span><h3 class="font-display font-700 text-lg text-ink mb-2">Desplazamiento exprés</h3><p class="text-mute text-sm">El electricista más cercano a Santa Coloma de Gramenet sale hacia tu ubicación de forma urgente.</p></div>
+      <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">03</span><h3 class="font-display font-700 text-lg text-ink mb-2">Presupuesto gratis</h3><p class="text-mute text-sm">Tras inspeccionar el problema te damos presupuesto cerrado. Si lo aceptas, empezamos.</p></div>
+      <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-gold text-white font-display font-800 text-lg grid place-items-center">04</span><h3 class="font-display font-700 text-lg text-ink mb-2">Problema resuelto</h3><p class="text-mute text-sm">Solucionamos la avería, hacemos comprobaciones y emitimos factura con garantía.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OPINIONES (testimonials split + marquee) ===================== -->
+<section id="opiniones" class="relative bg-ink-deep">
+  <div class="grid lg:grid-cols-2">
+    <div class="relative min-h-[280px] lg:min-h-full">
+      <img src="/img/electricista-opiniones-cuadro-santa-coloma.webp" alt="Electricista de Santa Coloma de Gramenet mostrando un cuadro eléctrico recién instalado a un cliente satisfecho" class="absolute inset-0 w-full h-full object-cover object-[center_35%]" />
+      <div class="absolute inset-0 bg-ink-deep/30"></div>
+    </div>
+    <div class="px-8 lg:px-16 py-20 text-center">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> OPINIONES</p>
+      <h2 class="font-display font-800 text-white text-4xl lg:text-5xl mb-4">Lo que dicen nuestros clientes</h2>
+      <p class="text-white/60 max-w-md mx-auto">Valoraciones reales de vecinos y negocios de Santa Coloma de Gramenet y el Barcelonès Nord a los que hemos atendido.</p>
+    </div>
+  </div>
+  <!-- marquee -->
+  <div class="marquee-wrap overflow-hidden py-12 bg-ink border-t border-white/5">
+    <div class="marquee-track px-4">
+      <!-- set 1 -->
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Se nos fue la luz un domingo por la noche y en menos de una hora estaban en casa. Rápidos, limpios y con presupuesto claro antes de empezar."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">M</span><span class="text-sm"><span class="block text-white font-600">Marta R.</span><span class="block text-white/45 text-xs">Fondo, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Nos hicieron el boletín para dar de alta la luz del local en tiempo récord. Trato muy profesional y precio cerrado."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">J</span><span class="text-sm"><span class="block text-white font-600">Jordi P.</span><span class="block text-white/45 text-xs">Centre, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"El diferencial saltaba sin parar. Encontraron la fuga en una regleta vieja que no veíamos. Adiós al problema y garantía por escrito."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">N</span><span class="text-sm"><span class="block text-white font-600">Núria B.</span><span class="block text-white/45 text-xs">Singuerlín, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Renovaron el cuadro eléctrico de la comunidad y ahora la luz del portal ya no falla. Factura en regla para la finca."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">D</span><span class="text-sm"><span class="block text-white font-600">David S.</span><span class="block text-white/45 text-xs">Santa Rosa, Santa Coloma</span></span></figcaption>
+      </figure>
+      <!-- set 2 (duplicate for seamless loop) -->
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5" aria-hidden="true">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Se nos fue la luz un domingo por la noche y en menos de una hora estaban en casa. Rápidos, limpios y con presupuesto claro antes de empezar."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">M</span><span class="text-sm"><span class="block text-white font-600">Marta R.</span><span class="block text-white/45 text-xs">Fondo, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5" aria-hidden="true">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Nos hicieron el boletín para dar de alta la luz del local en tiempo récord. Trato muy profesional y precio cerrado."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">J</span><span class="text-sm"><span class="block text-white font-600">Jordi P.</span><span class="block text-white/45 text-xs">Centre, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5" aria-hidden="true">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"El diferencial saltaba sin parar. Encontraron la fuga en una regleta vieja que no veíamos. Adiós al problema y garantía por escrito."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">N</span><span class="text-sm"><span class="block text-white font-600">Núria B.</span><span class="block text-white/45 text-xs">Singuerlín, Santa Coloma</span></span></figcaption>
+      </figure>
+      <figure class="w-80 shrink-0 bg-ink-soft rounded-sm p-7 border border-white/5" aria-hidden="true">
+        <div class="flex text-gold mb-3">★★★★★</div>
+        <blockquote class="text-white/80 text-sm leading-relaxed mb-5">"Renovaron el cuadro eléctrico de la comunidad y ahora la luz del portal ya no falla. Factura en regla para la finca."</blockquote>
+        <figcaption class="flex items-center gap-3"><span class="size-9 rounded-full bg-gold/20 text-gold grid place-items-center font-display font-700">D</span><span class="text-sm"><span class="block text-white font-600">David S.</span><span class="block text-white/45 text-xs">Santa Rosa, Santa Coloma</span></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EQUIPO ===================== -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> NUESTRO EQUIPO</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Electricistas profesionales</h2>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="group text-center">
+        <div class="relative overflow-hidden rounded-sm mb-4"><img src="/img/electricista-autorizado-santa-coloma.webp" alt="Electricista autorizado del equipo de ElectroGramenet en Santa Coloma de Gramenet" loading="lazy" class="w-full aspect-[10/11] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105" /><div class="absolute inset-x-0 bottom-0 h-1.5 bg-gold scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></div></div>
+        <h3 class="font-display font-700 text-ink text-lg">Electricista autorizado</h3>
+        <p class="text-mute text-sm">Instalador BT</p>
+      </div>
+      <div class="group text-center">
+        <div class="relative overflow-hidden rounded-sm mb-4"><img src="/img/tecnico-urgencias-santa-coloma.webp" alt="Técnico de urgencias eléctricas 24h del equipo de ElectroGramenet en Santa Coloma de Gramenet" loading="lazy" class="w-full aspect-[10/11] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105" /><div class="absolute inset-x-0 bottom-0 h-1.5 bg-gold scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></div></div>
+        <h3 class="font-display font-700 text-ink text-lg">Técnico de urgencias</h3>
+        <p class="text-mute text-sm">Guardia 24h</p>
+      </div>
+      <div class="group text-center">
+        <div class="relative overflow-hidden rounded-sm mb-4"><img src="/img/especialista-cuadros-electricos-santa-coloma.webp" alt="Especialista en cuadros eléctricos del equipo de ElectroGramenet en Santa Coloma de Gramenet" loading="lazy" class="w-full aspect-[10/11] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105" /><div class="absolute inset-x-0 bottom-0 h-1.5 bg-gold scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></div></div>
+        <h3 class="font-display font-700 text-ink text-lg">Especialista en cuadros</h3>
+        <p class="text-mute text-sm">Instalador BT</p>
+      </div>
+      <div class="group text-center">
+        <div class="relative overflow-hidden rounded-sm mb-4"><img src="/img/tecnica-boletines-electricos-santa-coloma.webp" alt="Técnico de boletines eléctricos (CIE/BRIE) del equipo de ElectroGramenet en Santa Coloma de Gramenet" loading="lazy" class="w-full aspect-[10/11] object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105" /><div class="absolute inset-x-0 bottom-0 h-1.5 bg-gold scale-x-0 group-hover:scale-x-100 origin-left transition-transform"></div></div>
+        <h3 class="font-display font-700 text-ink text-lg">Técnico de boletines</h3>
+        <p class="text-mute text-sm">Certificados CIE/BRIE</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ZONAS ===================== -->
+<section id="zonas" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ÁREA DE COBERTURA</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Llegamos a todos los barrios de Santa Coloma de Gramenet</h2>
+      <p class="text-mute mt-4">Basados en el Barcelonès Nord, garantizamos la máxima rapidez de desplazamiento a cualquier punto del término municipal:</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08221 — Centre</p><h4 class="font-display font-700 text-ink text-xl mb-1">Centre · Vallparadís</h4><p class="text-mute text-sm">Casco urbano, ayuntamiento y parque de Vallparadís.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08223 — Ca n'Aurell</p><h4 class="font-display font-700 text-ink text-xl mb-1">Ca n'Aurell · La Maurina</h4><p class="text-mute text-sm">Zona residencial al oeste, pisos y unifamiliares.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08226 — Sant Pere</p><h4 class="font-display font-700 text-ink text-xl mb-1">Sant Pere · Can Boada</h4><p class="text-mute text-sm">Barrios del norte con instalaciones a renovar.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08225 — Ca n'Anglada</p><h4 class="font-display font-700 text-ink text-xl mb-1">Ca n'Anglada · Torre-sana</h4><p class="text-mute text-sm">Comunidades de vecinos y bloques de pisos.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">08224 — Can Palet</p><h4 class="font-display font-700 text-ink text-xl mb-1">Can Palet · Les Fonts</h4><p class="text-mute text-sm">Viviendas unifamiliares y suministros a ampliar.</p></div>
+      <div class="bg-white rounded-sm p-7 border-l-4 border-gold"><p class="text-gold font-600 text-sm mb-1">Polígonos</p><h4 class="font-display font-700 text-ink text-xl mb-1">Can Petit · Els Bellots · Santa Margarida</h4><p class="text-mute text-sm">Naves, locales comerciales y oficinas.</p></div>
+    </div>
+    <div class="mt-8 bg-ink rounded-sm p-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-white">
+      <div><h4 class="font-display font-700 text-2xl mb-1">¿Estás fuera de estas zonas?</h4><p class="text-white/60 text-sm">Cubrimos todo el Barcelonès Nord: Badalona, Sant Adrià de Besòs, Montcada i Reixac y los barrios del norte de Barcelona.</p></div>
+      <a href="tel:+34677654821" class="shrink-0 bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm px-7 py-3.5 rounded-md whitespace-nowrap">Llama para confirmar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BLOG ===================== -->
+<section id="consejos" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="mb-12 reveal flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5">
+      <div>
+        <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> CONSEJOS</p>
+        <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Consejos y noticias</h2>
+      </div>
+      <a href="/blog/" class="shrink-0 inline-flex items-center gap-2 self-start sm:self-auto border-2 border-ink hover:border-gold hover:text-gold text-ink font-display font-700 text-sm tracking-wide px-7 py-3.5 rounded-md transition-colors">Ver todos los consejos <span>→</span></a>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-10 items-center mb-8">
+      <a href="/blog/por-que-salta-el-diferencial/" class="overflow-hidden rounded-sm group block"><img src="/img/blog-diferencial-cuadro-santa-coloma.webp" alt="Por qué salta el diferencial: rearmar el diferencial del cuadro en una vivienda de Santa Coloma de Gramenet" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" /></a>
+      <div>
+        <p class="text-mute text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg> Guía de seguridad</p>
+        <h3 class="font-display font-800 text-ink text-2xl lg:text-3xl leading-snug mb-4"><a href="/blog/por-que-salta-el-diferencial/" class="hover:text-gold transition-colors">Por qué salta el diferencial de tu casa una y otra vez</a></h3>
+        <p class="text-mute leading-relaxed mb-6">El diferencial salta para protegerte de fugas de corriente o sobrecargas. Las causas más habituales son un electrodoméstico averiado, humedad en la instalación, un cable deteriorado o un cuadro eléctrico antiguo. Te explicamos cómo aislar el circuito antes de que lleguemos.</p>
+        <a href="/blog/por-que-salta-el-diferencial/" class="inline-block bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-xs tracking-widest px-8 py-3.5 rounded-md">LEER MÁS</a>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-surface bg-surface rounded-sm">
+      <a href="/blog/protectores-de-sobretension/" class="group flex items-center gap-4 p-6 hover:bg-white transition-colors"><img src="/img/blog-protectores-sobretension-santa-coloma.webp" alt="Protectores de sobretensión en el cuadro eléctrico, Santa Coloma de Gramenet" class="size-16 rounded-sm object-cover shrink-0" /><div><h4 class="font-display font-700 text-ink text-sm leading-snug group-hover:text-gold transition-colors">Protección con protectores de sobretensión</h4><p class="text-mute text-xs mt-1">Consejos</p></div></a>
+      <a href="/blog/consejos-seguridad-electrica-hogar/" class="group flex items-center gap-4 p-6 hover:bg-white transition-colors"><img src="/img/blog-seguridad-electrica-hogar-santa-coloma.webp" alt="Consejos de seguridad eléctrica para el hogar en Santa Coloma de Gramenet" class="size-16 rounded-sm object-cover shrink-0" /><div><h4 class="font-display font-700 text-ink text-sm leading-snug group-hover:text-gold transition-colors">10 consejos de seguridad eléctrica en el hogar</h4><p class="text-mute text-xs mt-1">Consejos</p></div></a>
+      <a href="/blog/cables-danados-o-sueltos/" class="group flex items-center gap-4 p-6 hover:bg-white transition-colors"><img src="/img/blog-cables-danados-santa-coloma.webp" alt="Cables eléctricos dañados o sueltos en una vivienda de Santa Coloma de Gramenet" class="size-16 rounded-sm object-cover shrink-0" /><div><h4 class="font-display font-700 text-ink text-sm leading-snug group-hover:text-gold transition-colors">Cables dañados o sueltos: qué hacer</h4><p class="text-mute text-xs mt-1">Consejos</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQS ===================== -->
+<section id="faqs" class="py-24 bg-surface">
+  <div class="max-w-3xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Preguntas frecuentes</h2>
+    </div>
+    <div class="space-y-4">
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">En servicios de urgencia salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord. Disponemos de técnicos locales en constante movimiento por la zona para garantizar la máxima velocidad de atención.</p></div>
+      </div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta un electricista de urgencias 24 horas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">El precio depende del tipo de avería y el horario (diurno, nocturno o festivo). Ofrecemos tarifas competitivas y transparentes en Santa Coloma de Gramenet, con presupuesto cerrado y sin compromiso una vez evaluada la situación en el lugar, evitando cualquier sorpresa.</p></div>
+      </div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Tenéis disponibilidad sábados, domingos y festivos?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, absolutamente. Nuestro servicio de electricistas de urgencia está activo las 24 horas del día, los 365 días del año. Los fines de semana y festivos en Cataluña contamos con guardias permanentes para cortes de luz y averías de gravedad.</p></div>
+      </div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Emitís boletines eléctricos oficiales (CIE o BRIE)?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, somos instaladores electricistas autorizados. Emitimos el Boletín Azul (BRIE) para ampliaciones y pequeños cambios en Catalunya, o el Certificado de Instalación Eléctrica (CIE) exigido por la compañía para nuevos suministros, cambios de titular o aumentos de potencia.</p></div>
+      </div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Qué hago si huele a quemado o saltan chispas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Es lo más serio: hay riesgo de incendio. Corta la corriente en el cuadro general, no toques el punto afectado y ventila. Si ves fuego, llama a emergencias. Después llámanos: es de los avisos a los que antes salimos en Santa Coloma de Gramenet.</p></div>
+      </div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden">
+        <button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Trabajáis en mi barrio de Santa Coloma de Gramenet?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button>
+        <div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Cubrimos todos los barrios y urbanizaciones del término municipal —Centre, Fondo, Santa Rosa, el Raval, Riu Nord, Riu Sud, Singuerlín, Les Oliveres, Can Franquesa y la Guinardera— además de zonas colindantes del Barcelonès Nord. Tenemos técnicos en ruta por la zona, así que llegamos rápido.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<section class="bg-gold">
+  <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
+    <div class="text-white text-center lg:text-left">
+      <h2 class="font-display font-800 text-3xl lg:text-4xl mb-1">¿Sin luz o con una avería peligrosa?</h2>
+      <p class="text-white/85">Hablas directamente con el electricista de guardia de Santa Coloma de Gramenet. La llamada y el presupuesto no cuestan nada.</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+      <a href="#contacto" class="bg-white text-ink font-display font-700 text-sm tracking-wide px-9 py-4 rounded-md hover:bg-ink hover:text-white transition-colors text-center">SOLICITAR SERVICIO</a>
+      <a href="tel:+34677654821" class="border-2 border-white text-white font-display font-700 text-sm tracking-wide px-9 py-4 rounded-md hover:bg-white hover:text-ink transition-colors text-center flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR: 677 654 821</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO + MAPA ===================== -->
+<section id="contacto" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12 reveal">
+      <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DÓNDE ESTAMOS</p>
+      <h2 class="font-display font-800 text-ink text-4xl lg:text-5xl">Servicio en Santa Coloma de Gramenet y alrededores</h2>
+    </div>
+    <div class="grid lg:grid-cols-[1.5fr_1fr] gap-8 items-stretch">
+      <div class="relative rounded-sm overflow-hidden shadow-card min-h-[420px]">
+        <iframe src="https://www.google.com/maps?q=Santa%20Coloma%20de%20Gramenet%2C%20Barcelona&z=13&output=embed" class="absolute inset-0 w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ElectroGramenet — zona de servicio en Santa Coloma de Gramenet"></iframe>
+      </div>
+      <div class="bg-ink rounded-sm text-white p-9 lg:p-10 flex flex-col">
+        <h3 class="font-display font-800 text-3xl mb-7">Contacto</h3>
+        <div class="space-y-6 mb-8">
+          <div class="flex items-start gap-4">
+            <span class="size-11 shrink-0 rounded-full bg-white/10 grid place-items-center text-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></span>
+            <div><p class="font-display font-700">Zona</p><p class="text-white/65 text-sm">Santa Coloma de Gramenet, Barcelona y alrededores</p></div>
+          </div>
+          <!-- PLACEHOLDER: sustituir teléfono real -->
+          <a href="tel:+34677654821" class="flex items-start gap-4 group">
+            <span class="size-11 shrink-0 rounded-full bg-white/10 grid place-items-center text-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span>
+            <div><p class="font-display font-700">Teléfono de urgencias</p><p class="text-white/65 text-sm group-hover:text-gold transition-colors">677 654 821</p></div>
+          </a>
+          <!-- PLACEHOLDER: sustituir email real -->
+          <a href="mailto:info@electricistasantacoloma.es" class="flex items-start gap-4 group">
+            <span class="size-11 shrink-0 rounded-full bg-white/10 grid place-items-center text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <div><p class="font-display font-700">Email</p><p class="text-white/65 text-sm group-hover:text-gold transition-colors">info@electricistasantacoloma.es</p></div>
+          </a>
+          <div class="flex items-start gap-4">
+            <span class="size-11 shrink-0 rounded-full bg-white/10 grid place-items-center text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-5 h-5"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg></span>
+            <div><p class="font-display font-700">Horario</p><p class="text-white/65 text-sm">Disponible 24 horas, 365 días</p></div>
+          </div>
+        </div>
+        <div class="mt-auto space-y-3">
+          <a href="tel:+34677654821" class="flex items-center justify-center gap-2 bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm px-6 py-4 rounded-md"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AHORA</a>
+          <a href="https://wa.me/34677654821?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 transition-colors text-white font-600 text-sm px-6 py-4 rounded-md"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.2 4.74 1.2h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7z"/></svg> Escribir por WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-ink-deep text-white pt-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-10 pb-14">
+      <div>
+        <div class="mb-5"><span class="inline-flex bg-white rounded-md px-3 py-2.5"><span class="inline-flex items-center gap-2"><svg viewBox="0 0 64 64" class="h-9 w-9 shrink-0" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#141619"/><path fill="#F5A623" d="M32 12a15 15 0 0 0-9 27v5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5a15 15 0 0 0-9-27z"/><path fill="#141619" d="M26 40h12v2a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2z"/><path fill="#141619" d="M33 20 24 34h6l-2 10 12-16h-7z"/></svg><span class="font-display font-900 text-xl leading-none text-ink">Electro<span class="text-gold">Gramenet</span></span></span></span></div>
+        <p class="text-white/55 text-sm leading-relaxed mb-5">Servicio local de electricidad urgente en Santa Coloma de Gramenet, Barcelona. Instalador autorizado que presta asistencia técnica exprés 24 h.</p>
+        <div class="flex items-center gap-3">
+          <a href="#" aria-label="Instagram" class="size-9 grid place-items-center rounded-sm bg-white/10 hover:bg-gold transition-colors"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.42.42.68.82.9 1.4.17.4.36 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2a3.8 3.8 0 0 1-.9 1.4c-.42.42-.82.68-1.4.9-.4.17-1 .36-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.22-.6.48-1 .9-1.4.42-.42.82-.68 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 4.86A4.94 4.94 0 1 0 12 17a4.94 4.94 0 0 0 0-9.88zm0 8.14A3.2 3.2 0 1 1 12 8.8a3.2 3.2 0 0 1 0 6.4zm5.14-8.34a1.15 1.15 0 1 1-2.3 0 1.15 1.15 0 0 1 2.3 0z"/></svg></a>
+          <a href="#" aria-label="Facebook" class="size-9 grid place-items-center rounded-sm bg-white/10 hover:bg-gold transition-colors"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.75-1.6 1.5v1.8H16l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=electricista+de+urgencia+en+Santa+Coloma+de+Gramenet" target="_blank" rel="noopener" aria-label="Google" class="size-9 grid place-items-center rounded-sm bg-white/10 hover:bg-gold transition-colors font-display font-800 text-sm">G</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-display font-700 text-lg mb-6">Servicios</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li><a href="/averias-electricas-santa-coloma/" class="hover:text-gold transition-colors">Averías y urgencias 24h</a></li>
+          <li><a href="/instalacion-electrica-vivienda-santa-coloma/" class="hover:text-gold transition-colors">Instalación de viviendas</a></li>
+          <li><a href="/boletin-electrico-santa-coloma/" class="hover:text-gold transition-colors">Boletines (CIE/BRIE)</a></li>
+          <li><a href="/cuadros-electricos-santa-coloma/" class="hover:text-gold transition-colors">Cuadros eléctricos</a></li>
+          <li><a href="/enchufes-iluminacion-santa-coloma/" class="hover:text-gold transition-colors">Enchufes e iluminación</a></li>
+          <li><a href="/comunidades-vecinos-santa-coloma/" class="hover:text-gold transition-colors">Comunidades y locales</a></li>
+          <li><a href="/cargador-coche-electrico-santa-coloma/" class="hover:text-gold transition-colors">Cargador coche eléctrico</a></li>
+          <li><a href="/placas-solares-santa-coloma/" class="hover:text-gold transition-colors">Placas solares</a></li>
+          <li><a href="/climatizacion-aire-acondicionado-santa-coloma/" class="hover:text-gold transition-colors">Climatización y aire acond.</a></li>
+          <li><a href="/domotica-santa-coloma/" class="hover:text-gold transition-colors">Domótica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-700 text-lg mb-6">Zona de servicio</h4>
+        <ul class="space-y-2 text-white/60 text-sm">
+          <li>Santa Coloma (Centre, Fondo, Singuerlín)</li>
+          <li>Badalona</li>
+          <li>Sant Adrià de Besòs</li>
+          <li>Montcada i Reixac</li>
+          <li>Barcelona (Trinitat · Sant Andreu)</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-700 text-lg mb-6">Contacto</h4>
+        <ul class="space-y-3 text-white/60 text-sm">
+          <li class="flex items-center gap-2"><span class="text-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg></span> Santa Coloma de Gramenet, Barcelona (España)</li>
+          <li><a href="tel:+34677654821" class="flex items-center gap-2 hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg></span> 677 654 821</a></li>
+          <li><a href="mailto:info@electricistasantacoloma.es" class="flex items-center gap-2 hover:text-gold transition-colors"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-4 h-4"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span> info@electricistasantacoloma.es</a></li>
+          <li class="flex items-center gap-2"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" class="w-4 h-4"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></svg></span> 24 horas · 365 días</li>
+        </ul>
+        <a href="tel:+34677654821" class="inline-flex items-center gap-2 mt-5 bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-xs px-5 py-3 rounded-md">LLAMAR AHORA</a>
+      </div>
+    </div>
+    <div class="border-t border-white/10 py-7 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-white/45 text-sm flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4 text-gold"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> © 2026 ElectroGramenet · Electricista en Santa Coloma de Gramenet, Barcelona. Todos los derechos reservados.</p>
+      <a href="https://www.google.com/maps/search/?api=1&query=electricista+de+urgencia+en+Santa+Coloma+de+Gramenet" target="_blank" rel="noopener" class="flex items-center gap-2 bg-white text-ink font-600 px-4 h-10 rounded-full hover:bg-gold hover:text-white transition-colors text-sm"><span class="font-800">G</span> Reseñas en Google</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/34677654821?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Santa%20Coloma" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" class="fixed bottom-6 right-6 z-50 size-16 grid place-items-center">
+  <span class="absolute inset-0 rounded-full bg-[#25D366] opacity-60 animate-ping"></span>
+  <span class="relative size-16 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white grid place-items-center shadow-float transition-colors"><svg viewBox="0 0 24 24" fill="currentColor" class="size-9"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.2 4.74 1.2h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7zM12.04 20.15h-.003a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23a8.2 8.2 0 0 1 5.82 2.42 8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23z"/></svg></span>
+</a>
+
+<!-- sticky CTA móvil -->
+<a href="tel:+34677654821" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-gold text-white font-display font-700 text-center py-4 flex items-center justify-center gap-2 shadow-float"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR ELECTRICISTA URGENTE</a>
 
 <script>
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-/* ══════════════ CONFIG ══════════════ */
-const FRAME_COUNT = 241;                 // frames extraídos del viaje (3 clips encadenados)
-const FRAME_PATH  = i => `assets/frames/f_${String(i).padStart(3,'0')}.webp`;
-const RESP_MIN    = 25;                  // el HUD cuenta 00:00 → 25:00
-
-/* ══════════════ H1 letra a letra ══════════════ */
-(() => {
-  const h1 = document.getElementById('h1');
-  const lines = ['ELECTRICISTA DE', 'URGENCIA EN', '|SANTA COLOMA', '|DE GRAMENET'];
-  let i = 0;
-  lines.forEach((line, li) => {
-    const div = document.createElement('div');
-    div.setAttribute('aria-hidden', 'true');
-    let amb = false;
-    [...line].forEach(ch => {
-      if (ch === '|') { amb = true; return; }
-      const s = document.createElement('span');
-      s.className = 'l' + (amb ? ' amb' : '');
-      s.style.setProperty('--i', i++);
-      s.textContent = ch === ' ' ? ' ' : ch;
-      div.appendChild(s);
-    });
-    h1.appendChild(div);
+  // mobile menu
+  const burger = document.getElementById('burger');
+  const mm = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => mm.classList.toggle('hidden'));
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mm.classList.add('hidden')));
+  // submenú Servicios (acordeón) en el menú móvil
+  const svcBtn = document.getElementById('m-svc-btn');
+  if (svcBtn) svcBtn.addEventListener('click', () => {
+    const panel = document.getElementById('m-svc');
+    const nowHidden = panel.classList.toggle('hidden');
+    svcBtn.setAttribute('aria-expanded', String(!nowHidden));
+    document.getElementById('m-svc-ic').textContent = nowHidden ? '+' : '−';
   });
-})();
 
-/* ══════════════ Canvas + frames ══════════════ */
-const canvas = document.getElementById('film');
-const ctx = canvas.getContext('2d');
-const frames = new Array(FRAME_COUNT);
-let loadedCount = 0, bootDone = false;
+  // hero slider
+  (function(){
+    const hero = document.getElementById('hero');
+    if(!hero) return;
+    const slides = [...hero.querySelectorAll('.hero-slide')];
+    const dots = [...hero.querySelectorAll('.hero-dot')];
+    let cur = 0, timer;
+    function go(n){
+      cur = (n + slides.length) % slides.length;
+      slides.forEach((s,i)=>s.classList.toggle('active', i===cur));
+      dots.forEach((d,i)=>d.classList.toggle('active', i===cur));
+    }
+    function next(){ go(cur+1); }
+    function start(){ stop(); timer = setInterval(next, 6000); }
+    function stop(){ if(timer) clearInterval(timer); }
+    dots.forEach(d => d.addEventListener('click', () => { go(+d.dataset.go); start(); }));
+    hero.querySelectorAll('.hero-arrow').forEach(a => a.addEventListener('click', () => { go(cur + (+a.dataset.dir)); start(); }));
+    hero.addEventListener('mouseenter', stop);
+    hero.addEventListener('mouseleave', start);
+    start();
+  })();
 
-function sizeCanvas() {
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  canvas.width = Math.round(innerWidth * dpr);
-  canvas.height = Math.round(innerHeight * dpr);
-}
-sizeCanvas();
-addEventListener('resize', () => { sizeCanvas(); dirty = true; });
-
-function loadFrame(i, cb) {
-  if (frames[i]) return;
-  const img = new Image();
-  img.decoding = 'async';
-  img.onload = () => { img.ok = true; loadedCount++; dirty = true; cb && cb(); };
-  img.onerror = () => { img.ok = false; cb && cb(); };
-  img.src = FRAME_PATH(i);
-  frames[i] = img;
-}
-
-function nearestLoaded(t) {
-  if (frames[t] && frames[t].ok) return frames[t];
-  for (let d = 1; d < FRAME_COUNT; d++) {
-    const a = frames[t - d], b = frames[t + d];
-    if (a && a.ok) return a;
-    if (b && b.ok) return b;
+  // services tabs
+  const tabs = document.querySelectorAll('.svc-tab');
+  const panels = document.querySelectorAll('.svc-panel');
+  function setActive(btn){
+    tabs.forEach(t => { t.classList.remove('is-active','bg-gold','text-white'); t.classList.add('text-ink'); });
+    btn.classList.add('is-active');
   }
-  return null;
-}
-
-/* carga progresiva: pase 1 (1 de cada 8) → pase 2 (todos) */
-(() => {
-  const stride = 8;
-  const pass1 = [];
-  for (let i = 0; i < FRAME_COUNT; i += stride) pass1.push(i);
-  pass1.push(FRAME_COUNT - 1);
-  let done = 0;
-  const bar = document.getElementById('bootBar');
-  const finish = () => {
-    if (bootDone) return;
-    bootDone = true;
-    document.getElementById('boot').classList.add('off');
-    for (let i = 0; i < FRAME_COUNT; i++) loadFrame(i);
-  };
-  pass1.forEach(i => loadFrame(i, () => {
-    done++;
-    if (bar) bar.style.width = Math.round(done / pass1.length * 100) + '%';
-    if (done >= pass1.length) finish();
+  tabs.forEach(btn => btn.addEventListener('click', () => {
+    setActive(btn);
+    const key = btn.dataset.tab;
+    panels.forEach(p => {
+      const on = p.dataset.panel === key;
+      p.classList.toggle('hidden', !on);
+      p.classList.toggle('grid', on);
+    });
   }));
-  setTimeout(finish, 4000); // failsafe
-})();
 
-/* ══════════════ Chispas del final ══════════════ */
-const sCan = document.getElementById('sparks');
-const sCtx = sCan.getContext('2d');
-let sparks = [], sparksArmed = true;
-function sizeSparks() {
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  sCan.width = Math.round(innerWidth * dpr);
-  sCan.height = Math.round(innerHeight * dpr);
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => q.addEventListener('click', () => {
+    const item = q.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }));
+
+  // flip cards: en móvil (sin hover) el toque gira la tarjeta; el enlace de la cara trasera navega
+  (function(){
+    const noHover = window.matchMedia('(hover: none)');
+    document.querySelectorAll('.flip3').forEach(card => {
+      function tryFlip(e){
+        if (!noHover.matches) return;              // en escritorio manda el hover
+        if (e.target.closest('a')) return;         // si tocan el enlace, que navegue
+        e.preventDefault();
+        document.querySelectorAll('.flip3').forEach(c => { if (c !== card) c.classList.remove('flipped'); });
+        card.classList.toggle('flipped');
+      }
+      card.addEventListener('click', tryFlip);
+      card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.classList.toggle('flipped'); } });
+    });
+  })();
+
+  // reveal on scroll (with safety fallback so content is never stuck invisible)
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+  reveals.forEach(el => io.observe(el));
+  // Fallback: if anything hasn't revealed shortly after load, show it.
+  window.addEventListener('load', () => setTimeout(() => reveals.forEach(el => el.classList.add('in')), 700));
+</script>
+
+<!-- tab active styling -->
+<style>
+  .svc-tab{background:#fff;color:#1c1f24;transition:all .2s ease}
+  .svc-tab.is-active{background:#f7b72f;color:#fff}
+  .svc-tab:not(.is-active):hover{background:#f4f5f7}
+</style>
+
+<!-- JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  "@id": "https://electricista-santa-coloma.netlify.app/#business",
+  "name": "ElectroGramenet",
+  "alternateName": "Electricista Santa Coloma de Gramenet",
+  "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+  "image": "https://electricista-santa-coloma.netlify.app/og.jpg",
+  "logo": "https://electricista-santa-coloma.netlify.app/icon-512.png",
+  "url": "https://electricista-santa-coloma.netlify.app/",
+  "telephone": "+34677654821",
+  "email": "info@electricistasantacoloma.es",
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+  "address": { "@type": "PostalAddress", "addressLocality": "Santa Coloma de Gramenet", "addressRegion": "Barcelona", "addressCountry": "ES" },
+  "geo": { "@type": "GeoCoordinates", "latitude": 41.4515, "longitude": 2.2080 },
+  "areaServed": [
+    { "@type": "City", "name": "Santa Coloma de Gramenet" },
+    { "@type": "City", "name": "Badalona" },
+    { "@type": "City", "name": "Sant Adrià de Besòs" },
+    { "@type": "City", "name": "Montcada i Reixac" },
+    { "@type": "City", "name": "Barcelona" },
+    { "@type": "AdministrativeArea", "name": "Barcelonès Nord" }
+  ],
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de electricista en Santa Coloma de Gramenet",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Averías y urgencias eléctricas 24h", "url": "https://electricista-santa-coloma.netlify.app/averias-electricas-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Instalación eléctrica de viviendas", "url": "https://electricista-santa-coloma.netlify.app/instalacion-electrica-vivienda-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Boletines eléctricos (CIE/BRIE)", "url": "https://electricista-santa-coloma.netlify.app/boletin-electrico-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cuadros eléctricos", "url": "https://electricista-santa-coloma.netlify.app/cuadros-electricos-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Enchufes e iluminación", "url": "https://electricista-santa-coloma.netlify.app/enchufes-iluminacion-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aumento de potencia", "url": "https://electricista-santa-coloma.netlify.app/aumento-de-potencia-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electricista para comunidades de vecinos", "url": "https://electricista-santa-coloma.netlify.app/comunidades-vecinos-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Electricista para locales y negocios", "url": "https://electricista-santa-coloma.netlify.app/locales-negocios-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cargador de coche eléctrico (punto de recarga)", "url": "https://electricista-santa-coloma.netlify.app/cargador-coche-electrico-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Placas solares y autoconsumo", "url": "https://electricista-santa-coloma.netlify.app/placas-solares-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Climatización y aire acondicionado", "url": "https://electricista-santa-coloma.netlify.app/climatizacion-aire-acondicionado-santa-coloma/" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Domótica y hogar conectado", "url": "https://electricista-santa-coloma.netlify.app/domotica-santa-coloma/" } }
+    ]
+  }
 }
-sizeSparks();
-addEventListener('resize', sizeSparks);
-function burst(x, y, dir, n, spd = 1) {
-  const k = sCan.width / 1900;
-  for (let i = 0; i < n; i++) {
-    const a = dir + (Math.random() - .5) * 1.5;
-    const sp = (3 + Math.random() * 14) * k * spd;
-    sparks.push({
-      x, y, px: x, py: y,
-      vx: Math.cos(a) * sp, vy: Math.sin(a) * sp,
-      life: .7 + Math.random() * .5, decay: .008 + Math.random() * .016,
-      w: (Math.random() < .2 ? 2.8 : 1.5) * k, hue: Math.random()
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?", "acceptedAnswer": { "@type": "Answer", "text": "En servicios de urgencia salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord. Disponemos de técnicos locales en constante movimiento por la zona para garantizar la máxima velocidad de atención." } },
+    { "@type": "Question", "name": "¿Cuánto cuesta un electricista de urgencias 24 horas?", "acceptedAnswer": { "@type": "Answer", "text": "El precio depende del tipo de avería y el horario. Ofrecemos tarifas competitivas y transparentes en Santa Coloma de Gramenet, con presupuesto cerrado y sin compromiso una vez evaluada la situación en el lugar." } },
+    { "@type": "Question", "name": "¿Tenéis disponibilidad sábados, domingos y festivos?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Nuestro servicio de electricistas de urgencia está activo las 24 horas del día, los 365 días del año, con guardias permanentes en fines de semana y festivos." } },
+    { "@type": "Question", "name": "¿Emitís boletines eléctricos oficiales (CIE o BRIE)?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, somos instaladores autorizados. Emitimos el Boletín Azul (BRIE) para ampliaciones y el Certificado de Instalación Eléctrica (CIE) exigido para nuevos suministros, cambios de titular o aumentos de potencia." } },
+    { "@type": "Question", "name": "¿Trabajáis en mi barrio de Santa Coloma de Gramenet?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cubrimos todos los barrios del término municipal —Centre, Fondo, Santa Rosa, el Raval, Riu Nord, Riu Sud, Singuerlín, Les Oliveres, Can Franquesa y la Guinardera— además de zonas colindantes del Barcelonès Nord." } }
+  ]
+}
+</script>
+<script>
+  // Todos los formularios envían a WhatsApp con los datos rellenados
+  (function(){
+    var WA_NUM='34677654821';
+    function formToWhatsApp(f){
+      var parts=[];
+      f.querySelectorAll('input,select,textarea').forEach(function(el){
+        if(el.type==='submit'||el.type==='button'||el.type==='hidden')return;
+        var label=(el.getAttribute('placeholder')||el.getAttribute('aria-label')||el.name||'').replace(/\s*\*\s*$/,'').trim();
+        var val=el.value;
+        if(el.tagName==='SELECT'){ if(el.selectedIndex<=0)return; val=el.options[el.selectedIndex].text; if(!label&&el.options[0])label=el.options[0].text.replace(/[…:\.\s]+$/,'').trim(); }
+        if(el.type==='checkbox'||el.type==='radio'){ if(!el.checked)return; }
+        if(!val||!String(val).trim())return;
+        parts.push(label?label+': '+val:val);
+      });
+      var msg='Hola, quiero presupuesto sin compromiso de un electricista en Santa Coloma de Gramenet.';
+      if(parts.length)msg+='\n\n'+parts.join('\n');
+      window.open('https://wa.me/'+WA_NUM+'?text='+encodeURIComponent(msg),'_blank');
+    }
+    document.querySelectorAll('form').forEach(function(f){
+      f.addEventListener('submit',function(e){e.preventDefault();formToWhatsApp(f);});
+    });
+  })();
+</script>
+
+<script>
+(function(){
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  var FRAME_COUNT = 241;
+  var RESP_MIN = 25;
+  var exp = document.getElementById('hero-scrub');
+  if (!exp) return;
+  var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // anclas con scroll suave controlado (el CSS global ya no usa scroll-behavior)
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    var id = a.getAttribute('href');
+    if (id.length < 2) return;
+    a.addEventListener('click', function(e){
+      var el = document.querySelector(id);
+      if (!el) return;
+      e.preventDefault();
+      el.scrollIntoView({ behavior:'smooth', block:'start' });
+    });
+  });
+
+  // H1 letra a letra
+  (function(){
+    var h1 = document.getElementById('hs-h1');
+    var lines = ['ELECTRICISTA DE','URGENCIA EN','|SANTA COLOMA','|DE GRAMENET'];
+    var i = 0;
+    lines.forEach(function(line){
+      var div = document.createElement('div');
+      div.setAttribute('aria-hidden','true');
+      var g = false;
+      line.split('').forEach(function(ch){
+        if (ch === '|') { g = true; return; }
+        var s = document.createElement('span');
+        s.className = 'l' + (g ? ' g' : '');
+        s.style.setProperty('--i', i++);
+        s.textContent = (ch === ' ') ? ' ' : ch;
+        div.appendChild(s);
+      });
+      h1.appendChild(div);
+    });
+  })();
+
+  // canvas + frames
+  var film = document.getElementById('film');
+  var ctx = film.getContext('2d');
+  var frames = new Array(FRAME_COUNT);
+  var loaded = 0, bootDone = false, dirty = true;
+  function sizeCanvas(){
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    film.width = Math.round(innerWidth * dpr);
+    film.height = Math.round(innerHeight * dpr);
+    dirty = true;
+  }
+  sizeCanvas();
+  addEventListener('resize', sizeCanvas);
+  function pad3(n){ n = String(n); while (n.length < 3) n = '0' + n; return n; }
+  function loadFrame(i, cb){
+    if (frames[i]) return;
+    var img = new Image();
+    img.decoding = 'async';
+    img.onload = function(){ img.ok = true; loaded++; dirty = true; if (cb) cb(); };
+    img.onerror = function(){ img.ok = false; if (cb) cb(); };
+    img.src = '/assets/frames/f_' + pad3(i) + '.webp';
+    frames[i] = img;
+  }
+  function nearest(t){
+    if (frames[t] && frames[t].ok) return frames[t];
+    for (var d = 1; d < FRAME_COUNT; d++) {
+      var a = frames[t-d], b = frames[t+d];
+      if (a && a.ok) return a;
+      if (b && b.ok) return b;
+    }
+    return null;
+  }
+  (function(){
+    var stride = 8, pass1 = [], done = 0;
+    for (var i = 0; i < FRAME_COUNT; i += stride) pass1.push(i);
+    pass1.push(FRAME_COUNT - 1);
+    var bar = document.getElementById('bootBar');
+    function finish(){
+      if (bootDone) return;
+      bootDone = true;
+      var b = document.getElementById('boot');
+      if (b) b.classList.add('off');
+      for (var i = 0; i < FRAME_COUNT; i++) loadFrame(i);
+    }
+    pass1.forEach(function(i){ loadFrame(i, function(){
+      done++;
+      if (bar) bar.style.width = Math.round(done / pass1.length * 100) + '%';
+      if (done >= pass1.length) finish();
+    }); });
+    setTimeout(finish, 3000);
+  })();
+
+  // chispas del final
+  var sCan = document.getElementById('sparksfx');
+  var sCtx = sCan.getContext('2d');
+  var sparks = [], armed = true, fxOn = false;
+  function sizeSparks(){
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    sCan.width = Math.round(innerWidth * dpr);
+    sCan.height = Math.round(innerHeight * dpr);
+  }
+  sizeSparks();
+  addEventListener('resize', sizeSparks);
+  function burst(x, y, dir, n){
+    var k = sCan.width / 1900;
+    for (var i = 0; i < n; i++) {
+      var a = dir + (Math.random() - .5) * 1.5;
+      var sp = (3 + Math.random() * 14) * k;
+      sparks.push({ x:x, y:y, vx:Math.cos(a)*sp, vy:Math.sin(a)*sp, life:.7+Math.random()*.5, decay:.008+Math.random()*.016, w:(Math.random()<.2?2.8:1.5)*k, hue:Math.random() });
+    }
+  }
+  function fire(){
+    var w = sCan.width, h = sCan.height;
+    burst(-10, h*.32, -0.25, 40);
+    burst(w+10, h*.42, Math.PI+0.25, 40);
+    burst(w*.5, h+10, -Math.PI/2, 48);
+    setTimeout(function(){ burst(w*.22, -10, Math.PI/2+.4, 26); burst(w*.8, -10, Math.PI/2-.4, 26); }, 300);
+  }
+  function drawFx(){
+    var w = sCan.width, h = sCan.height;
+    if (!sparks.length) { if (fxOn) { sCtx.clearRect(0,0,w,h); fxOn = false; } return; }
+    fxOn = true;
+    sCtx.clearRect(0,0,w,h);
+    sCtx.globalCompositeOperation = 'lighter';
+    var grav = 0.16 * (w / 1900);
+    sCtx.lineCap = 'round';
+    sparks = sparks.filter(function(pt){
+      pt.vy += grav; pt.vx *= .986; pt.vy *= .992;
+      pt.x += pt.vx; pt.y += pt.vy;
+      pt.life -= pt.decay;
+      if (pt.life <= 0 || pt.y > h + 40) return false;
+      var c = pt.hue < .22 ? '255,244,214' : pt.hue < .72 ? '247,183,47' : '255,122,0';
+      sCtx.strokeStyle = 'rgba(' + c + ',' + Math.min(1, pt.life).toFixed(3) + ')';
+      sCtx.lineWidth = pt.w;
+      sCtx.beginPath();
+      sCtx.moveTo(pt.x - pt.vx * 2.6, pt.y - pt.vy * 2.6);
+      sCtx.lineTo(pt.x, pt.y);
+      sCtx.stroke();
+      return true;
     });
   }
-}
-function fireSparks() {
-  const w = sCan.width, h = sCan.height;
-  burst(-10, h * .32, -0.25, 40);
-  burst(w + 10, h * .42, Math.PI + 0.25, 40);
-  burst(w * .5, h + 10, -Math.PI / 2, 48);
-  setTimeout(() => { burst(w * .22, -10, Math.PI / 2 + .4, 26); burst(w * .8, -10, Math.PI / 2 - .4, 26); }, 300);
-}
 
-/* patrón oculto tras el fondo: circuitería que solo se ve dentro del resplandor */
-const pat = document.createElement('canvas');
-(function buildPattern() {
-  const s = 640; pat.width = s; pat.height = s;
-  const c = pat.getContext('2d');
-  const rnd = (a, b) => a + Math.random() * (b - a);
-  c.strokeStyle = 'rgba(255,177,0,0.5)'; c.fillStyle = 'rgba(255,177,0,0.5)'; c.lineWidth = 1.2;
-  for (let i = 0; i < 24; i++) {
-    let x = rnd(0, s), y = rnd(0, s);
-    c.beginPath(); c.moveTo(x, y);
-    const steps = 2 + Math.floor(Math.random() * 3);
-    for (let j = 0; j < steps; j++) {
-      if (Math.random() < .5) x += rnd(-90, 90); else y += rnd(-90, 90);
-      c.lineTo(x, y);
-    }
-    c.stroke();
-    c.beginPath(); c.arc(x, y, 2.4, 0, 7); c.fill();
-  }
-  for (let i = 0; i < 16; i++) { c.beginPath(); c.arc(rnd(0, s), rnd(0, s), 1.4, 0, 7); c.fill(); }
-})();
-let glows = [], nextPop = 0;
-
-let fxWasActive = false;
-function drawFx() {
-  const w = sCan.width, h = sCan.height;
-  if (!sparks.length && !glows.length) {
-    if (fxWasActive) { sCtx.clearRect(0, 0, w, h); fxWasActive = false; }
-    return;
-  }
-  fxWasActive = true;
-  sCtx.clearRect(0, 0, w, h);
-  sCtx.globalCompositeOperation = 'lighter';
-
-  /* resplandores que revelan la circuitería oculta */
-  glows = glows.filter(g => {
-    g.t++;
-    const k = g.t / g.dur;
-    if (k >= 1) return false;
-    const a = Math.sin(Math.PI * k);
-    const grd = sCtx.createRadialGradient(g.x, g.y, 0, g.x, g.y, g.r);
-    grd.addColorStop(0, `rgba(255,177,0,${(a * (g.pat ? 0.14 : 0.12)).toFixed(3)})`);
-    grd.addColorStop(1, 'rgba(255,177,0,0)');
-    sCtx.fillStyle = grd;
-    sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r, 0, 7); sCtx.fill();
-    if (g.pat) {
-      sCtx.save();
-      sCtx.beginPath(); sCtx.arc(g.x, g.y, g.r * .82, 0, 7); sCtx.clip();
-      sCtx.globalAlpha = a * 0.3;
-      const ts = pat.width;
-      for (let X = Math.floor((g.x - g.r) / ts) * ts; X < g.x + g.r; X += ts)
-        for (let Y = Math.floor((g.y - g.r) / ts) * ts; Y < g.y + g.r; Y += ts)
-          sCtx.drawImage(pat, X, Y);
-      sCtx.globalAlpha = 1;
-      sCtx.restore();
-    }
-    return true;
+  // scrub
+  var hud = document.getElementById('hud');
+  var hudTime = document.getElementById('hudTime');
+  var hudBar = document.getElementById('hudBar');
+  var scrubPanels = [].slice.call(exp.querySelectorAll('.panel')).map(function(el){
+    var p = el.getAttribute('data-band').split(',');
+    return { el: el, a: +p[0], b: +p[1] };
   });
-
-  /* chispas con estela */
-  const grav = 0.16 * (w / 1900);
-  sCtx.lineCap = 'round';
-  sparks = sparks.filter(pt => {
-    pt.vy += grav; pt.vx *= .986; pt.vy *= .992;
-    pt.x += pt.vx; pt.y += pt.vy;
-    pt.life -= pt.decay;
-    if (pt.life <= 0 || pt.y > h + 40) return false;
-    const c = pt.hue < .22 ? '255,244,214' : pt.hue < .72 ? '255,177,0' : '255,122,0';
-    sCtx.strokeStyle = `rgba(${c},${Math.min(1, pt.life).toFixed(3)})`;
-    sCtx.lineWidth = pt.w;
-    sCtx.beginPath();
-    sCtx.moveTo(pt.x - pt.vx * 2.6, pt.y - pt.vy * 2.6);
-    sCtx.lineTo(pt.x, pt.y);
-    sCtx.stroke();
-    return true;
-  });
-}
-
-/* ══════════════ Scrub ══════════════ */
-const exp = document.getElementById('experiencia');
-const hud = document.getElementById('hud');
-const hudTime = document.getElementById('hudTime');
-const hudBar = document.getElementById('hudBar');
-const panels = [...document.querySelectorAll('.panel')].map(el => {
-  const [a, b] = el.dataset.band.split(',').map(Number);
-  return { el, a, b };
-});
-let current = 0, target = 0, dirty = true;
-const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-function progress() {
-  const r = exp.getBoundingClientRect();
-  const total = r.height - innerHeight;
-  return Math.min(1, Math.max(0, -r.top / total));
-}
-const smooth = (t) => t * t * (3 - 2 * t);
-
-function band(p, a, b, f = 0.022) {
-  if (p < a - f || p > b + f) return 0;
-  if (p < a + f) return smooth((p - (a - f)) / (2 * f));
-  if (p > b - f) return 1 - smooth((p - (b - f)) / (2 * f));
-  return 1;
-}
-
-function draw() {
-  const img = nearestLoaded(Math.round(current));
-  ctx.fillStyle = '#050403';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
-  if (!img) return;
-  const cw = canvas.width, ch = canvas.height;
-  const ir = img.naturalWidth / img.naturalHeight, cr = cw / ch;
-  let dw, dh;
-  if (cr > ir) { dw = cw; dh = cw / ir; } else { dh = ch; dw = ch * ir; }
-  ctx.drawImage(img, (cw - dw) / 2, (ch - dh) / 2, dw, dh);
-}
-
-function tick() {
-  const p = progress();
-  target = p * (FRAME_COUNT - 1);
-  const prev = current;
-  current += (target - current) * (reduced ? 1 : 0.16);
-  if (Math.abs(current - target) < 0.4) current = target;
-  if (Math.round(prev) !== Math.round(current) || dirty) { draw(); dirty = false; }
-
-  /* paneles */
-  for (const { el, a, b } of panels) {
-    const o = band(p, a, b);
-    if (o <= 0.005) { el.style.visibility = 'hidden'; el.style.opacity = 0; continue; }
-    el.style.visibility = 'visible';
-    el.style.opacity = o.toFixed(3);
-    el.style.transform = `translateY(${((1 - o) * 26).toFixed(1)}px)`;
+  var current = 0, target = 0;
+  function progress(){
+    var r = exp.getBoundingClientRect();
+    var total = r.height - innerHeight;
+    return Math.min(1, Math.max(0, -r.top / total));
   }
-
-  /* HUD — el cronómetro arranca con "LLAMAS" (p>0.33) */
-  const hp = Math.max(0, Math.min(1, (p - 0.33) / 0.65));
-  const inScrub = p > 0.33 && p < 0.985;
-  hud.classList.toggle('on', inScrub);
-  if (inScrub) {
-    const secs = Math.round(hp * RESP_MIN * 60);
-    const mm = String(Math.floor(secs / 60)).padStart(2, '0');
-    const ss = String(secs % 60).padStart(2, '0');
-    hudTime.textContent = `${mm}:${ss}`;
-    hudBar.style.width = (hp * 100).toFixed(1) + '%';
+  function smooth(t){ return t * t * (3 - 2 * t); }
+  function band(p, a, b){
+    var f = 0.022;
+    if (p < a - f || p > b + f) return 0;
+    if (p < a + f) return smooth((p - (a - f)) / (2 * f));
+    if (p > b - f) return 1 - smooth((p - (b - f)) / (2 * f));
+    return 1;
   }
-
-  /* chispas: estallido al llegar al final del viaje… */
-  if (p > 0.9 && sparksArmed && !reduced) { sparksArmed = false; fireSparks(); }
-  if (p < 0.8) sparksArmed = true;
-  /* …y después del vídeo: un chisporroteo pequeño y espaciado (cada 4-7 s)
-     en un punto aleatorio, que alumbra un poquito su zona; de vez en cuando
-     un resplandor mayor revela la circuitería oculta */
-  if (p >= 0.995 && !reduced) {
-    const now = performance.now();
-    if (now > nextPop) {
-      nextPop = now + 4000 + Math.random() * 3000;
-      const w = sCan.width, h = sCan.height;
-      const x = Math.random() * w, y = Math.random() * h * .9;
-      burst(x, y, Math.random() * Math.PI * 2, 4 + Math.floor(Math.random() * 4), 0.35);
-      const big = Math.random() < 0.28;
-      glows.push({ x, y, r: (big ? 330 + Math.random() * 170 : 130 + Math.random() * 90) * (w / 1900), t: 0, dur: big ? 150 : 75, pat: big });
+  function draw(){
+    var img = nearest(Math.round(current));
+    ctx.fillStyle = '#0b0c0e';
+    ctx.fillRect(0, 0, film.width, film.height);
+    if (!img) return;
+    var cw = film.width, ch = film.height;
+    var ir = img.naturalWidth / img.naturalHeight, cr = cw / ch;
+    var dw, dh;
+    if (cr > ir) { dw = cw; dh = cw / ir; } else { dh = ch; dw = ch * ir; }
+    ctx.drawImage(img, (cw - dw) / 2, (ch - dh) / 2, dw, dh);
+  }
+  function tick(){
+    var p = progress();
+    target = p * (FRAME_COUNT - 1);
+    var prev = current;
+    current += (target - current) * (reduced ? 1 : 0.16);
+    if (Math.abs(current - target) < 0.4) current = target;
+    if (Math.round(prev) !== Math.round(current) || dirty) { draw(); dirty = false; }
+    for (var i = 0; i < scrubPanels.length; i++) {
+      var sp = scrubPanels[i], o = band(p, sp.a, sp.b);
+      if (o <= 0.005) { sp.el.style.visibility = 'hidden'; sp.el.style.opacity = 0; continue; }
+      sp.el.style.visibility = 'visible';
+      sp.el.style.opacity = o.toFixed(3);
+      sp.el.style.transform = 'translateY(' + ((1 - o) * 26).toFixed(1) + 'px)';
     }
+    var hp = Math.max(0, Math.min(1, (p - 0.33) / 0.65));
+    var inScrub = p > 0.33 && p < 0.985;
+    hud.classList.toggle('on', inScrub);
+    if (inScrub) {
+      var secs = Math.round(hp * RESP_MIN * 60);
+      var mm = String(Math.floor(secs / 60)); if (mm.length < 2) mm = '0' + mm;
+      var ss = String(secs % 60); if (ss.length < 2) ss = '0' + ss;
+      hudTime.textContent = mm + ':' + ss;
+      hudBar.style.width = (hp * 100).toFixed(1) + '%';
+    }
+    if (p > 0.9 && armed && !reduced) { armed = false; fire(); }
+    if (p < 0.8) armed = true;
+    drawFx();
+    requestAnimationFrame(tick);
   }
-  drawFx();
-
   requestAnimationFrame(tick);
-}
-requestAnimationFrame(tick);
-
-/* anclas del menú con scroll suave controlado */
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  const id = a.getAttribute('href');
-  if (id.length < 2) return;
-  a.addEventListener('click', e => {
-    const el = document.querySelector(id);
-    if (!el) return;
-    e.preventDefault();
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
-
-/* nav hide/show */
-let lastY = scrollY;
-addEventListener('scroll', () => {
-  const nav = document.getElementById('nav');
-  const y = scrollY;
-  nav.classList.toggle('hide', y > lastY && y > 300);
-  lastY = y;
-}, { passive: true });
-
-/* ══════════════ Reveals ══════════════ */
-const io = new IntersectionObserver(es => es.forEach(e => {
-  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-}), { threshold: 0.12 });
-document.querySelectorAll('.rev').forEach(el => io.observe(el));
-
-/* ══════════════ Contadores (solo datos reales: 24 / 365) ══════════════ */
-const cio = new IntersectionObserver(es => es.forEach(e => {
-  if (!e.isIntersecting) return;
-  cio.unobserve(e.target);
-  const el = e.target, end = +el.dataset.count, suf = el.innerHTML.includes('<small>') ? el.querySelector('small').outerHTML : '';
-  const t0 = performance.now(), dur = 1400;
-  (function step(t) {
-    const k = Math.min(1, (t - t0) / dur);
-    el.innerHTML = Math.round(end * (1 - Math.pow(1 - k, 3))) + suf;
-    if (k < 1) requestAnimationFrame(step);
-  })(t0);
-}), { threshold: 0.6 });
-document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
-
-/* marquee: duplicar pista para bucle perfecto */
-(() => {
-  const tr = document.getElementById('mqTrack');
-  tr.innerHTML += tr.innerHTML;
-  tr.querySelectorAll('.rev-card:nth-child(n+7)').forEach(c => c.setAttribute('aria-hidden', 'true'));
 })();
 </script>
 </body>
