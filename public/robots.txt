@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://electricista-santa-coloma.netlify.app/sitemap.xml
+Sitemap: https://electrogramenet.es/sitemap.xml
