@@ -1,0 +1,9 @@
+{
+  "name": "electrogramenet",
+  "private": true,
+  "description": "Web estática + funciones Netlify de CTA tracking (track/stats)",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^8.2.0"
+  }
+}

@@ -1,3 +1,8 @@
 # Static site — no build step. Publish the pre-built public/ folder.
 [build]
   publish = "public"
+
+# Funciones serverless (CTA tracking: /.netlify/functions/track y /stats)
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
