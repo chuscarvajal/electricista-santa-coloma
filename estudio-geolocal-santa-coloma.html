@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Estudio de mercado local · Electricista en Santa Coloma de Gramenet</title>
+<style>
+  :root{
+    --paper:#faf8f2; --card:#ffffff; --ink:#161310; --muted:#6c665c; --line:#e9e3d5;
+    --accent:#e0a11c; --accent-ink:#8a6410; --good:#2f8f5b; --good-bg:#e7f3ec;
+    --warn:#b4531a; --warn-bg:#f6e9df; --shadow:0 24px 50px -34px rgba(0,0,0,.35);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --paper:#100f0d; --card:#1a1815; --ink:#f4f0e6; --muted:#a39d90; --line:#2c2a23;
+      --accent:#ffb100; --accent-ink:#ffce55; --good:#5ccb8c; --good-bg:#16241c;
+      --warn:#e88a4f; --warn-bg:#2a1f16; --shadow:0 24px 50px -30px rgba(0,0,0,.6); }
+  }
+  :root[data-theme="dark"]{ --paper:#100f0d; --card:#1a1815; --ink:#f4f0e6; --muted:#a39d90; --line:#2c2a23;
+    --accent:#ffb100; --accent-ink:#ffce55; --good:#5ccb8c; --good-bg:#16241c; --warn:#e88a4f; --warn-bg:#2a1f16; --shadow:0 24px 50px -30px rgba(0,0,0,.6); }
+  :root[data-theme="light"]{ --paper:#faf8f2; --card:#ffffff; --ink:#161310; --muted:#6c665c; --line:#e9e3d5;
+    --accent:#e0a11c; --accent-ink:#8a6410; --good:#2f8f5b; --good-bg:#e7f3ec; --warn:#b4531a; --warn-bg:#f6e9df; --shadow:0 24px 50px -34px rgba(0,0,0,.35); }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{line-height:1.12;letter-spacing:-.02em;text-wrap:balance;margin:0}
+  h1{font-size:clamp(28px,4.6vw,44px);font-weight:800}
+  h2{font-size:clamp(21px,3vw,28px);font-weight:750}
+  h3{font-size:17px;font-weight:700}
+  p{margin:0}
+  .eyebrow{font-size:12.5px;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+  .num{font-variant-numeric:tabular-nums}
+  a{color:inherit}
+
+  header.top{border-bottom:1px solid var(--line);background:
+    radial-gradient(120% 140% at 88% -20%, color-mix(in srgb,var(--accent) 18%, transparent), transparent 60%)}
+  .brand{display:flex;align-items:center;gap:10px;padding:20px 0 0}
+  .brand .lock{width:26px;height:26px;border-radius:7px;background:var(--accent);color:#161310;display:grid;place-items:center;font-weight:900;font-size:15px}
+  .brand b{font-weight:800;letter-spacing:-.01em}
+  .brand span{color:var(--muted);font-weight:600}
+  .head-main{padding:26px 0 30px}
+  .head-main h1{margin-bottom:12px}
+  .head-main .sub{color:var(--muted);max-width:62ch;font-size:17px}
+  .meta{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:16px;color:var(--muted);font-size:13.5px}
+  .meta b{color:var(--ink);font-weight:700}
+
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 6px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px}
+  .kpi .k{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .kpi .v{font-size:30px;font-weight:800;letter-spacing:-.03em;margin-top:4px}
+  .kpi .d{font-size:13px;color:var(--muted);margin-top:2px}
+  .kpi .v em{font-style:normal;color:var(--accent-ink)}
+  .kpi .v.sm{font-size:21px}
+
+  section{padding:38px 0;border-top:1px solid var(--line)}
+  section:first-of-type{border-top:0}
+  .lead{color:var(--muted);max-width:70ch;margin-top:12px;font-size:16.5px}
+  .lead strong{color:var(--ink)}
+
+  figure{margin:22px 0 0}
+  figure img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+  figcaption{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
+
+  .tablewrap{overflow-x:auto;margin-top:20px;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+  table{border-collapse:collapse;width:100%;min-width:660px;font-size:14.5px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line)}
+  th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700;background:color-mix(in srgb,var(--paper) 60%, var(--card))}
+  tbody tr:last-child td{border-bottom:0}
+  td.n{font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right}
+  .biz{font-weight:700}
+  .lead-row{background:color-mix(in srgb,var(--accent) 12%, transparent)}
+  .gap-row{background:color-mix(in srgb,var(--good) 14%, transparent)}
+  .sat-row{background:color-mix(in srgb,var(--warn) 9%, transparent)}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .tag.ok{background:var(--good-bg);color:var(--good)}
+  .tag.hot{background:var(--warn-bg);color:var(--warn)}
+  .tag.sm{background:color-mix(in srgb,var(--muted) 18%,transparent);color:var(--muted)}
+  .stars{color:var(--accent-ink);font-weight:750;white-space:nowrap}
+
+  .ops{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+  .op{border:1px solid var(--line);border-left:4px solid var(--good);border-radius:12px;padding:18px 18px;background:var(--card)}
+  .op h3{margin-bottom:6px}
+  .op p{color:var(--muted);font-size:14.5px}
+  .op .why{margin-top:10px;font-size:13.5px;color:var(--ink)}
+
+  .rec{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 22px;box-shadow:var(--shadow);margin-top:18px}
+  .rec .flag{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#161310;font-weight:800;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;padding:5px 12px;border-radius:999px}
+  .rec h3{margin:14px 0 6px;font-size:22px}
+  .rec ul{margin:12px 0 0;padding-left:0;list-style:none;display:grid;gap:10px}
+  .rec li{display:flex;gap:11px;font-size:15px;align-items:flex-start}
+  .rec li .dot{flex:none;width:20px;height:20px;border-radius:50%;background:var(--good-bg);color:var(--good);display:grid;place-items:center;font-size:11px;font-weight:800;margin-top:2px}
+  .coords{margin-top:16px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--muted);background:color-mix(in srgb,var(--paper) 50%,var(--card));border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+
+  .note{font-size:13.5px;color:var(--muted);margin-top:16px;border-left:3px solid var(--line);padding-left:14px}
+  footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
+
+  @media (max-width:760px){
+    .kpis{grid-template-columns:1fr 1fr}
+    .ops{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><span class="lock">⚡</span> <b>ElectroGramenet</b> <span>· estudio de mercado SEO local</span></div>
+    <div class="head-main">
+      <span class="eyebrow">Dónde colocar la ficha</span>
+      <h1>Mercado del electricista en Santa Coloma de Gramenet</h1>
+      <p class="sub">Censo geolocalizado de la competencia en Google Maps, cruce con la población por barrio (padrón) y densidad competitiva real — para decidir en qué barrio anclar la ficha y entrar en el pack de mapas.</p>
+      <div class="meta"><span>Fuente: <b>Google Maps + padrón municipal</b></span><span>Fecha: <b>julio 2026</b></span><span>Método: <b>haversine + población</b></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="kpis">
+    <div class="kpi"><div class="k">Electricistas reales en SCG</div><div class="v num">55</div><div class="d">de 67 fichas (resto: fontanero, contratista…)</div></div>
+    <div class="kpi"><div class="k">Fichas líderes (&gt;90 reseñas)</div><div class="v num">3</div><div class="d">el muro: 94-174 reseñas</div></div>
+    <div class="kpi"><div class="k">Barrio óptimo para anclar</div><div class="v sm"><em>Singuerlín</em></div><div class="d">12.776 hab · solo 7 rivales &lt;500 m</div></div>
+    <div class="kpi"><div class="k">Zona más saturada</div><div class="v sm">El Centre</div><div class="d">14 rivales &lt;500 m</div></div>
+  </div>
+
+  <section>
+    <span class="eyebrow">La foto del mercado</span>
+    <h2>Populoso, saturado en el centro-sur… y con un hueco donde sí vive gente</h2>
+    <p class="lead">Santa Coloma tiene <strong>55 electricistas con ficha</strong> en 7 km²: mercado maduro, con 3 fichas de 94-174 reseñas que forman un muro. Pero cruzando <strong>dónde están los competidores</strong> (coordenadas reales) con <strong>dónde vive la gente</strong> (padrón por barrio) aparece la jugada: el <strong>centro-sur (Centre, Fondo, Riu, Raval) está saturado</strong>, y los barrios del norte con hueco real —Can Franquesa, Les Oliveres— <strong>tienen muy poca población</strong> (1.300-3.300 hab), así que el hueco no sirve de mucho. La excepción es <strong>El Singuerlín</strong>: uno de los barrios <strong>más poblados (12.776 hab)</strong> y, a la vez, <strong>de los menos saturados (7 rivales pegados)</strong>. Ahí está la oportunidad de proximidad.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">El mapa</span>
+    <h2>Competidores sobre la población, barrio a barrio</h2>
+    <figure>
+      <img src="estudio-geogrid.png" alt="Mapa de Santa Coloma con burbujas de población por barrio y las fichas de electricista de Google (tamaño = reseñas)">
+      <figcaption>Burbujas azules = población del barrio (padrón). Puntos: gris = &lt;15 reseñas · ámbar = 15-90 · rojo = líder &gt;90 (el muro). ★ verde = anclaje recomendado (Singuerlín). Se ve el racimo de rojos en el centro-sur y el respiro alrededor de Singuerlín. <em>(Versión interactiva: geogrid-santa-coloma.html)</em></figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <span class="eyebrow">Densidad competitiva × población</span>
+    <h2>Dónde vive la gente vs. dónde está la competencia</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Barrio</th><th class="num">Población</th><th class="num">Rivales &lt;500 m</th><th class="num">Rivales &lt;900 m</th><th>Veredicto</th></tr></thead>
+        <tbody>
+          <tr class="sat-row"><td class="biz">El Centre</td><td class="n">16.722</td><td class="n">14</td><td class="n">31</td><td><span class="tag hot">saturado</span></td></tr>
+          <tr class="sat-row"><td class="biz">El Fondo</td><td class="n">16.303</td><td class="n">10</td><td class="n">28</td><td><span class="tag hot">saturado + muro reseñas</span></td></tr>
+          <tr class="sat-row"><td class="biz">El Riu Sud</td><td class="n">14.749</td><td class="n">11</td><td class="n">23</td><td><span class="tag hot">competido</span></td></tr>
+          <tr class="sat-row"><td class="biz">Santa Rosa</td><td class="n">13.994</td><td class="n">10</td><td class="n">30</td><td><span class="tag hot">competido</span></td></tr>
+          <tr class="gap-row"><td class="biz">El Singuerlín</td><td class="n">12.776</td><td class="n">7</td><td class="n">20</td><td><span class="tag ok">★ populoso y despejado</span></td></tr>
+          <tr><td class="biz">El Llatí</td><td class="n">9.899</td><td class="n">6</td><td class="n">24</td><td>medio</td></tr>
+          <tr class="sat-row"><td class="biz">El Raval</td><td class="n">8.105</td><td class="n">11</td><td class="n">28</td><td><span class="tag hot">saturado por hab.</span></td></tr>
+          <tr class="sat-row"><td class="biz">El Riu Nord</td><td class="n">7.957</td><td class="n">12</td><td class="n">20</td><td><span class="tag hot">saturado por hab.</span></td></tr>
+          <tr><td class="biz">Les Oliveres</td><td class="n">3.308</td><td class="n">2</td><td class="n">12</td><td><span class="tag sm">hueco pero poca gente</span></td></tr>
+          <tr><td class="biz">Can Franquesa</td><td class="n">1.328</td><td class="n">0</td><td class="n">9</td><td><span class="tag sm">hueco pero casi vacío</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">La lectura clave: los barrios con <strong>0-2 rivales</strong> (Can Franquesa, Les Oliveres) tienen tan poca población que el hueco vale poco. <strong>El Singuerlín es el único barrio grande (12.776 hab) con competencia floja pegada (7)</strong> — el resto de barrios poblados tienen 10-14 rivales a &lt;500 m. Ahí es donde población y hueco coinciden.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Censo · el muro de reseñas</span>
+    <h2>Las fichas fuertes a batir</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Ficha</th><th>Valoración</th><th class="num">Reseñas</th><th>24h</th></tr></thead>
+        <tbody>
+          <tr class="lead-row"><td class="biz">Multiserveis Barcelona</td><td class="stars">5,0 ★</td><td class="n">174</td><td>—</td></tr>
+          <tr><td class="biz">Reformes JAR</td><td class="stars">5,0 ★</td><td class="n">152</td><td>—</td></tr>
+          <tr><td class="biz">✅ Lampista Santa Coloma 24/7</td><td class="stars">4,9 ★</td><td class="n">94</td><td>Sí</td></tr>
+          <tr><td class="biz">Realización de Estudios y Serv. Energéticos</td><td class="stars">2,7 ★</td><td class="n">68</td><td>—</td></tr>
+          <tr><td class="biz">ReforBCN Solucions</td><td class="stars">4,7 ★</td><td class="n">39</td><td>—</td></tr>
+          <tr><td class="biz">SIV · Trabajos verticales</td><td class="stars">4,5 ★</td><td class="n">32</td><td>—</td></tr>
+          <tr><td class="biz">Encarnacion Solutions bcn</td><td class="stars">4,8 ★</td><td class="n">20</td><td>Sí</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Solo <strong>3 fichas superan las 90 reseñas</strong>; la cuarta (68) tiene <strong>2,7 ★ — eslabón débil</strong> (mala reputación con posición alta). Debajo, cola larga de ~45 fichas con 0-40 reseñas. <strong>Con 20-30 reseñas reales ya te cuelas</strong> por delante de casi todos.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Zonas de oportunidad</span>
+    <h2>El hueco de Singuerlín + el hueco de calidad</h2>
+    <div class="ops">
+      <div class="op">
+        <h3>Anclar en Singuerlín <span style="color:var(--good);font-size:13px;font-weight:700">(proximidad)</span></h3>
+        <p>12.776 habitantes y solo 7 rivales a &lt;500 m (vs. 14 en el Centre). El único barrio grande con hueco.</p>
+        <div class="why"><strong>Por qué:</strong> cuando ahí buscan "electricista cerca", casi no hay ficha pegada. Anclar en Singuerlín captura esa demanda de proximidad de un barrio muy poblado y del resto del norte.</div>
+      </div>
+      <div class="op">
+        <h3>Reseñas + web <span style="color:var(--good);font-size:13px;font-weight:700">(se gana de verdad)</span></h3>
+        <p>Los líderes tienen 94-174 reseñas; tú empiezas en 0. Su web suele ser pobre o inexistente.</p>
+        <div class="why"><strong>Por qué:</strong> pide reseña a cada cliente desde el día 1 (objetivo 20-30) y aprovecha que tu web está mejor montada que casi todas. Es la ventaja que sí puedes ganar rápido.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">Recomendación</span>
+    <h2>Dónde anclar la ficha de ElectroGramenet</h2>
+    <div class="rec">
+      <span class="flag">⭐ Recomendación principal</span>
+      <h3>Ficha de área de servicio anclada en El Singuerlín</h3>
+      <p style="color:var(--muted);font-size:15px;max-width:66ch">Para un electricista de urgencias el tipo correcto es <strong style="color:var(--ink)">"negocio a domicilio" (área de servicio)</strong>: sin dirección pública, con el centro en la dirección real de Víctor. Los datos apuntan a <strong style="color:var(--ink)">El Singuerlín</strong>: el barrio poblado con menos competencia pegada. Los "huecos" del norte (Can Franquesa, Les Oliveres) están casi vacíos y no compensan.</p>
+      <ul>
+        <li><span class="dot">1</span><span><strong>Ancla la ficha en la dirección real de Víctor.</strong> Si está —o puede estar— en <strong>El Singuerlín</strong> (o su borde con Les Oliveres/Fondo Nord), es el mejor sitio: mucha población, poca competencia cerca. Si su dirección real es del centro-sur, sirve igual (la ubicación es palanca secundaria).</span></li>
+        <li><span class="dot">2</span><span><strong>Área de servicio = todo el municipio</strong> + colindantes (Badalona, Sant Adrià, Montcada). Sin dirección pública en la ficha.</span></li>
+        <li><span class="dot">3</span><span><strong>Categoría "Electricista"</strong> + horario 24h + teléfono <span class="num">677&nbsp;654&nbsp;821</span> + web electrogramenet.es. NAP idéntico en todas partes.</span></li>
+        <li><span class="dot">4</span><span><strong>Reseñas = prioridad nº1.</strong> Objetivo 20-30 en los primeros meses; solo 3 rivales pasan de 90 y uno tiene 2,7 ★.</span></li>
+        <li><span class="dot">5</span><span><strong>Citaciones NAP + tu web</strong> (plan ya preparado): la ventaja de calidad donde ganas a la competencia local.</span></li>
+      </ul>
+      <div class="coords">Anclaje sugerido — El Singuerlín ≈ 41.4600, 2.2110 (usar la dirección REAL del operador en el barrio o su entorno)</div>
+    </div>
+    <p class="note"><strong>Demanda:</strong> a nivel provincial "electricista urgente Barcelona" ~140/mes y "electricista 24 horas Barcelona" ~110/mes; el volumen local exacto de Santa Coloma es modesto. La bolsa de "electricista cerca de mí" (sin ciudad) se gana con la ubicación de la ficha — por eso anclar en el barrio poblado-y-despejado (Singuerlín) tiene sentido, sumado al peso mayor de reseñas + citaciones + web.</p>
+  </section>
+
+  <footer>
+    <div class="wrap" style="padding:0">Estudio interno · ElectroGramenet · Santa Coloma de Gramenet · Censo geolocalizado Google Maps (jul. 2026, 4 búsquedas · 67 fichas) + padrón por barrio (Ajuntament de Santa Coloma). Cifras de reseñas sujetas a variación diaria; centros de barrio aproximados.</div>
+  </footer>
+</div>
+
+<script>
+  (function(){ try{ var t=localStorage.getItem('theme'); if(t) document.documentElement.setAttribute('data-theme',t); }catch(e){} })();
+</script>
+</body>
+</html>

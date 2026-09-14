@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Geogrid · Electricistas y población en Santa Coloma de Gramenet</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  html,body{margin:0;padding:0;background:#0f0e0c;font-family:ui-sans-serif,system-ui,"Segoe UI",Roboto,sans-serif}
+  #map{width:1000px;height:720px}
+  .leaflet-control-attribution{font-size:9px;opacity:.5}
+  .lbl{font-size:11px;font-weight:700;color:#1a1712;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 6px #fff;white-space:nowrap;background:none;border:none}
+  .lbl small{font-weight:600;color:#5a5348}
+  .panel{position:absolute;z-index:1000;background:rgba(16,14,12,.92);color:#f4 efe;color:#f4efe4;border:1px solid #3a3428;border-radius:12px;padding:14px 16px;font-size:13px;line-height:1.5;backdrop-filter:blur(6px)}
+  #title{top:14px;left:14px;max-width:430px}
+  #title h1{margin:0 0 4px;font-size:18px;color:#ffce55;letter-spacing:-.01em}
+  #title p{margin:0;color:#c8c0b2;font-size:12.5px}
+  #legend{bottom:14px;left:14px}
+  #legend .row{display:flex;align-items:center;gap:9px;margin:5px 0;color:#d8d0c2}
+  #legend .dot{border-radius:50%;flex:none;border:1.5px solid rgba(255,255,255,.85)}
+  #legend .pc{width:16px;height:16px;border-radius:50%;background:rgba(88,150,216,.28);border:1.5px solid rgba(120,175,235,.8);flex:none}
+  #legend b{color:#ffce55}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="title" class="panel">
+  <h1>⚡ Electricistas vs. población — Santa Coloma de Gramenet</h1>
+  <p>Burbujas azules = población por barrio (padrón). Puntos ámbar/rojos = fichas de electricista en Google (tamaño = nº de reseñas). Donde hay mucha burbuja y pocos puntos = hueco.</p>
+</div>
+<div id="legend" class="panel">
+  <div class="row"><span class="pc"></span> Población del barrio (tamaño ∝ habitantes)</div>
+  <div class="row"><span class="dot" style="width:9px;height:9px;background:#8d8478"></span> Electricista &lt;15 reseñas</div>
+  <div class="row"><span class="dot" style="width:13px;height:13px;background:#e0a11c"></span> Electricista 15-90 reseñas</div>
+  <div class="row"><span class="dot" style="width:18px;height:18px;background:#c0392b"></span> Líder &gt;90 reseñas (el muro)</div>
+  <div class="row"><span style="color:#33d17a;font-size:17px;line-height:1">★</span> <b>Anclaje recomendado · El Singuerlín</b></div>
+</div>
+<script>
+  const BARRIOS = [
+    ["El Centre",41.4520,2.2088,16722],["El Fondo",41.4468,2.2135,16303],["El Riu Sud",41.4525,2.2035,14749],
+    ["Santa Rosa",41.4550,2.2115,13994],["El Singuerlín",41.4600,2.2110,12776],["El Llatí",41.4558,2.2155,9899],
+    ["El Raval",41.4498,2.2168,8105],["El Riu Nord",41.4588,2.2058,7957],["Can Mariner",41.4500,2.2058,7611],
+    ["Les Oliveres",41.4632,2.2090,3308],["La Riera Alta",41.4553,2.2038,1995],["La Guinardera",41.4642,2.2125,1981],
+    ["Can Franquesa",41.4622,2.2152,1328],["El Cementiri Vell",41.4562,2.2128,1327],["Els Safaretjos",41.4470,2.2050,1126]
+  ];
+  const COMP = [
+    ["Multiserveis Barcelona",41.44606,2.21948,174],["Reformes JAR",41.44634,2.21204,152],["Lampista SC 24/7",41.45355,2.22241,94],
+    ["Realiz. Estudios",41.45083,2.20559,68],["ReforBCN",41.45498,2.20672,39],["SIV",41.4517,2.20433,32],
+    ["Encarnacion",41.44806,2.215,20],["Electricidad y fontanería ED",41.44141,2.21785,16],["SAT TECNIPROf",41.45314,2.19085,16],
+    ["Saludes Romeo",41.45705,2.21516,12],["Samelectric",41.45602,2.20836,10],["Grupo Gálvez",41.44577,2.20993,10],
+    ["Inst. Guillermo",41.45386,2.2175,7],["Pricma28",41.45496,2.20694,7],["PROGUARDIANS",41.4612,2.20266,7],
+    ["Climalectric",41.45248,2.20868,6],["Marla",41.44612,2.2077,6],["GARMO",41.45619,2.20798,5],["Mughal",41.44702,2.218,5],
+    ["Multiservicios R&K",41.45087,2.22207,5],["FG Instalaciones",41.45463,2.22531,5],["Albermati",41.4437,2.22235,4],
+    ["Instalia 360",41.45884,2.20727,4],["ElecFont",41.45946,2.20473,3],["Montajes Osel",41.45795,2.20408,3],
+    ["Javier Garcia",41.45017,2.2174,3],["Badaelectric",41.4495,2.228,3],["Miran",41.45337,2.21429,2],
+    ["Seimor",41.45438,2.20883,2],["Servi-Smart",41.45129,2.22687,2],["MAAZA",41.45549,2.20771,2],["AGECAD",41.44459,2.21113,2],
+    ["Juan Carrasco",41.44113,2.21091,2],["Carlos Marin",41.44919,2.20474,2],["Montajes Eléctricos Osel",41.46212,2.20789,2],
+    ["Proyectos Cubero",41.45028,2.21215,2],["Electrobox21",41.4608,2.20049,1],["Garcia & Motoso",41.45626,2.21779,1],
+    ["Antonio Jiménez",41.45681,2.21769,1],["Fateh",41.44975,2.20545,1],["Muntatges Afins",41.45705,2.20292,1],
+    ["Tecelma",41.44611,2.2246,1],["Valverde",41.45009,2.20887,0],["J. Lladó",41.45765,2.20668,0],["Seromat",41.44873,2.20412,0],
+    ["Jordi Sequera",41.44373,2.22286,0],["Cristian",41.45221,2.1896,0],["F. Serrano",41.44813,2.22675,0],
+    ["Gómez Bernabeu",41.45247,2.21822,0],["Electropaperassa",41.44837,2.21869,0],["Dogar",41.45124,2.20348,0],
+    ["Silvestre B.",41.45143,2.22568,0],["Inst. Montes",41.45909,2.20856,0]
+  ];
+  const map = L.map('map',{zoomControl:false,attributionControl:true,scrollWheelZoom:false}).setView([41.4535,2.2110],15);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'© OpenStreetMap © CARTO'}).addTo(map);
+  // burbujas de población
+  BARRIOS.forEach(([n,la,lo,pop])=>{
+    L.circle([la,lo],{radius:Math.sqrt(pop)*3.2,color:'#5f96d8',weight:1.2,fillColor:'#5f96d8',fillOpacity:.16}).addTo(map);
+    L.marker([la,lo],{icon:L.divIcon({className:'lbl',html:n.replace('El ','').replace('La ','')+'<br><small>'+pop.toLocaleString('es')+' hab</small>',iconSize:[110,28],iconAnchor:[55,10]})}).addTo(map);
+  });
+  // competidores
+  COMP.forEach(([n,la,lo,rev])=>{
+    const r = Math.max(4,Math.min(17,4+Math.sqrt(rev)*1.35));
+    const col = rev>=90?'#c0392b':(rev>=15?'#e0a11c':'#8d8478');
+    L.circleMarker([la,lo],{radius:r,color:'#fff',weight:1.3,fillColor:col,fillOpacity:.92}).addTo(map).bindTooltip(n+' — '+rev+' reseñas',{direction:'top'});
+  });
+  // anclaje recomendado
+  L.marker([41.4600,2.2110],{icon:L.divIcon({className:'lbl',html:'<span style="font-size:30px;color:#2fbf6b;text-shadow:0 0 4px #fff,0 1px 4px rgba(0,0,0,.6)">★</span>',iconSize:[30,30],iconAnchor:[15,20]}),zIndexOffset:1000}).addTo(map);
+  window._ready=false; let pend=0;
+  map.eachLayer(l=>{ if(l.on&&l._url){ l.on('loading',()=>{pend++;window._ready=false}); l.on('load',()=>{window._ready=true}); } });
+  setTimeout(()=>{window._ready=true},4500);
+</script>
+</body>
+</html>
