@@ -47,6 +47,234 @@
   .live-dot { animation:pulseDot 2s infinite; }
 </style>
 <script defer src="/track.js"></script>
+<style>
+  .quick-answer { max-width: 56rem; margin: 0 auto; background: #f6f7fb; border: 1px solid rgba(212,160,23,.35); border-left: 4px solid #d4a017; border-radius: .25rem; padding: 1.1rem 1.35rem; }
+  .quick-answer .qa-label { font-weight:700; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:#b8860b; margin:0 0 .4rem; }
+  .quick-answer p:last-child { margin:0; color:#111827; font-size:1.02rem; line-height:1.65; }
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:58rem; margin:1.5rem auto 0; }
+  .data-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.95rem; text-align:left; }
+  .data-table th, .data-table td { padding:.75rem .85rem; border-bottom:1px solid #e5e7eb; vertical-align:top; line-height:1.5; }
+  .data-table th { font-size:.76rem; letter-spacing:.07em; text-transform:uppercase; color:#b8860b; }
+  .data-table td { color:#4b5563; }
+  .data-table td:first-child { color:#111827; font-weight:600; }
+  .data-table tbody tr:last-child td { border-bottom:none; }
+  .content-date { max-width:56rem; margin:0 auto; font-size:.82rem; color:#6b7280; text-align:center; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://electrogramenet.es/#business",
+ "name": "ElectroGramenet",
+ "alternateName": "Electricista Santa Coloma de Gramenet",
+ "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+ "image": "https://electrogramenet.es/og.jpg",
+ "logo": "https://electrogramenet.es/icon-512.png",
+ "url": "https://electrogramenet.es/",
+ "telephone": "+34677654821",
+ "sameAs": [
+  "https://www.hotfrog.es/company/d6c430729e4b4e007e152ebfd8ddd975",
+  "https://www.cylex.es/santa-coloma-de-gramenet/electrogramenet-14667329.html",
+  "https://encuentre-abierto.es/santa-coloma-de-gramenet/electrogramenet-1944541",
+  "https://firmania.es/santa-coloma-de-gramenet/electrogramenet-2733776",
+  "https://www.facebook.com/electrogramenet/",
+  "https://santa-coloma-de-gramenet.infoisinfo.es/ficha/electrogramenet/3803874"
+ ],
+ "email": "info@electrogramenet.es",
+ "priceRange": "€€",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Carrer de Wagner, 41",
+  "postalCode": "08923",
+  "addressLocality": "Santa Coloma de Gramenet",
+  "addressRegion": "Barcelona",
+  "addressCountry": "ES"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 41.4515,
+  "longitude": 2.208
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Santa Coloma de Gramenet"
+  },
+  {
+   "@type": "City",
+   "name": "Badalona"
+  },
+  {
+   "@type": "City",
+   "name": "Sant Adrià de Besòs"
+  },
+  {
+   "@type": "City",
+   "name": "Montcada i Reixac"
+  },
+  {
+   "@type": "City",
+   "name": "Barcelona"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Barcelonès Nord"
+  }
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "00:00",
+   "closes": "23:59"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios de electricista en Santa Coloma de Gramenet",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Averías y urgencias eléctricas 24h",
+     "url": "https://electrogramenet.es/averias-electricas-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Instalación eléctrica de viviendas",
+     "url": "https://electrogramenet.es/instalacion-electrica-vivienda-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Boletines eléctricos (CIE/BRIE)",
+     "url": "https://electrogramenet.es/boletin-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cuadros eléctricos",
+     "url": "https://electrogramenet.es/cuadros-electricos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Enchufes e iluminación",
+     "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Aumento de potencia",
+     "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para comunidades de vecinos",
+     "url": "https://electrogramenet.es/comunidades-vecinos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para locales y negocios",
+     "url": "https://electrogramenet.es/locales-negocios-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargador de coche eléctrico (punto de recarga)",
+     "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Placas solares y autoconsumo",
+     "url": "https://electrogramenet.es/placas-solares-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Climatización y aire acondicionado",
+     "url": "https://electrogramenet.es/climatizacion-aire-acondicionado-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Domótica y hogar conectado",
+     "url": "https://electrogramenet.es/domotica-santa-coloma/"
+    }
+   }
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/#webpage",
+ "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/",
+ "name": "Instalación de Cargador de Coche Eléctrico en Santa Coloma de Gramenet | ElectroGramenet",
+ "description": "Instalación de cargador de coche eléctrico (wallbox) en Santa Coloma de Gramenet: casa, garaje o comunidad. Electricista autorizado, boletín, gestión de ayudas MOVES y carga inteligente. Presupuesto sin compromiso.",
+ "inLanguage": "es-ES",
+ "datePublished": "2026-07-05",
+ "dateModified": "2026-09-14",
+ "isPartOf": {
+  "@type": "WebSite",
+  "@id": "https://electrogramenet.es/#website",
+  "name": "ElectroGramenet",
+  "url": "https://electrogramenet.es/"
+ },
+ "about": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "publisher": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "speakable": {
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+   "h1",
+   ".quick-answer"
+  ]
+ }
+}
+</script>
 </head>
 <body class="bg-white antialiased">
 
@@ -132,7 +360,7 @@
     <nav class="text-sm text-white/50 mb-5 flex items-center gap-2 flex-wrap"><a href="/" class="hover:text-gold transition-colors">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-gold transition-colors">Servicios</a><span>/</span><span class="text-gold">Cargador coche eléctrico</span></nav>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-4 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> MOVILIDAD ELÉCTRICA</p>
     <h1 class="font-display font-800 text-white text-4xl lg:text-6xl leading-[1.05] max-w-3xl mb-5">Instalación de cargador de coche eléctrico en Santa Coloma de Gramenet</h1>
-    <p class="text-lg text-white/80 leading-relaxed max-w-2xl mb-4">Cargar en casa cuesta hasta cinco veces menos que en un poste público y cada mañana sales con el coche lleno. Te instalamos el punto de recarga (wallbox) en tu casa, garaje o comunidad de vecinos de Santa Coloma de Gramenet: elegimos el equipo, lo dejamos legalizado con boletín y te tramitamos la ayuda MOVES.</p>
+    <p class="text-lg text-white/80 leading-relaxed max-w-2xl mb-4">Cargar en casa cuesta hasta cinco veces menos que en un poste público y cada mañana sales con el coche lleno. Te instalamos el punto de recarga (wallbox) en tu casa, garaje o comunidad de vecinos de Santa Coloma de Gramenet: elegimos el equipo, lo dejamos legalizado con boletín y te tramitamos la ayuda MOVES. Presupuesto gratuito, garantía por escrito y electricistas con años de experiencia en puntos de recarga.</p>
     <p class="text-white/60 text-sm mb-8 flex flex-wrap items-center gap-x-5 gap-y-1"><span class="flex items-center gap-1.5"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Instalador autorizado</span><span class="flex items-center gap-1.5"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Boletín incluido</span><span class="flex items-center gap-1.5"><span class="text-gold"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span> Presupuesto cerrado</span></p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-8 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLÁMANOS Y TE ASESORAMOS HOY</a>
@@ -140,6 +368,7 @@
     </div>
   </div>
 </section>
+<section class="bg-white"><div class="max-w-7xl mx-auto px-6 py-8"><div class="quick-answer"><p class="qa-label">Respuesta rápida</p><p>Instalamos tu cargador de coche eléctrico (wallbox) en Santa Coloma de Gramenet en casa, en el garaje comunitario (basta comunicarlo a la comunidad) o en tu empresa: línea dedicada desde tu contador, protecciones, wallbox de 7,4, 11 o 22 kW según tu coche y tu red, legalización con boletín y tramitación de la ayuda MOVES III. Presupuesto gratuito y cerrado tras una visita rápida.</p></div></div></section>
 
 <section id="casos" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6">
@@ -191,7 +420,7 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-14">
       <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p>
-      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cómo instalamos tu punto de recarga</h2>
+      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cómo instalamos tu punto de recarga?</h2>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7 mb-8">
       <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">01</span><h3 class="font-display font-700 text-lg text-ink mb-2">Visita y asesoramiento</h3><p class="text-mute text-sm">Vemos tu plaza, tu cuadro y tu coche para elegir el wallbox y la potencia adecuados.</p></div>
@@ -251,7 +480,7 @@
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12">
       <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PRECIO</p>
-      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cuánto cuesta instalar un cargador de coche eléctrico</h2>
+      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cuánto cuesta instalar un cargador de coche eléctrico?</h2>
       <p class="text-mute mt-3">El precio depende de tu caso concreto. Estos son los factores que más influyen:</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -293,14 +522,16 @@
   <p class="text-sm text-mute mt-8">¿Fuera de estas zonas? Cubrimos también Badalona, Sant Adrià de Besòs, Montcada i Reixac y los barrios del norte de Barcelona. <a href="tel:+34677654821" class="text-gold font-600 hover:underline">Llama y te confirmamos.</a></p>
 </div></section>
 
+
+<section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl mb-8"><p class="eyebrow text-gold font-700 mb-2">POTENCIAS</p><h2 class="font-display font-900 text-ink text-3xl lg:text-4xl mb-4">¿Qué potencia de cargador necesito?</h2><p class="text-mute leading-relaxed">Tiempos aproximados para recargar 40 kWh, que es una batería habitual. Elegimos la potencia según tu coche, tu red y tu potencia contratada.</p></div><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">Potencia del wallbox</th><th scope="col">Tipo de red</th><th scope="col">Tiempo aprox. para 40 kWh</th><th scope="col">Para quién</th></tr></thead><tbody><tr><td>3,7 kW</td><td>Monofásica (16 A)</td><td>Unas 11 horas</td><td>Híbridos enchufables y carga nocturna sin prisa</td></tr><tr><td>7,4 kW</td><td>Monofásica (32 A)</td><td>Unas 5-6 horas</td><td>La opción habitual en vivienda y garaje comunitario</td></tr><tr><td>11 kW</td><td>Trifásica (16 A)</td><td>Unas 4 horas</td><td>Viviendas con suministro trifásico</td></tr><tr><td>22 kW</td><td>Trifásica (32 A)</td><td>Unas 2 horas</td><td>Empresas, flotas y varios vehículos</td></tr></tbody></table></div></div></section>
 <section id="faqs" class="py-20 bg-surface">
   <div class="max-w-3xl mx-auto px-6">
     <div class="text-center mb-10"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Preguntas frecuentes sobre puntos de recarga en Santa Coloma de Gramenet</h2></div>
     <div class="space-y-4">
-      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Puedo instalar un punto de recarga en el garaje de mi comunidad de vecinos?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, y es más fácil de lo que parece. Desde 2021 solo tienes que comunicar por escrito a la comunidad que vas a instalar tu punto de recarga en tu plaza; no hace falta que lo apruebe la junta. Nosotros llevamos la línea desde tu contador hasta la plaza, con su protección individual, y si la comunidad quiere dejamos preparada la preinstalación del garaje para el resto de vecinos. Lo hacemos a diario en garajes y parkings comunitarios de Santa Coloma de Gramenet y el Barcelonès Nord.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuántos kW necesito, 7,4, 11 o 22? ¿Monofásico o trifásico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende de tu coche y de tu instalación. Para uso doméstico en Santa Coloma de Gramenet lo normal es un wallbox de 7,4 kW monofásico: carga de sobra la mayoría de coches durante la noche. Si tienes suministro trifásico y quieres cargar más rápido, podemos poner 11 o 22 kW. No siempre compensa la máxima potencia, así que en la visita te decimos qué encaja de verdad con tu vehículo y tu cuadro para que no pagues por potencia que no vas a aprovechar.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta instalar un cargador de coche eléctrico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">No hay un precio único porque depende de tu caso: la distancia del cuadro a la plaza, el wallbox que elijas, si hay que reforzar protecciones y si tramitamos la ayuda MOVES. Por eso hacemos una visita rápida en Santa Coloma de Gramenet y te damos un presupuesto cerrado, sin sorpresas ni letra pequeña. Lo que sí te adelanto: cargar en casa se amortiza rápido frente a los postes públicos, y con la subvención MOVES el coste de la instalación baja bastante.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Me gestionáis la subvención del Plan MOVES?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. El Plan MOVES III subvenciona buena parte de la instalación de tu punto de recarga, y nosotros te preparamos toda la documentación para que la ayuda sea real y no se quede en un folleto. Te decimos cuánto te corresponde según tu caso —vivienda, comunidad o empresa— y nos encargamos del papeleo y la justificación. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet, porque el trámite echa para atrás a mucha gente y así se lo quitamos de encima.</p></div></div>
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Puedo instalar un punto de recarga en el garaje de mi comunidad de vecinos?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, y es más fácil de lo que parece. La Ley de Propiedad Horizontal permite instalar un punto de recarga de uso privado en tu plaza solo comunicándolo por escrito a la comunidad; no hace falta que lo apruebe la junta, aunque la comunidad puede pedir que la instalación cumpla la normativa y no afecte a las zonas comunes. Llevamos la línea desde tu contador hasta la plaza por las zonas comunes, con su protección individual (magnetotérmico y diferencial propios según la ITC-BT-52), y el consumo lo pagas tú en tu factura. Si tu contador está lejos, valoramos una tirada larga o, si hay varios vecinos interesados, una preinstalación colectiva que abarata cada punto. Emitimos el boletín, te preparamos el escrito de comunicación a la comunidad y tramitamos la ayuda MOVES. Lo hacemos a diario en garajes y parkings de Santa Coloma de Gramenet, con presupuesto gratuito.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuántos kW necesito, 7,4, 11 o 22? ¿Monofásico o trifásico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende de tu coche y de tu instalación. Para uso doméstico en Santa Coloma de Gramenet lo normal es un wallbox de 7,4 kW monofásico (32 A): recarga unos 40 kWh, que es una batería habitual, en 5 o 6 horas, de sobra para una noche. Un cargador de 3,7 kW (16 A) sirve para híbridos enchufables o carga nocturna sin prisa (unas 11 horas para 40 kWh). Si tienes suministro trifásico y quieres cargar más rápido, podemos poner 11 kW (unas 4 horas) o 22 kW (unas 2 horas), que tiene sentido en chalets con trifásica, empresas y flotas. No siempre compensa la máxima potencia: la mayoría de wallbox llevan gestor dinámico de carga, que baja la potencia cuando enciendes el horno o el aire y la sube de noche, así que muchas familias cargan sin tocar el contrato. En la visita te decimos qué encaja con tu vehículo, tu cuadro y tu potencia contratada.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta instalar un cargador de coche eléctrico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">No hay un precio único porque depende de tu caso: la distancia del cuadro o del contador a la plaza, el wallbox que elijas, si hay que reforzar protecciones o subir la potencia, y si tramitamos la ayuda MOVES. Por eso hacemos una visita rápida en Santa Coloma de Gramenet y te damos un presupuesto cerrado y gratuito, sin sorpresas ni letra pequeña. El precio cubre la línea dedicada de cobre con su sección, el magnetotérmico y el diferencial propios que exige la ITC-BT-52, el wallbox si va con nosotros, la configuración, la prueba de carga con tu coche y la legalización con boletín. Lo que lo encarece es una tirada larga por el garaje de una comunidad; lo que lo abarata, tener el cuadro cerca o hacer una preinstalación colectiva. Cargar en casa se amortiza rápido frente a los postes públicos, y con la subvención MOVES III el coste final baja de forma importante. Garantía por escrito.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Me gestionáis la subvención del Plan MOVES?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. El Plan MOVES III subvenciona buena parte de la instalación de tu punto de recarga, y nosotros te preparamos toda la documentación para que la ayuda sea real y no se quede en un folleto: presupuesto y factura con el desglose que pide la convocatoria, boletín y certificado de la instalación, fotos, y la memoria justificativa. Te decimos cuánto te corresponde según tu caso (vivienda, comunidad o empresa) y nos encargamos del papeleo y de la justificación una vez instalado. Ten en cuenta que la ayuda se cobra después de instalar y justificar, que las convocatorias tienen plazos y fondos limitados, y que la instalación debe cumplir la normativa y estar legalizada para poder cobrarla. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet, porque el trámite echa para atrás a mucha gente y con ayuda se saca adelante sin problema.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Tendré que ampliar la potencia contratada?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Casi nunca. Instalamos cargadores con gestión dinámica de potencia: el wallbox mide lo que consume tu casa y baja su carga cuando pones el horno, la vitro o el aire, de forma que no salta el ICP. Así cargas el coche sin subir la potencia contratada ni pagar más cada mes. Lo valoramos en la visita según tu vivienda en Santa Coloma de Gramenet, y si en tu caso concreto sí interesara ampliar, te lo decimos claro y con números antes de tocar nada.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Puedo cargar desde un enchufe normal o necesito un wallbox?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">De forma puntual puedes usar un enchufe, pero para el día a día no es buena idea: un enchufe doméstico no está pensado para aguantar tantas horas seguidas a plena carga y puede recalentarse. Lo seguro y lo que más dura es un punto de recarga (wallbox) dedicado, con su propia protección. Es lo que instalamos en casas y garajes de Santa Coloma de Gramenet, y la diferencia en seguridad y en velocidad de carga se nota desde el primer día.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en instalar el punto de recarga?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Una instalación normal en una vivienda o garaje de Santa Coloma de Gramenet suele quedar lista en unas horas, el mismo día. Primero hacemos una visita para ver tu plaza, tu cuadro y tu coche; con eso te damos el presupuesto cerrado y, cuando lo aceptas, cerramos día. En comunidades de vecinos puede llevar un poco más por la canalización, pero te damos un plazo concreto desde el principio. Nada de esperas eternas ni de dejarte la instalación a medias.</p></div></div>
@@ -310,6 +541,7 @@
     </div>
   </div>
 </section>
+<section class="bg-surface"><div class="max-w-7xl mx-auto px-6 py-6"><p class="content-date">Contenido revisado el 14 de septiembre de 2026 por el equipo de ElectroGramenet, instaladores autorizados de baja tensión en Santa Coloma de Gramenet.</p></div></section>
 
 <section id="presupuesto" class="bg-gold">
   <div class="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
@@ -389,7 +621,110 @@
   });
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Instalación de cargador de coche eléctrico","name":"Instalación de cargador de coche eléctrico en Santa Coloma de Gramenet","provider":{"@type":"Electrician","name":"ElectroGramenet","telephone":"+34677654821","areaServed":"Santa Coloma de Gramenet"},"areaServed":{"@type":"City","name":"Santa Coloma de Gramenet"},"url":"https://electrogramenet.es/cargador-coche-electrico-santa-coloma/","description":"Instalación de cargador de coche eléctrico (wallbox) en Santa Coloma de Gramenet: casa, garaje o comunidad. Electricista autorizado, boletín, gestión de ayudas MOVES y carga inteligente. Presupuesto sin compromiso."}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Puedo instalar un punto de recarga en el garaje de mi comunidad de vecinos?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es más fácil de lo que parece. Desde 2021 solo tienes que comunicar por escrito a la comunidad que vas a instalar tu punto de recarga en tu plaza; no hace falta que lo apruebe la junta. Nosotros llevamos la línea desde tu contador hasta la plaza, con su protección individual, y si la comunidad quiere dejamos preparada la preinstalación del garaje para el resto de vecinos. Lo hacemos a diario en garajes y parkings comunitarios de Santa Coloma de Gramenet y el Barcelonès Nord."}},{"@type":"Question","name":"¿Cuántos kW necesito, 7,4, 11 o 22? ¿Monofásico o trifásico?","acceptedAnswer":{"@type":"Answer","text":"Depende de tu coche y de tu instalación. Para uso doméstico en Santa Coloma de Gramenet lo normal es un wallbox de 7,4 kW monofásico: carga de sobra la mayoría de coches durante la noche. Si tienes suministro trifásico y quieres cargar más rápido, podemos poner 11 o 22 kW. No siempre compensa la máxima potencia, así que en la visita te decimos qué encaja de verdad con tu vehículo y tu cuadro para que no pagues por potencia que no vas a aprovechar."}},{"@type":"Question","name":"¿Cuánto cuesta instalar un cargador de coche eléctrico?","acceptedAnswer":{"@type":"Answer","text":"No hay un precio único porque depende de tu caso: la distancia del cuadro a la plaza, el wallbox que elijas, si hay que reforzar protecciones y si tramitamos la ayuda MOVES. Por eso hacemos una visita rápida en Santa Coloma de Gramenet y te damos un presupuesto cerrado, sin sorpresas ni letra pequeña. Lo que sí te adelanto: cargar en casa se amortiza rápido frente a los postes públicos, y con la subvención MOVES el coste de la instalación baja bastante."}},{"@type":"Question","name":"¿Me gestionáis la subvención del Plan MOVES?","acceptedAnswer":{"@type":"Answer","text":"Sí. El Plan MOVES III subvenciona buena parte de la instalación de tu punto de recarga, y nosotros te preparamos toda la documentación para que la ayuda sea real y no se quede en un folleto. Te decimos cuánto te corresponde según tu caso —vivienda, comunidad o empresa— y nos encargamos del papeleo y la justificación. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet, porque el trámite echa para atrás a mucha gente y así se lo quitamos de encima."}},{"@type":"Question","name":"¿Tendré que ampliar la potencia contratada?","acceptedAnswer":{"@type":"Answer","text":"Casi nunca. Instalamos cargadores con gestión dinámica de potencia: el wallbox mide lo que consume tu casa y baja su carga cuando pones el horno, la vitro o el aire, de forma que no salta el ICP. Así cargas el coche sin subir la potencia contratada ni pagar más cada mes. Lo valoramos en la visita según tu vivienda en Santa Coloma de Gramenet, y si en tu caso concreto sí interesara ampliar, te lo decimos claro y con números antes de tocar nada."}},{"@type":"Question","name":"¿Puedo cargar desde un enchufe normal o necesito un wallbox?","acceptedAnswer":{"@type":"Answer","text":"De forma puntual puedes usar un enchufe, pero para el día a día no es buena idea: un enchufe doméstico no está pensado para aguantar tantas horas seguidas a plena carga y puede recalentarse. Lo seguro y lo que más dura es un punto de recarga (wallbox) dedicado, con su propia protección. Es lo que instalamos en casas y garajes de Santa Coloma de Gramenet, y la diferencia en seguridad y en velocidad de carga se nota desde el primer día."}},{"@type":"Question","name":"¿Cuánto tardáis en instalar el punto de recarga?","acceptedAnswer":{"@type":"Answer","text":"Una instalación normal en una vivienda o garaje de Santa Coloma de Gramenet suele quedar lista en unas horas, el mismo día. Primero hacemos una visita para ver tu plaza, tu cuadro y tu coche; con eso te damos el presupuesto cerrado y, cuando lo aceptas, cerramos día. En comunidades de vecinos puede llevar un poco más por la canalización, pero te damos un plazo concreto desde el principio. Nada de esperas eternas ni de dejarte la instalación a medias."}},{"@type":"Question","name":"¿La instalación queda legalizada y con boletín?","acceptedAnswer":{"@type":"Answer","text":"Sí, siempre. Somos instaladores autorizados, así que además de montar el cargador emitimos el boletín (certificado de instalación conforme a la ITC-BT-52) y lo dejamos todo legalizado y a normativa. Eso te protege a ti y es imprescindible para tramitar la ayuda MOVES. Te entregamos la documentación y la garantía por escrito. Trabajar con un instalador autorizado en Santa Coloma de Gramenet te evita el clásico problema de la instalación barata que luego no pasa ninguna inspección."}},{"@type":"Question","name":"¿Puedo cargar el coche con mis placas solares?","acceptedAnswer":{"@type":"Answer","text":"Sí, y es la mejor combinación. Preparamos el punto de recarga para que aproveche la energía de tus placas solares y cargues el coche prácticamente gratis con tus excedentes. Si ya tienes fotovoltaica la integramos, y si aún no la tienes también la instalamos nosotros en Santa Coloma de Gramenet, así lo dejas todo con un mismo equipo. Cargar el coche con tu propia energía solar es lo que más reduce el coste por kilómetro, mucho más que cualquier tarifa de la comercializadora."}},{"@type":"Question","name":"¿Instaláis cargadores para empresas, flotas o parkings?","acceptedAnswer":{"@type":"Answer","text":"Sí. Además de casas y comunidades, montamos puntos de recarga para empresas, flotas de vehículos y parkings en Santa Coloma de Gramenet y el Barcelonès Nord. En estos casos solemos instalar varios cargadores con carga balanceada, control de usuarios y, si hace falta, sistema de pago o facturación por consumo. Estudiamos la potencia disponible del local o la nave para dimensionarlo bien y que puedan cargar varios coches a la vez sin problemas. Si tienes un negocio o gestionas un parking, te preparamos una propuesta a medida."}}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Instalación de cargador de coche eléctrico",
+ "name": "Instalación de cargador de coche eléctrico en Santa Coloma de Gramenet",
+ "provider": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Santa Coloma de Gramenet"
+ },
+ "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/",
+ "description": "Instalación de cargador de coche eléctrico (wallbox) en Santa Coloma de Gramenet: casa, garaje o comunidad. Electricista autorizado, boletín, gestión de ayudas MOVES y carga inteligente. Presupuesto sin compromiso."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Puedo instalar un punto de recarga en el garaje de mi comunidad de vecinos?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, y es más fácil de lo que parece. La Ley de Propiedad Horizontal permite instalar un punto de recarga de uso privado en tu plaza solo comunicándolo por escrito a la comunidad; no hace falta que lo apruebe la junta, aunque la comunidad puede pedir que la instalación cumpla la normativa y no afecte a las zonas comunes. Llevamos la línea desde tu contador hasta la plaza por las zonas comunes, con su protección individual (magnetotérmico y diferencial propios según la ITC-BT-52), y el consumo lo pagas tú en tu factura. Si tu contador está lejos, valoramos una tirada larga o, si hay varios vecinos interesados, una preinstalación colectiva que abarata cada punto. Emitimos el boletín, te preparamos el escrito de comunicación a la comunidad y tramitamos la ayuda MOVES. Lo hacemos a diario en garajes y parkings de Santa Coloma de Gramenet, con presupuesto gratuito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuántos kW necesito, 7,4, 11 o 22? ¿Monofásico o trifásico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Depende de tu coche y de tu instalación. Para uso doméstico en Santa Coloma de Gramenet lo normal es un wallbox de 7,4 kW monofásico (32 A): recarga unos 40 kWh, que es una batería habitual, en 5 o 6 horas, de sobra para una noche. Un cargador de 3,7 kW (16 A) sirve para híbridos enchufables o carga nocturna sin prisa (unas 11 horas para 40 kWh). Si tienes suministro trifásico y quieres cargar más rápido, podemos poner 11 kW (unas 4 horas) o 22 kW (unas 2 horas), que tiene sentido en chalets con trifásica, empresas y flotas. No siempre compensa la máxima potencia: la mayoría de wallbox llevan gestor dinámico de carga, que baja la potencia cuando enciendes el horno o el aire y la sube de noche, así que muchas familias cargan sin tocar el contrato. En la visita te decimos qué encaja con tu vehículo, tu cuadro y tu potencia contratada."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuánto cuesta instalar un cargador de coche eléctrico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No hay un precio único porque depende de tu caso: la distancia del cuadro o del contador a la plaza, el wallbox que elijas, si hay que reforzar protecciones o subir la potencia, y si tramitamos la ayuda MOVES. Por eso hacemos una visita rápida en Santa Coloma de Gramenet y te damos un presupuesto cerrado y gratuito, sin sorpresas ni letra pequeña. El precio cubre la línea dedicada de cobre con su sección, el magnetotérmico y el diferencial propios que exige la ITC-BT-52, el wallbox si va con nosotros, la configuración, la prueba de carga con tu coche y la legalización con boletín. Lo que lo encarece es una tirada larga por el garaje de una comunidad; lo que lo abarata, tener el cuadro cerca o hacer una preinstalación colectiva. Cargar en casa se amortiza rápido frente a los postes públicos, y con la subvención MOVES III el coste final baja de forma importante. Garantía por escrito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Me gestionáis la subvención del Plan MOVES?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. El Plan MOVES III subvenciona buena parte de la instalación de tu punto de recarga, y nosotros te preparamos toda la documentación para que la ayuda sea real y no se quede en un folleto: presupuesto y factura con el desglose que pide la convocatoria, boletín y certificado de la instalación, fotos, y la memoria justificativa. Te decimos cuánto te corresponde según tu caso (vivienda, comunidad o empresa) y nos encargamos del papeleo y de la justificación una vez instalado. Ten en cuenta que la ayuda se cobra después de instalar y justificar, que las convocatorias tienen plazos y fondos limitados, y que la instalación debe cumplir la normativa y estar legalizada para poder cobrarla. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet, porque el trámite echa para atrás a mucha gente y con ayuda se saca adelante sin problema."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Tendré que ampliar la potencia contratada?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Casi nunca. Instalamos cargadores con gestión dinámica de potencia: el wallbox mide lo que consume tu casa y baja su carga cuando pones el horno, la vitro o el aire, de forma que no salta el ICP. Así cargas el coche sin subir la potencia contratada ni pagar más cada mes. Lo valoramos en la visita según tu vivienda en Santa Coloma de Gramenet, y si en tu caso concreto sí interesara ampliar, te lo decimos claro y con números antes de tocar nada."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puedo cargar desde un enchufe normal o necesito un wallbox?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "De forma puntual puedes usar un enchufe, pero para el día a día no es buena idea: un enchufe doméstico no está pensado para aguantar tantas horas seguidas a plena carga y puede recalentarse. Lo seguro y lo que más dura es un punto de recarga (wallbox) dedicado, con su propia protección. Es lo que instalamos en casas y garajes de Santa Coloma de Gramenet, y la diferencia en seguridad y en velocidad de carga se nota desde el primer día."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuánto tardáis en instalar el punto de recarga?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Una instalación normal en una vivienda o garaje de Santa Coloma de Gramenet suele quedar lista en unas horas, el mismo día. Primero hacemos una visita para ver tu plaza, tu cuadro y tu coche; con eso te damos el presupuesto cerrado y, cuando lo aceptas, cerramos día. En comunidades de vecinos puede llevar un poco más por la canalización, pero te damos un plazo concreto desde el principio. Nada de esperas eternas ni de dejarte la instalación a medias."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿La instalación queda legalizada y con boletín?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, siempre. Somos instaladores autorizados, así que además de montar el cargador emitimos el boletín (certificado de instalación conforme a la ITC-BT-52) y lo dejamos todo legalizado y a normativa. Eso te protege a ti y es imprescindible para tramitar la ayuda MOVES. Te entregamos la documentación y la garantía por escrito. Trabajar con un instalador autorizado en Santa Coloma de Gramenet te evita el clásico problema de la instalación barata que luego no pasa ninguna inspección."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puedo cargar el coche con mis placas solares?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, y es la mejor combinación. Preparamos el punto de recarga para que aproveche la energía de tus placas solares y cargues el coche prácticamente gratis con tus excedentes. Si ya tienes fotovoltaica la integramos, y si aún no la tienes también la instalamos nosotros en Santa Coloma de Gramenet, así lo dejas todo con un mismo equipo. Cargar el coche con tu propia energía solar es lo que más reduce el coste por kilómetro, mucho más que cualquier tarifa de la comercializadora."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Instaláis cargadores para empresas, flotas o parkings?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Además de casas y comunidades, montamos puntos de recarga para empresas, flotas de vehículos y parkings en Santa Coloma de Gramenet y el Barcelonès Nord. En estos casos solemos instalar varios cargadores con carga balanceada, control de usuarios y, si hace falta, sistema de pago o facturación por consumo. Estudiamos la potencia disponible del local o la nave para dimensionarlo bien y que puedan cargar varios coches a la vez sin problemas. Si tienes un negocio o gestionas un parking, te preparamos una propuesta a medida."
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>

@@ -47,6 +47,234 @@
   .live-dot { animation:pulseDot 2s infinite; }
 </style>
 <script defer src="/track.js"></script>
+<style>
+  .quick-answer { max-width: 56rem; margin: 0 auto; background: #f6f7fb; border: 1px solid rgba(212,160,23,.35); border-left: 4px solid #d4a017; border-radius: .25rem; padding: 1.1rem 1.35rem; }
+  .quick-answer .qa-label { font-weight:700; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:#b8860b; margin:0 0 .4rem; }
+  .quick-answer p:last-child { margin:0; color:#111827; font-size:1.02rem; line-height:1.65; }
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:58rem; margin:1.5rem auto 0; }
+  .data-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.95rem; text-align:left; }
+  .data-table th, .data-table td { padding:.75rem .85rem; border-bottom:1px solid #e5e7eb; vertical-align:top; line-height:1.5; }
+  .data-table th { font-size:.76rem; letter-spacing:.07em; text-transform:uppercase; color:#b8860b; }
+  .data-table td { color:#4b5563; }
+  .data-table td:first-child { color:#111827; font-weight:600; }
+  .data-table tbody tr:last-child td { border-bottom:none; }
+  .content-date { max-width:56rem; margin:0 auto; font-size:.82rem; color:#6b7280; text-align:center; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://electrogramenet.es/#business",
+ "name": "ElectroGramenet",
+ "alternateName": "Electricista Santa Coloma de Gramenet",
+ "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+ "image": "https://electrogramenet.es/og.jpg",
+ "logo": "https://electrogramenet.es/icon-512.png",
+ "url": "https://electrogramenet.es/",
+ "telephone": "+34677654821",
+ "sameAs": [
+  "https://www.hotfrog.es/company/d6c430729e4b4e007e152ebfd8ddd975",
+  "https://www.cylex.es/santa-coloma-de-gramenet/electrogramenet-14667329.html",
+  "https://encuentre-abierto.es/santa-coloma-de-gramenet/electrogramenet-1944541",
+  "https://firmania.es/santa-coloma-de-gramenet/electrogramenet-2733776",
+  "https://www.facebook.com/electrogramenet/",
+  "https://santa-coloma-de-gramenet.infoisinfo.es/ficha/electrogramenet/3803874"
+ ],
+ "email": "info@electrogramenet.es",
+ "priceRange": "€€",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Carrer de Wagner, 41",
+  "postalCode": "08923",
+  "addressLocality": "Santa Coloma de Gramenet",
+  "addressRegion": "Barcelona",
+  "addressCountry": "ES"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 41.4515,
+  "longitude": 2.208
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Santa Coloma de Gramenet"
+  },
+  {
+   "@type": "City",
+   "name": "Badalona"
+  },
+  {
+   "@type": "City",
+   "name": "Sant Adrià de Besòs"
+  },
+  {
+   "@type": "City",
+   "name": "Montcada i Reixac"
+  },
+  {
+   "@type": "City",
+   "name": "Barcelona"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Barcelonès Nord"
+  }
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "00:00",
+   "closes": "23:59"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios de electricista en Santa Coloma de Gramenet",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Averías y urgencias eléctricas 24h",
+     "url": "https://electrogramenet.es/averias-electricas-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Instalación eléctrica de viviendas",
+     "url": "https://electrogramenet.es/instalacion-electrica-vivienda-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Boletines eléctricos (CIE/BRIE)",
+     "url": "https://electrogramenet.es/boletin-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cuadros eléctricos",
+     "url": "https://electrogramenet.es/cuadros-electricos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Enchufes e iluminación",
+     "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Aumento de potencia",
+     "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para comunidades de vecinos",
+     "url": "https://electrogramenet.es/comunidades-vecinos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para locales y negocios",
+     "url": "https://electrogramenet.es/locales-negocios-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargador de coche eléctrico (punto de recarga)",
+     "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Placas solares y autoconsumo",
+     "url": "https://electrogramenet.es/placas-solares-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Climatización y aire acondicionado",
+     "url": "https://electrogramenet.es/climatizacion-aire-acondicionado-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Domótica y hogar conectado",
+     "url": "https://electrogramenet.es/domotica-santa-coloma/"
+    }
+   }
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://electrogramenet.es/locales-negocios-santa-coloma/#webpage",
+ "url": "https://electrogramenet.es/locales-negocios-santa-coloma/",
+ "name": "Electricista para Locales y Negocios en Santa Coloma de Gramenet | Instalación Comercial",
+ "description": "Instalación eléctrica para locales y negocios en Santa Coloma de Gramenet: apertura y adecuación, boletín para licencia de actividad, iluminación comercial y mantenimiento sin parar tu negocio. Instalador autorizado.",
+ "inLanguage": "es-ES",
+ "datePublished": "2026-07-05",
+ "dateModified": "2026-09-14",
+ "isPartOf": {
+  "@type": "WebSite",
+  "@id": "https://electrogramenet.es/#website",
+  "name": "ElectroGramenet",
+  "url": "https://electrogramenet.es/"
+ },
+ "about": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "publisher": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "speakable": {
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+   "h1",
+   ".quick-answer"
+  ]
+ }
+}
+</script>
 </head>
 <body class="bg-white antialiased">
 
@@ -132,13 +360,14 @@
     <nav class="text-sm text-white/50 mb-5 flex items-center gap-2 flex-wrap"><a href="/" class="hover:text-gold transition-colors">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-gold transition-colors">Servicios</a><span>/</span><span class="text-gold">Locales y negocios</span></nav>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-4 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> INSTALACIÓN ELÉCTRICA COMERCIAL</p>
     <h1 class="font-display font-800 text-white text-4xl lg:text-6xl leading-[1.04] max-w-3xl mb-5">Electricista para locales y negocios en Santa Coloma de Gramenet</h1>
-    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Abrimos, adecuamos y mantenemos la instalación eléctrica de tu local en Santa Coloma de Gramenet: boletín para la licencia de actividad, cuadro, iluminación y averías sin parar tu negocio. Instalador autorizado, con presupuesto cerrado.</p>
+    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Abrimos, adecuamos y mantenemos la instalación eléctrica de tu local en Santa Coloma de Gramenet: boletín para la licencia de actividad, cuadro, iluminación y averías sin parar tu negocio. Instalador autorizado, con presupuesto cerrado. Presupuesto gratuito, garantía por escrito y electricistas con años de experiencia en comercios y empresas.</p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-8 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AL 677 654 821</a>
       <a href="#presupuesto" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-7 py-4 rounded-md text-sm">Pedir presupuesto →</a>
     </div>
   </div>
 </section>
+<section class="bg-white"><div class="max-w-7xl mx-auto px-6 py-8"><div class="quick-answer"><p class="qa-label">Respuesta rápida</p><p>Electricista para locales y negocios en Santa Coloma de Gramenet: boletín (CIE) para la licencia de actividad, cuadro, iluminación y averías sin parar tu negocio, con trabajos fuera del horario comercial si lo necesitas. Si el local es de pública concurrencia (bar, restaurante, gimnasio) te decimos antes qué exige la ITC-BT-28. Factura a nombre de la empresa, presupuesto gratuito y garantía por escrito.</p></div></div></section>
 
 <section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6">
   <div class="text-center max-w-2xl mx-auto mb-12"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> QUÉ HACEMOS</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Todo lo eléctrico de tu local, en un solo equipo</h2><p class="text-mute mt-3">Desde que coges las llaves del local hasta el día a día del negocio en Santa Coloma de Gramenet:</p></div>
@@ -154,7 +383,7 @@
   <div class="relative"><img width="1264" height="848" decoding="async" loading="lazy" src="/img/electricista-comunidad-portal-santa-coloma.webp" alt="Instalación eléctrica y cuadro de un negocio en Santa Coloma de Gramenet" class="rounded-sm w-full h-[420px] object-cover shadow-card" /></div>
   <div>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ABRIR SIN SUSTOS</p>
-    <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">Abre tu local cumpliendo normativa</h2>
+    <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">¿Qué necesita tu local para abrir cumpliendo normativa?</h2>
     <p class="text-mute leading-relaxed mb-6">La instalación eléctrica es uno de los puntos que más frenan una apertura: sin el boletín y el alumbrado de emergencia en regla, no hay licencia de actividad. Nos encargamos de dejarlo todo listo y documentado para que abras a tiempo.</p>
     <ul class="space-y-3">
       <li class="flex gap-3"><span class="size-6 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-mute">Cuadro eléctrico dimensionado para tu actividad.</span></li>
@@ -197,7 +426,7 @@
 </div></section>
 
 <section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6">
-  <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cómo trabajamos tu local</h2></div>
+  <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cómo trabajamos en tu local?</h2></div>
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
     <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">01</span><h3 class="font-display font-700 text-lg text-ink mb-2">Visita al local</h3><p class="text-mute text-sm">Vemos el estado eléctrico y qué necesita tu actividad en Santa Coloma de Gramenet.</p></div>
     <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">02</span><h3 class="font-display font-700 text-lg text-ink mb-2">Presupuesto</h3><p class="text-mute text-sm">Precio cerrado con lo necesario para abrir o mejorar, sin partidas ocultas.</p></div>
@@ -236,16 +465,17 @@
 <section id="faqs" class="py-20 bg-surface"><div class="max-w-3xl mx-auto px-6">
   <div class="text-center mb-10"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Preguntas frecuentes sobre instalaciones para locales en Santa Coloma de Gramenet</h2></div>
   <div class="space-y-4">
-      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Qué necesito para abrir un local en Santa Coloma de Gramenet a nivel eléctrico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Para la licencia de actividad necesitas una instalación eléctrica a normativa (REBT) y el boletín eléctrico (CIE) que lo certifique, además del alumbrado de emergencia y la señalización obligatorios. Según la potencia y la actividad, puede pedirse también un proyecto. Nosotros revisamos tu local en Santa Coloma de Gramenet, dejamos la instalación en regla y te entregamos el boletín y la documentación que el Ayuntamiento te exige para poder abrir.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Emitís el boletín eléctrico para la licencia de actividad?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Somos instaladores autorizados y emitimos el Certificado de Instalación Eléctrica (boletín / CIE) que necesitas para la licencia de actividad de tu negocio en Santa Coloma de Gramenet. Si tu local ya está montado pero no tiene boletín válido, revisamos la instalación, corregimos lo que no cumpla y lo emitimos. Te entregamos todo documentado para que no tengas problemas con el Ayuntamiento ni con la compañía eléctrica.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Podéis hacer la instalación sin cerrar mi negocio?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Siempre que se puede, sí. Sabemos que cada hora con el local cerrado es dinero perdido, así que planificamos los trabajos por fases y, cuando la obra lo permite, fuera del horario comercial —a primera hora, por la noche o en día de cierre—. En una avería urgente en Santa Coloma de Gramenet priorizamos dejarte operativo cuanto antes y, si algo requiere corte, lo acordamos contigo para el peor momento posible del negocio.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en venir si tengo una avería en el local?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Las averías de negocios las tratamos como urgencia porque un local sin luz no puede trabajar. Salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord, con servicio 24 horas. Localizamos la causa, te decimos qué pasa y te damos una solución para que vuelvas a abrir cuanto antes; si hay que pedir algún material, dejamos el local funcionando de forma provisional siempre que sea seguro.</p></div></div>
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Qué necesito para abrir un local en Santa Coloma de Gramenet a nivel eléctrico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Para la licencia de actividad necesitas una instalación eléctrica a normativa (REBT) y el boletín eléctrico (CIE) que lo certifique, además del alumbrado de emergencia y la señalización obligatorios. Según la potencia y la actividad puede pedirse también un proyecto de ingeniero: si tu local es de pública concurrencia, como un bar, un restaurante, un gimnasio o una academia, la instalación se rige por la ITC-BT-28 y, según aforo y potencia, puede exigir proyecto e inspección inicial de una OCA. Nosotros revisamos tu local en Santa Coloma de Gramenet, te decimos antes de empezar qué exige tu caso, dejamos la instalación en regla (cuadro con sus protecciones, circuitos para cocina, climatización, TPV o maquinaria, iluminación y emergencia) y te entregamos el boletín y la documentación que el Ayuntamiento y la compañía te piden, con factura a nombre de la empresa y presupuesto gratuito.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Emitís el boletín eléctrico para la licencia de actividad?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Somos instaladores autorizados de baja tensión registrados en la Generalitat y emitimos el Certificado de Instalación Eléctrica (boletín o CIE) que necesitas para la licencia de actividad de tu negocio en Santa Coloma de Gramenet, y lo registramos nosotros. Si tu local ya está montado pero no tiene boletín válido, revisamos la instalación, corregimos lo que no cumpla (protecciones, toma de tierra, secciones de cable, alumbrado de emergencia) y lo emitimos; si está bien, el boletín está listo el mismo día de la visita. Te entregamos todo documentado para que no tengas problemas con el Ayuntamiento ni con la compañía eléctrica, con factura a nombre de la empresa. Precio cerrado y gratuito antes de empezar, y garantía por escrito en los trabajos de adecuación.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Podéis hacer la instalación sin cerrar mi negocio?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Siempre que se puede, sí. Sabemos que cada hora con el local cerrado es dinero perdido, así que planificamos los trabajos por fases y, cuando la obra lo permite, fuera del horario comercial: a primera hora antes de abrir, por la noche, en el día de cierre semanal o en festivo. Es lo habitual en cambios de cuadro, instalación de iluminación de sala y escaparate, ampliación de circuitos para una cocina o una máquina nueva y en los trabajos de adecuación para la licencia. Te decimos con antelación cuánto tiempo estará el local sin luz y dejamos todo recogido y funcionando antes de tu apertura. En una avería urgente en Santa Coloma de Gramenet priorizamos dejarte operativo cuanto antes y, si algo requiere corte, lo acordamos contigo para el momento que menos afecte al negocio.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en venir si tengo una avería en el local?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Las averías de negocios las tratamos como urgencia porque un local sin luz no puede trabajar: no cobras, se estropea el género de la nevera y pierdes clientes. Salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord, con servicio 24 horas, también en festivo. Localizamos la causa con instrumentos (sobrecarga por maquinaria, fuga en un equipo de frío, diferencial gastado, automático que no aguanta la cocina), te decimos qué pasa y te damos una solución para que vuelvas a abrir cuanto antes; en la mayoría de casos lo reparamos en el momento, porque llevamos el material en el vehículo. Si hay que pedir algún material, dejamos el local funcionando de forma provisional siempre que sea seguro y volvemos cuanto antes. Precio cerrado antes de empezar y factura a nombre de la empresa.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Trabajáis con bares, restaurantes y comercios?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, con todo tipo de negocios de Santa Coloma de Gramenet: comercios y tiendas, bares y restaurantes, oficinas, peluquerías, clínicas y despachos. Cada actividad tiene necesidades distintas —una cocina de hostelería no consume como una oficina—, así que dimensionamos el cuadro y los circuitos para tu caso concreto. La instalación queda preparada para tus equipos y con margen para crecer si amplías el negocio.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Me hacéis la iluminación del comercio y el rótulo?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Montamos la iluminación de escaparate, sala y zona de trabajo con LED de bajo consumo, el rótulo o letrero luminoso y el alumbrado de emergencia obligatorio. Una buena iluminación vende: destaca el producto y hace el local más atractivo, y con LED gastas mucho menos. Te asesoramos sobre la temperatura de luz y la distribución adecuadas para tu tipo de comercio en Santa Coloma de Gramenet.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Hacéis mantenimiento eléctrico de negocios?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, y lo recomendamos. Ofrecemos revisiones periódicas del cuadro, las protecciones, las tomas y el alumbrado de emergencia para detectar problemas antes de que te dejen sin luz en plena jornada. Un contrato de mantenimiento en tu local de Santa Coloma de Gramenet evita paradas imprevistas y alarga la vida de la instalación. Adaptamos las visitas a tu tipo de actividad y a la exigencia de tus equipos.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Dais factura y precio cerrado para empresas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Trabajamos con presupuesto cerrado antes de empezar, sin partidas sorpresa, y emitimos factura para tu empresa o autónomo. Para trabajos recurrentes o contratos de mantenimiento acordamos condiciones claras. La idea es que sepas exactamente qué vas a pagar y puedas planificar el gasto de tu negocio en Santa Coloma de Gramenet sin llevarte sustos a final de obra.</p></div></div>
   </div>
 </div></section>
+<section class="bg-surface"><div class="max-w-7xl mx-auto px-6 py-6"><p class="content-date">Contenido revisado el 14 de septiembre de 2026 por el equipo de ElectroGramenet, instaladores autorizados de baja tensión en Santa Coloma de Gramenet.</p></div></section>
 
 <section class="bg-ink-deep"><div class="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
   <div class="text-white text-center lg:text-left"><h2 class="font-display font-800 text-3xl lg:text-4xl mb-1">Abre o mantén tu negocio en Santa Coloma de Gramenet</h2><p class="text-white/70">Instalación, boletín, iluminación y mantenimiento. Presupuesto sin compromiso.</p></div>
@@ -320,7 +550,94 @@
   });
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Instalación eléctrica para locales y negocios","name":"Electricista para locales y negocios en Santa Coloma de Gramenet","provider":{"@type":"Electrician","name":"ElectroGramenet","telephone":"+34677654821","areaServed":"Santa Coloma de Gramenet"},"areaServed":{"@type":"City","name":"Santa Coloma de Gramenet"},"url":"https://electrogramenet.es/locales-negocios-santa-coloma/","description":"Instalación eléctrica para locales y negocios en Santa Coloma de Gramenet: apertura y adecuación, boletín para licencia de actividad, iluminación comercial y mantenimiento sin parar tu negocio. Instalador autorizado."}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué necesito para abrir un local en Santa Coloma de Gramenet a nivel eléctrico?","acceptedAnswer":{"@type":"Answer","text":"Para la licencia de actividad necesitas una instalación eléctrica a normativa (REBT) y el boletín eléctrico (CIE) que lo certifique, además del alumbrado de emergencia y la señalización obligatorios. Según la potencia y la actividad, puede pedirse también un proyecto. Nosotros revisamos tu local en Santa Coloma de Gramenet, dejamos la instalación en regla y te entregamos el boletín y la documentación que el Ayuntamiento te exige para poder abrir."}},{"@type":"Question","name":"¿Emitís el boletín eléctrico para la licencia de actividad?","acceptedAnswer":{"@type":"Answer","text":"Sí. Somos instaladores autorizados y emitimos el Certificado de Instalación Eléctrica (boletín / CIE) que necesitas para la licencia de actividad de tu negocio en Santa Coloma de Gramenet. Si tu local ya está montado pero no tiene boletín válido, revisamos la instalación, corregimos lo que no cumpla y lo emitimos. Te entregamos todo documentado para que no tengas problemas con el Ayuntamiento ni con la compañía eléctrica."}},{"@type":"Question","name":"¿Podéis hacer la instalación sin cerrar mi negocio?","acceptedAnswer":{"@type":"Answer","text":"Siempre que se puede, sí. Sabemos que cada hora con el local cerrado es dinero perdido, así que planificamos los trabajos por fases y, cuando la obra lo permite, fuera del horario comercial —a primera hora, por la noche o en día de cierre—. En una avería urgente en Santa Coloma de Gramenet priorizamos dejarte operativo cuanto antes y, si algo requiere corte, lo acordamos contigo para el peor momento posible del negocio."}},{"@type":"Question","name":"¿Cuánto tardáis en venir si tengo una avería en el local?","acceptedAnswer":{"@type":"Answer","text":"Las averías de negocios las tratamos como urgencia porque un local sin luz no puede trabajar. Salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord, con servicio 24 horas. Localizamos la causa, te decimos qué pasa y te damos una solución para que vuelvas a abrir cuanto antes; si hay que pedir algún material, dejamos el local funcionando de forma provisional siempre que sea seguro."}},{"@type":"Question","name":"¿Trabajáis con bares, restaurantes y comercios?","acceptedAnswer":{"@type":"Answer","text":"Sí, con todo tipo de negocios de Santa Coloma de Gramenet: comercios y tiendas, bares y restaurantes, oficinas, peluquerías, clínicas y despachos. Cada actividad tiene necesidades distintas —una cocina de hostelería no consume como una oficina—, así que dimensionamos el cuadro y los circuitos para tu caso concreto. La instalación queda preparada para tus equipos y con margen para crecer si amplías el negocio."}},{"@type":"Question","name":"¿Me hacéis la iluminación del comercio y el rótulo?","acceptedAnswer":{"@type":"Answer","text":"Sí. Montamos la iluminación de escaparate, sala y zona de trabajo con LED de bajo consumo, el rótulo o letrero luminoso y el alumbrado de emergencia obligatorio. Una buena iluminación vende: destaca el producto y hace el local más atractivo, y con LED gastas mucho menos. Te asesoramos sobre la temperatura de luz y la distribución adecuadas para tu tipo de comercio en Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Hacéis mantenimiento eléctrico de negocios?","acceptedAnswer":{"@type":"Answer","text":"Sí, y lo recomendamos. Ofrecemos revisiones periódicas del cuadro, las protecciones, las tomas y el alumbrado de emergencia para detectar problemas antes de que te dejen sin luz en plena jornada. Un contrato de mantenimiento en tu local de Santa Coloma de Gramenet evita paradas imprevistas y alarga la vida de la instalación. Adaptamos las visitas a tu tipo de actividad y a la exigencia de tus equipos."}},{"@type":"Question","name":"¿Dais factura y precio cerrado para empresas?","acceptedAnswer":{"@type":"Answer","text":"Sí. Trabajamos con presupuesto cerrado antes de empezar, sin partidas sorpresa, y emitimos factura para tu empresa o autónomo. Para trabajos recurrentes o contratos de mantenimiento acordamos condiciones claras. La idea es que sepas exactamente qué vas a pagar y puedas planificar el gasto de tu negocio en Santa Coloma de Gramenet sin llevarte sustos a final de obra."}}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Instalación eléctrica para locales y negocios",
+ "name": "Electricista para locales y negocios en Santa Coloma de Gramenet",
+ "provider": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Santa Coloma de Gramenet"
+ },
+ "url": "https://electrogramenet.es/locales-negocios-santa-coloma/",
+ "description": "Instalación eléctrica para locales y negocios en Santa Coloma de Gramenet: apertura y adecuación, boletín para licencia de actividad, iluminación comercial y mantenimiento sin parar tu negocio. Instalador autorizado."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Qué necesito para abrir un local en Santa Coloma de Gramenet a nivel eléctrico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Para la licencia de actividad necesitas una instalación eléctrica a normativa (REBT) y el boletín eléctrico (CIE) que lo certifique, además del alumbrado de emergencia y la señalización obligatorios. Según la potencia y la actividad puede pedirse también un proyecto de ingeniero: si tu local es de pública concurrencia, como un bar, un restaurante, un gimnasio o una academia, la instalación se rige por la ITC-BT-28 y, según aforo y potencia, puede exigir proyecto e inspección inicial de una OCA. Nosotros revisamos tu local en Santa Coloma de Gramenet, te decimos antes de empezar qué exige tu caso, dejamos la instalación en regla (cuadro con sus protecciones, circuitos para cocina, climatización, TPV o maquinaria, iluminación y emergencia) y te entregamos el boletín y la documentación que el Ayuntamiento y la compañía te piden, con factura a nombre de la empresa y presupuesto gratuito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Emitís el boletín eléctrico para la licencia de actividad?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Somos instaladores autorizados de baja tensión registrados en la Generalitat y emitimos el Certificado de Instalación Eléctrica (boletín o CIE) que necesitas para la licencia de actividad de tu negocio en Santa Coloma de Gramenet, y lo registramos nosotros. Si tu local ya está montado pero no tiene boletín válido, revisamos la instalación, corregimos lo que no cumpla (protecciones, toma de tierra, secciones de cable, alumbrado de emergencia) y lo emitimos; si está bien, el boletín está listo el mismo día de la visita. Te entregamos todo documentado para que no tengas problemas con el Ayuntamiento ni con la compañía eléctrica, con factura a nombre de la empresa. Precio cerrado y gratuito antes de empezar, y garantía por escrito en los trabajos de adecuación."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Podéis hacer la instalación sin cerrar mi negocio?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Siempre que se puede, sí. Sabemos que cada hora con el local cerrado es dinero perdido, así que planificamos los trabajos por fases y, cuando la obra lo permite, fuera del horario comercial: a primera hora antes de abrir, por la noche, en el día de cierre semanal o en festivo. Es lo habitual en cambios de cuadro, instalación de iluminación de sala y escaparate, ampliación de circuitos para una cocina o una máquina nueva y en los trabajos de adecuación para la licencia. Te decimos con antelación cuánto tiempo estará el local sin luz y dejamos todo recogido y funcionando antes de tu apertura. En una avería urgente en Santa Coloma de Gramenet priorizamos dejarte operativo cuanto antes y, si algo requiere corte, lo acordamos contigo para el momento que menos afecte al negocio."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuánto tardáis en venir si tengo una avería en el local?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Las averías de negocios las tratamos como urgencia porque un local sin luz no puede trabajar: no cobras, se estropea el género de la nevera y pierdes clientes. Salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord, con servicio 24 horas, también en festivo. Localizamos la causa con instrumentos (sobrecarga por maquinaria, fuga en un equipo de frío, diferencial gastado, automático que no aguanta la cocina), te decimos qué pasa y te damos una solución para que vuelvas a abrir cuanto antes; en la mayoría de casos lo reparamos en el momento, porque llevamos el material en el vehículo. Si hay que pedir algún material, dejamos el local funcionando de forma provisional siempre que sea seguro y volvemos cuanto antes. Precio cerrado antes de empezar y factura a nombre de la empresa."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Trabajáis con bares, restaurantes y comercios?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, con todo tipo de negocios de Santa Coloma de Gramenet: comercios y tiendas, bares y restaurantes, oficinas, peluquerías, clínicas y despachos. Cada actividad tiene necesidades distintas —una cocina de hostelería no consume como una oficina—, así que dimensionamos el cuadro y los circuitos para tu caso concreto. La instalación queda preparada para tus equipos y con margen para crecer si amplías el negocio."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Me hacéis la iluminación del comercio y el rótulo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Montamos la iluminación de escaparate, sala y zona de trabajo con LED de bajo consumo, el rótulo o letrero luminoso y el alumbrado de emergencia obligatorio. Una buena iluminación vende: destaca el producto y hace el local más atractivo, y con LED gastas mucho menos. Te asesoramos sobre la temperatura de luz y la distribución adecuadas para tu tipo de comercio en Santa Coloma de Gramenet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Hacéis mantenimiento eléctrico de negocios?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, y lo recomendamos. Ofrecemos revisiones periódicas del cuadro, las protecciones, las tomas y el alumbrado de emergencia para detectar problemas antes de que te dejen sin luz en plena jornada. Un contrato de mantenimiento en tu local de Santa Coloma de Gramenet evita paradas imprevistas y alarga la vida de la instalación. Adaptamos las visitas a tu tipo de actividad y a la exigencia de tus equipos."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Dais factura y precio cerrado para empresas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Trabajamos con presupuesto cerrado antes de empezar, sin partidas sorpresa, y emitimos factura para tu empresa o autónomo. Para trabajos recurrentes o contratos de mantenimiento acordamos condiciones claras. La idea es que sepas exactamente qué vas a pagar y puedas planificar el gasto de tu negocio en Santa Coloma de Gramenet sin llevarte sustos a final de obra."
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>

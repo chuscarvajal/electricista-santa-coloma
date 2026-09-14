@@ -47,6 +47,234 @@
   .live-dot { animation:pulseDot 2s infinite; }
 </style>
 <script defer src="/track.js"></script>
+<style>
+  .quick-answer { max-width: 56rem; margin: 0 auto; background: #f6f7fb; border: 1px solid rgba(212,160,23,.35); border-left: 4px solid #d4a017; border-radius: .25rem; padding: 1.1rem 1.35rem; }
+  .quick-answer .qa-label { font-weight:700; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:#b8860b; margin:0 0 .4rem; }
+  .quick-answer p:last-child { margin:0; color:#111827; font-size:1.02rem; line-height:1.65; }
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:58rem; margin:1.5rem auto 0; }
+  .data-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.95rem; text-align:left; }
+  .data-table th, .data-table td { padding:.75rem .85rem; border-bottom:1px solid #e5e7eb; vertical-align:top; line-height:1.5; }
+  .data-table th { font-size:.76rem; letter-spacing:.07em; text-transform:uppercase; color:#b8860b; }
+  .data-table td { color:#4b5563; }
+  .data-table td:first-child { color:#111827; font-weight:600; }
+  .data-table tbody tr:last-child td { border-bottom:none; }
+  .content-date { max-width:56rem; margin:0 auto; font-size:.82rem; color:#6b7280; text-align:center; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://electrogramenet.es/#business",
+ "name": "ElectroGramenet",
+ "alternateName": "Electricista Santa Coloma de Gramenet",
+ "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+ "image": "https://electrogramenet.es/og.jpg",
+ "logo": "https://electrogramenet.es/icon-512.png",
+ "url": "https://electrogramenet.es/",
+ "telephone": "+34677654821",
+ "sameAs": [
+  "https://www.hotfrog.es/company/d6c430729e4b4e007e152ebfd8ddd975",
+  "https://www.cylex.es/santa-coloma-de-gramenet/electrogramenet-14667329.html",
+  "https://encuentre-abierto.es/santa-coloma-de-gramenet/electrogramenet-1944541",
+  "https://firmania.es/santa-coloma-de-gramenet/electrogramenet-2733776",
+  "https://www.facebook.com/electrogramenet/",
+  "https://santa-coloma-de-gramenet.infoisinfo.es/ficha/electrogramenet/3803874"
+ ],
+ "email": "info@electrogramenet.es",
+ "priceRange": "€€",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Carrer de Wagner, 41",
+  "postalCode": "08923",
+  "addressLocality": "Santa Coloma de Gramenet",
+  "addressRegion": "Barcelona",
+  "addressCountry": "ES"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 41.4515,
+  "longitude": 2.208
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Santa Coloma de Gramenet"
+  },
+  {
+   "@type": "City",
+   "name": "Badalona"
+  },
+  {
+   "@type": "City",
+   "name": "Sant Adrià de Besòs"
+  },
+  {
+   "@type": "City",
+   "name": "Montcada i Reixac"
+  },
+  {
+   "@type": "City",
+   "name": "Barcelona"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Barcelonès Nord"
+  }
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "00:00",
+   "closes": "23:59"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios de electricista en Santa Coloma de Gramenet",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Averías y urgencias eléctricas 24h",
+     "url": "https://electrogramenet.es/averias-electricas-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Instalación eléctrica de viviendas",
+     "url": "https://electrogramenet.es/instalacion-electrica-vivienda-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Boletines eléctricos (CIE/BRIE)",
+     "url": "https://electrogramenet.es/boletin-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cuadros eléctricos",
+     "url": "https://electrogramenet.es/cuadros-electricos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Enchufes e iluminación",
+     "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Aumento de potencia",
+     "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para comunidades de vecinos",
+     "url": "https://electrogramenet.es/comunidades-vecinos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para locales y negocios",
+     "url": "https://electrogramenet.es/locales-negocios-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargador de coche eléctrico (punto de recarga)",
+     "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Placas solares y autoconsumo",
+     "url": "https://electrogramenet.es/placas-solares-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Climatización y aire acondicionado",
+     "url": "https://electrogramenet.es/climatizacion-aire-acondicionado-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Domótica y hogar conectado",
+     "url": "https://electrogramenet.es/domotica-santa-coloma/"
+    }
+   }
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/#webpage",
+ "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/",
+ "name": "Aumento de Potencia Eléctrica en Santa Coloma de Gramenet | Instalador Autorizado",
+ "description": "Aumento de potencia eléctrica en Santa Coloma de Gramenet: adaptamos tu cuadro e ICP, emitimos el boletín y lo tramitamos con tu compañía. Para aire, coche eléctrico o trifásico. Precio cerrado.",
+ "inLanguage": "es-ES",
+ "datePublished": "2026-07-05",
+ "dateModified": "2026-09-14",
+ "isPartOf": {
+  "@type": "WebSite",
+  "@id": "https://electrogramenet.es/#website",
+  "name": "ElectroGramenet",
+  "url": "https://electrogramenet.es/"
+ },
+ "about": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "publisher": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "speakable": {
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+   "h1",
+   ".quick-answer"
+  ]
+ }
+}
+</script>
 </head>
 <body class="bg-white antialiased">
 
@@ -132,16 +360,17 @@
     <nav class="text-sm text-white/50 mb-5 flex items-center gap-2 flex-wrap"><a href="/" class="hover:text-gold transition-colors">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-gold transition-colors">Servicios</a><span>/</span><span class="text-gold">Aumento de potencia</span></nav>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-4 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> MÁS POTENCIA · SIN SALTOS</p>
     <h1 class="font-display font-800 text-white text-4xl lg:text-6xl leading-[1.04] max-w-3xl mb-5">Aumento de potencia eléctrica en Santa Coloma de Gramenet</h1>
-    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">¿Se te va la luz al juntar electrodomésticos o vas a poner aire, vitro o un cargador de coche? Adaptamos tu instalación, emitimos el boletín y tramitamos la subida de potencia con tu compañía. Instalador autorizado en Santa Coloma de Gramenet, precio cerrado.</p>
+    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">¿Se te va la luz al juntar electrodomésticos o vas a poner aire, vitro o un cargador de coche? Adaptamos tu instalación, emitimos el boletín y tramitamos la subida de potencia con tu compañía. Instalador autorizado en Santa Coloma de Gramenet, precio cerrado. Presupuesto gratuito, garantía por escrito y electricistas con años de experiencia.</p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-8 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AL 677 654 821</a>
       <a href="#presupuesto" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-7 py-4 rounded-md text-sm">Pedir presupuesto →</a>
     </div>
   </div>
 </section>
+<section class="bg-white"><div class="max-w-7xl mx-auto px-6 py-8"><div class="quick-answer"><p class="qa-label">Respuesta rápida</p><p>Si te salta el ICP al juntar horno, vitro, lavadora o aire, te falta potencia contratada. Subimos la potencia de principio a fin en Santa Coloma de Gramenet: comprobamos que la instalación aguanta, emitimos el boletín si hace falta y lo tramitamos con tu comercializadora; la parte técnica suele quedar hecha el mismo día. Los derechos de la distribuidora van en tu factura y están fijados por normativa.</p></div></div></section>
 
 <section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6">
-  <div class="text-center max-w-2xl mx-auto mb-12"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ¿POR QUÉ SUBIR LA POTENCIA?</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cuándo te conviene aumentar la potencia</h2><p class="text-mute mt-3">Si te suena alguna de estas situaciones en tu casa o local de Santa Coloma de Gramenet, es el momento:</p></div>
+  <div class="text-center max-w-2xl mx-auto mb-12"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ¿POR QUÉ SUBIR LA POTENCIA?</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cuándo te conviene aumentar la potencia?</h2><p class="text-mute mt-3">Si te suena alguna de estas situaciones en tu casa o local de Santa Coloma de Gramenet, es el momento:</p></div>
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
     <div class="border border-ink/10 rounded-sm p-8 hover:border-gold hover:shadow-card transition-all"><div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><path d="M13 3 5 13h5l-1 8 8-11h-5l1-7z"/></svg></div><h3 class="font-display font-700 text-ink text-xl mb-2">Te salta el ICP</h3><p class="text-mute text-sm">Se va la luz al juntar lavadora, horno y vitro: te has quedado corto de potencia contratada.</p></div>
     <div class="border border-ink/10 rounded-sm p-8 hover:border-gold hover:shadow-card transition-all"><div class="text-gold mb-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="w-10 h-10"><rect x="2" y="5" width="20" height="8" rx="2"/><path d="M6 9h.01M10 9h4"/><path d="M7 17c0 1.5-1 2-1 3M12 17c0 1.5-1 2-1 3M17 17c0 1.5-1 2-1 3"/></svg></div><h3 class="font-display font-700 text-ink text-xl mb-2">Aire, vitro u horno nuevos</h3><p class="text-mute text-sm">Vas a instalar electrodomésticos de mucho consumo y necesitas más potencia para usarlos a la vez.</p></div>
@@ -167,7 +396,7 @@
 </div></section>
 
 <section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6">
-  <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cómo subimos tu potencia</h2></div>
+  <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cómo subimos tu potencia contratada?</h2></div>
   <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
     <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">01</span><h3 class="font-display font-700 text-lg text-ink mb-2">Estudio</h3><p class="text-mute text-sm">Vemos tu instalación en Santa Coloma de Gramenet y calculamos la potencia que necesitas.</p></div>
     <div class="relative bg-surface rounded-sm p-8 pt-12"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">02</span><h3 class="font-display font-700 text-lg text-ink mb-2">Adaptación</h3><p class="text-mute text-sm">Ajustamos cuadro, ICP y protecciones para que aguante la nueva potencia.</p></div>
@@ -203,18 +432,21 @@
   <p class="text-sm text-mute mt-8">¿Fuera de estas zonas? Cubrimos también Badalona, Sant Adrià de Besòs, Montcada i Reixac y los barrios del norte de Barcelona. <a href="tel:+34677654821" class="text-gold font-600 hover:underline">Llama y te confirmamos.</a></p>
 </div></section>
 
+
+<section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl mb-8"><p class="eyebrow text-gold font-700 mb-2">POTENCIAS</p><h2 class="font-display font-900 text-ink text-3xl lg:text-4xl mb-4">¿Qué potencia contratar según tu vivienda?</h2><p class="text-mute leading-relaxed">Potencias normalizadas en monofásica y para qué suelen bastar. Lo ajustamos con tus aparatos reales.</p></div><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">Potencia contratada</th><th scope="col">Para qué suele bastar</th><th scope="col">¿Hace falta boletín?</th></tr></thead><tbody><tr><td>3,45 kW</td><td>Piso pequeño sin inducción ni aire acondicionado</td><td>No, si el boletín en vigor la ampara</td></tr><tr><td>4,6 kW</td><td>Piso con lavadora, horno y microondas, cocina de gas</td><td>No, si el boletín en vigor la ampara</td></tr><tr><td>5,75 kW</td><td>Vivienda estándar con inducción o aire acondicionado</td><td>Solo si supera la potencia máxima del boletín</td></tr><tr><td>6,9 – 9,2 kW</td><td>Vivienda grande con varios aires, inducción y calefacción eléctrica</td><td>Normalmente sí, con adaptación del cuadro</td></tr><tr><td>11,5 kW o trifásica</td><td>Casas grandes, cargador de coche rápido o bomba de calor</td><td>Sí, CIE nuevo y a menudo acometida</td></tr></tbody></table></div></div></section>
 <section id="faqs" class="py-20 bg-white"><div class="max-w-3xl mx-auto px-6">
   <div class="text-center mb-10"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Preguntas frecuentes sobre el aumento de potencia en Santa Coloma de Gramenet</h2></div>
   <div class="space-y-4">
-      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta subir la potencia?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Hay dos partes: lo que cobra la compañía por el cambio de potencia contratada (según tarifa oficial) y, si tu instalación lo necesita, la adaptación del cuadro y el boletín. Nosotros te damos precio cerrado por la parte técnica tras ver tu instalación en Santa Coloma de Gramenet, y te explicamos qué te repercutirá la compañía para que no haya sorpresas.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Necesito boletín para aumentar la potencia?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Normalmente sí. La compañía exige un CIE que acredite que tu instalación soporta con seguridad la nueva potencia, sobre todo si subes bastante o la instalación tiene años. Al ser instaladores autorizados lo emitimos nosotros mismos en Santa Coloma de Gramenet, así no dependes de terceros.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Tenéis que cambiar el cuadro?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende del estado de tu cuadro y de cuánta potencia subas. Si el cuadro es antiguo o las protecciones no dan para la nueva potencia, hay que adaptarlo. Lo revisamos en la visita y te decimos si basta con un ajuste o conviene renovarlo, siempre con precio cerrado antes de tocar nada.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Lo tramitáis vosotros con la compañía?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Nos encargamos del papeleo del cambio de potencia con tu comercializadora o distribuidora aportando el boletín, para que tú no tengas que pelearte con llamadas ni formularios. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet.</p></div></div>
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta subir la potencia?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Hay dos partes, y conviene no mezclarlas. La primera es lo que cobra la compañía por el cambio de potencia contratada: los derechos de la distribuidora, fijados por normativa, que van en tu factura y se calculan por cada kW adicional. La segunda es la parte técnica, solo si tu instalación lo necesita: la adaptación del cuadro y el boletín (CIE) con la nueva potencia máxima admisible. Si tu boletín en vigor ya ampara la potencia que quieres, puede que no tengas que pagarnos nada más que la comprobación. Te damos precio cerrado y gratuito por la parte técnica tras ver tu instalación en Santa Coloma de Gramenet, y te explicamos qué te repercutirá la compañía para que no haya sorpresas y sepas a quién pagas cada cosa. Todo lo que hacemos lleva garantía por escrito.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Necesito boletín para aumentar la potencia?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Normalmente sí. La compañía exige un CIE que acredite que tu instalación soporta con seguridad la nueva potencia, sobre todo si subes bastante, si la instalación tiene años o si la potencia que pides supera la potencia máxima admisible que figura en tu boletín anterior. La excepción: si tienes un boletín en vigor cuya potencia máxima admisible es igual o superior a la que quieres contratar, la comercializadora suele aplicar el cambio sin boletín nuevo. Al ser instaladores autorizados lo emitimos nosotros mismos en Santa Coloma de Gramenet, así no dependes de terceros, y lo presentamos con el CUPS de tu contador. En la visita comprobamos el cuadro, las protecciones y la acometida, y te confirmamos si tu caso lo necesita antes de que pagues nada. Presupuesto gratuito y cerrado.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Tenéis que cambiar el cuadro?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende del estado de tu cuadro y de cuánta potencia subas. Si el cuadro es reciente y las protecciones están bien dimensionadas, muchas veces basta con un ajuste o con cambiar el interruptor general y no hay obra. Si el cuadro es antiguo, tiene plomos, no tiene diferencial o las protecciones no dan para la nueva potencia (por ejemplo al pasar de 3,45 a 5,75 kW con inducción y aire), hay que adaptarlo, y a veces conviene renovarlo entero por seguridad. También revisamos la acometida y la sección del cable desde el contador, que en pisos antiguos de Santa Coloma de Gramenet puede quedarse corta. Lo revisamos en la visita y te decimos si basta con un ajuste o conviene renovarlo, siempre con precio cerrado antes de tocar nada. <a href="/cuadros-electricos-santa-coloma/" class="text-gold font-700 hover:underline">Ver cuadros eléctricos en Santa Coloma →</a></p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Lo tramitáis vosotros con la compañía?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Nos encargamos del papeleo del cambio de potencia con tu comercializadora o distribuidora aportando el boletín y el CUPS de tu contador, para que tú no tengas que pelearte con llamadas ni formularios. La parte técnica y el boletín suelen quedar hechos el mismo día de la visita; después la compañía aplica el cambio en su propio plazo, normalmente entre cinco y quince días hábiles, y en algunos casos la distribuidora tiene que reprogramar el contador a distancia o cambiar el ICP. Te dejamos todo preparado y presentado, te avisamos de los plazos realistas y, si tienes prisa por una mudanza o una apertura, priorizamos la visita. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet: no entender de trámites y tener la potencia nueva sin líos.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tarda el aumento de potencia?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">La parte técnica (adaptar cuadro y emitir boletín) suele hacerse en poco tiempo. El cambio efectivo de potencia lo aplica la compañía, y ese plazo depende de ellos, aunque con el boletín en mano suele ir rápido. Te vamos informando en cada paso.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Me interesa el monofásico o el trifásico?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">La mayoría de viviendas de Santa Coloma de Gramenet funcionan de sobra con monofásico. El trifásico tiene sentido en locales, naves o viviendas con mucha demanda (varios equipos grandes, recarga rápida). Lo valoramos según lo que vayas a conectar y te recomendamos lo que de verdad te conviene, sin sobredimensionar.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Puedo subir la potencia solo para el cargador del coche?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">A veces no hace falta: con un cargador de gestión dinámica de potencia puedes cargar sin ampliar la contratada, porque reduce la carga cuando la casa consume. Si aun así necesitas más, lo combinamos. Lo vemos junto con la instalación del punto de recarga en tu vivienda de Santa Coloma de Gramenet.</p></div></div>
   </div>
 </div></section>
+<section class="bg-surface"><div class="max-w-7xl mx-auto px-6 py-6"><p class="content-date">Contenido revisado el 14 de septiembre de 2026 por el equipo de ElectroGramenet, instaladores autorizados de baja tensión en Santa Coloma de Gramenet.</p></div></section>
 
 <section class="bg-ink-deep"><div class="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
   <div class="text-white text-center lg:text-left"><h2 class="font-display font-800 text-3xl lg:text-4xl mb-1">Sube la potencia de tu casa en Santa Coloma de Gramenet</h2><p class="text-white/70">Adaptamos, certificamos y lo tramitamos con tu compañía. Precio cerrado y sin líos.</p></div>
@@ -289,7 +521,86 @@
   });
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Aumento de potencia eléctrica","name":"Aumento de potencia eléctrica en Santa Coloma de Gramenet","provider":{"@type":"Electrician","name":"ElectroGramenet","telephone":"+34677654821","areaServed":"Santa Coloma de Gramenet"},"areaServed":{"@type":"City","name":"Santa Coloma de Gramenet"},"url":"https://electrogramenet.es/aumento-de-potencia-santa-coloma/","description":"Aumento de potencia eléctrica en Santa Coloma de Gramenet: adaptamos tu cuadro e ICP, emitimos el boletín y lo tramitamos con tu compañía. Para aire, coche eléctrico o trifásico. Precio cerrado."}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta subir la potencia?","acceptedAnswer":{"@type":"Answer","text":"Hay dos partes: lo que cobra la compañía por el cambio de potencia contratada (según tarifa oficial) y, si tu instalación lo necesita, la adaptación del cuadro y el boletín. Nosotros te damos precio cerrado por la parte técnica tras ver tu instalación en Santa Coloma de Gramenet, y te explicamos qué te repercutirá la compañía para que no haya sorpresas."}},{"@type":"Question","name":"¿Necesito boletín para aumentar la potencia?","acceptedAnswer":{"@type":"Answer","text":"Normalmente sí. La compañía exige un CIE que acredite que tu instalación soporta con seguridad la nueva potencia, sobre todo si subes bastante o la instalación tiene años. Al ser instaladores autorizados lo emitimos nosotros mismos en Santa Coloma de Gramenet, así no dependes de terceros."}},{"@type":"Question","name":"¿Tenéis que cambiar el cuadro?","acceptedAnswer":{"@type":"Answer","text":"Depende del estado de tu cuadro y de cuánta potencia subas. Si el cuadro es antiguo o las protecciones no dan para la nueva potencia, hay que adaptarlo. Lo revisamos en la visita y te decimos si basta con un ajuste o conviene renovarlo, siempre con precio cerrado antes de tocar nada."}},{"@type":"Question","name":"¿Lo tramitáis vosotros con la compañía?","acceptedAnswer":{"@type":"Answer","text":"Sí. Nos encargamos del papeleo del cambio de potencia con tu comercializadora o distribuidora aportando el boletín, para que tú no tengas que pelearte con llamadas ni formularios. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Cuánto tarda el aumento de potencia?","acceptedAnswer":{"@type":"Answer","text":"La parte técnica (adaptar cuadro y emitir boletín) suele hacerse en poco tiempo. El cambio efectivo de potencia lo aplica la compañía, y ese plazo depende de ellos, aunque con el boletín en mano suele ir rápido. Te vamos informando en cada paso."}},{"@type":"Question","name":"¿Me interesa el monofásico o el trifásico?","acceptedAnswer":{"@type":"Answer","text":"La mayoría de viviendas de Santa Coloma de Gramenet funcionan de sobra con monofásico. El trifásico tiene sentido en locales, naves o viviendas con mucha demanda (varios equipos grandes, recarga rápida). Lo valoramos según lo que vayas a conectar y te recomendamos lo que de verdad te conviene, sin sobredimensionar."}},{"@type":"Question","name":"¿Puedo subir la potencia solo para el cargador del coche?","acceptedAnswer":{"@type":"Answer","text":"A veces no hace falta: con un cargador de gestión dinámica de potencia puedes cargar sin ampliar la contratada, porque reduce la carga cuando la casa consume. Si aun así necesitas más, lo combinamos. Lo vemos junto con la instalación del punto de recarga en tu vivienda de Santa Coloma de Gramenet."}}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Aumento de potencia eléctrica",
+ "name": "Aumento de potencia eléctrica en Santa Coloma de Gramenet",
+ "provider": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Santa Coloma de Gramenet"
+ },
+ "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/",
+ "description": "Aumento de potencia eléctrica en Santa Coloma de Gramenet: adaptamos tu cuadro e ICP, emitimos el boletín y lo tramitamos con tu compañía. Para aire, coche eléctrico o trifásico. Precio cerrado."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Cuánto cuesta subir la potencia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hay dos partes, y conviene no mezclarlas. La primera es lo que cobra la compañía por el cambio de potencia contratada: los derechos de la distribuidora, fijados por normativa, que van en tu factura y se calculan por cada kW adicional. La segunda es la parte técnica, solo si tu instalación lo necesita: la adaptación del cuadro y el boletín (CIE) con la nueva potencia máxima admisible. Si tu boletín en vigor ya ampara la potencia que quieres, puede que no tengas que pagarnos nada más que la comprobación. Te damos precio cerrado y gratuito por la parte técnica tras ver tu instalación en Santa Coloma de Gramenet, y te explicamos qué te repercutirá la compañía para que no haya sorpresas y sepas a quién pagas cada cosa. Todo lo que hacemos lleva garantía por escrito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Necesito boletín para aumentar la potencia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Normalmente sí. La compañía exige un CIE que acredite que tu instalación soporta con seguridad la nueva potencia, sobre todo si subes bastante, si la instalación tiene años o si la potencia que pides supera la potencia máxima admisible que figura en tu boletín anterior. La excepción: si tienes un boletín en vigor cuya potencia máxima admisible es igual o superior a la que quieres contratar, la comercializadora suele aplicar el cambio sin boletín nuevo. Al ser instaladores autorizados lo emitimos nosotros mismos en Santa Coloma de Gramenet, así no dependes de terceros, y lo presentamos con el CUPS de tu contador. En la visita comprobamos el cuadro, las protecciones y la acometida, y te confirmamos si tu caso lo necesita antes de que pagues nada. Presupuesto gratuito y cerrado."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Tenéis que cambiar el cuadro?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Depende del estado de tu cuadro y de cuánta potencia subas. Si el cuadro es reciente y las protecciones están bien dimensionadas, muchas veces basta con un ajuste o con cambiar el interruptor general y no hay obra. Si el cuadro es antiguo, tiene plomos, no tiene diferencial o las protecciones no dan para la nueva potencia (por ejemplo al pasar de 3,45 a 5,75 kW con inducción y aire), hay que adaptarlo, y a veces conviene renovarlo entero por seguridad. También revisamos la acometida y la sección del cable desde el contador, que en pisos antiguos de Santa Coloma de Gramenet puede quedarse corta. Lo revisamos en la visita y te decimos si basta con un ajuste o conviene renovarlo, siempre con precio cerrado antes de tocar nada. Ver cuadros eléctricos en Santa Coloma →"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Lo tramitáis vosotros con la compañía?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Nos encargamos del papeleo del cambio de potencia con tu comercializadora o distribuidora aportando el boletín y el CUPS de tu contador, para que tú no tengas que pelearte con llamadas ni formularios. La parte técnica y el boletín suelen quedar hechos el mismo día de la visita; después la compañía aplica el cambio en su propio plazo, normalmente entre cinco y quince días hábiles, y en algunos casos la distribuidora tiene que reprogramar el contador a distancia o cambiar el ICP. Te dejamos todo preparado y presentado, te avisamos de los plazos realistas y, si tienes prisa por una mudanza o una apertura, priorizamos la visita. Es de lo que más agradecen nuestros clientes en Santa Coloma de Gramenet: no entender de trámites y tener la potencia nueva sin líos."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuánto tarda el aumento de potencia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La parte técnica (adaptar cuadro y emitir boletín) suele hacerse en poco tiempo. El cambio efectivo de potencia lo aplica la compañía, y ese plazo depende de ellos, aunque con el boletín en mano suele ir rápido. Te vamos informando en cada paso."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Me interesa el monofásico o el trifásico?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "La mayoría de viviendas de Santa Coloma de Gramenet funcionan de sobra con monofásico. El trifásico tiene sentido en locales, naves o viviendas con mucha demanda (varios equipos grandes, recarga rápida). Lo valoramos según lo que vayas a conectar y te recomendamos lo que de verdad te conviene, sin sobredimensionar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puedo subir la potencia solo para el cargador del coche?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A veces no hace falta: con un cargador de gestión dinámica de potencia puedes cargar sin ampliar la contratada, porque reduce la carga cuando la casa consume. Si aun así necesitas más, lo combinamos. Lo vemos junto con la instalación del punto de recarga en tu vivienda de Santa Coloma de Gramenet."
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>

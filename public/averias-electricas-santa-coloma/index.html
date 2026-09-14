@@ -47,6 +47,234 @@
   .live-dot { animation:pulseDot 2s infinite; }
 </style>
 <script defer src="/track.js"></script>
+<style>
+  .quick-answer { max-width: 56rem; margin: 0 auto; background: #f6f7fb; border: 1px solid rgba(212,160,23,.35); border-left: 4px solid #d4a017; border-radius: .25rem; padding: 1.1rem 1.35rem; }
+  .quick-answer .qa-label { font-weight:700; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:#b8860b; margin:0 0 .4rem; }
+  .quick-answer p:last-child { margin:0; color:#111827; font-size:1.02rem; line-height:1.65; }
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:58rem; margin:1.5rem auto 0; }
+  .data-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.95rem; text-align:left; }
+  .data-table th, .data-table td { padding:.75rem .85rem; border-bottom:1px solid #e5e7eb; vertical-align:top; line-height:1.5; }
+  .data-table th { font-size:.76rem; letter-spacing:.07em; text-transform:uppercase; color:#b8860b; }
+  .data-table td { color:#4b5563; }
+  .data-table td:first-child { color:#111827; font-weight:600; }
+  .data-table tbody tr:last-child td { border-bottom:none; }
+  .content-date { max-width:56rem; margin:0 auto; font-size:.82rem; color:#6b7280; text-align:center; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://electrogramenet.es/#business",
+ "name": "ElectroGramenet",
+ "alternateName": "Electricista Santa Coloma de Gramenet",
+ "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+ "image": "https://electrogramenet.es/og.jpg",
+ "logo": "https://electrogramenet.es/icon-512.png",
+ "url": "https://electrogramenet.es/",
+ "telephone": "+34677654821",
+ "sameAs": [
+  "https://www.hotfrog.es/company/d6c430729e4b4e007e152ebfd8ddd975",
+  "https://www.cylex.es/santa-coloma-de-gramenet/electrogramenet-14667329.html",
+  "https://encuentre-abierto.es/santa-coloma-de-gramenet/electrogramenet-1944541",
+  "https://firmania.es/santa-coloma-de-gramenet/electrogramenet-2733776",
+  "https://www.facebook.com/electrogramenet/",
+  "https://santa-coloma-de-gramenet.infoisinfo.es/ficha/electrogramenet/3803874"
+ ],
+ "email": "info@electrogramenet.es",
+ "priceRange": "€€",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Carrer de Wagner, 41",
+  "postalCode": "08923",
+  "addressLocality": "Santa Coloma de Gramenet",
+  "addressRegion": "Barcelona",
+  "addressCountry": "ES"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 41.4515,
+  "longitude": 2.208
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Santa Coloma de Gramenet"
+  },
+  {
+   "@type": "City",
+   "name": "Badalona"
+  },
+  {
+   "@type": "City",
+   "name": "Sant Adrià de Besòs"
+  },
+  {
+   "@type": "City",
+   "name": "Montcada i Reixac"
+  },
+  {
+   "@type": "City",
+   "name": "Barcelona"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Barcelonès Nord"
+  }
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "00:00",
+   "closes": "23:59"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios de electricista en Santa Coloma de Gramenet",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Averías y urgencias eléctricas 24h",
+     "url": "https://electrogramenet.es/averias-electricas-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Instalación eléctrica de viviendas",
+     "url": "https://electrogramenet.es/instalacion-electrica-vivienda-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Boletines eléctricos (CIE/BRIE)",
+     "url": "https://electrogramenet.es/boletin-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cuadros eléctricos",
+     "url": "https://electrogramenet.es/cuadros-electricos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Enchufes e iluminación",
+     "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Aumento de potencia",
+     "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para comunidades de vecinos",
+     "url": "https://electrogramenet.es/comunidades-vecinos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para locales y negocios",
+     "url": "https://electrogramenet.es/locales-negocios-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargador de coche eléctrico (punto de recarga)",
+     "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Placas solares y autoconsumo",
+     "url": "https://electrogramenet.es/placas-solares-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Climatización y aire acondicionado",
+     "url": "https://electrogramenet.es/climatizacion-aire-acondicionado-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Domótica y hogar conectado",
+     "url": "https://electrogramenet.es/domotica-santa-coloma/"
+    }
+   }
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://electrogramenet.es/averias-electricas-santa-coloma/#webpage",
+ "url": "https://electrogramenet.es/averias-electricas-santa-coloma/",
+ "name": "Averías y Urgencias Eléctricas 24h en Santa Coloma de Gramenet | Electricista de Urgencia",
+ "description": "Electricista de urgencia 24h en Santa Coloma de Gramenet para averías eléctricas: sin luz, salta el diferencial, huele a quemado o cortocircuito. Llegamos rápido, presupuesto cerrado. Llama ahora.",
+ "inLanguage": "es-ES",
+ "datePublished": "2026-07-05",
+ "dateModified": "2026-09-14",
+ "isPartOf": {
+  "@type": "WebSite",
+  "@id": "https://electrogramenet.es/#website",
+  "name": "ElectroGramenet",
+  "url": "https://electrogramenet.es/"
+ },
+ "about": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "publisher": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "speakable": {
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+   "h1",
+   ".quick-answer"
+  ]
+ }
+}
+</script>
 </head>
 <body class="bg-white antialiased">
 
@@ -132,19 +360,20 @@
     <nav class="text-sm text-white/50 mb-5 flex items-center gap-2 flex-wrap"><a href="/" class="hover:text-gold transition-colors">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-gold transition-colors">Servicios</a><span>/</span><span class="text-gold">Averías y urgencias 24h</span></nav>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-4 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> URGENCIAS ELÉCTRICAS · 24 H · 365 DÍAS</p>
     <h1 class="font-display font-800 text-white text-4xl lg:text-6xl leading-[1.03] max-w-3xl mb-5">Averías y urgencias eléctricas 24h en Santa Coloma de Gramenet</h1>
-    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Te has quedado sin luz y nadie coge el teléfono. Aquí sí: te responde un electricista de Santa Coloma de Gramenet —no un call center— y sale hacia tu casa enseguida. Presupuesto cerrado, sin sorpresas.</p>
+    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Te has quedado sin luz y nadie coge el teléfono. Aquí sí: te responde un electricista de Santa Coloma de Gramenet —no un call center— y sale hacia tu casa enseguida. Presupuesto cerrado, sin sorpresas. Electricistas 24 horas con años de experiencia, presupuesto gratuito por teléfono y garantía por escrito en la reparación.</p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-800 text-base tracking-wide px-10 py-5 rounded-md shadow-gold flex items-center gap-3"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AL 677 654 821</a>
       <a href="https://wa.me/34677654821?text=Hola%2C%20necesito%20un%20electricista%20urgente%20en%20Santa%20Coloma" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-7 py-5 rounded-md text-sm"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.2 4.74 1.2h.004c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7z"/></svg> Escríbenos por WhatsApp</a>
     </div>
   </div>
 </section>
+<section class="bg-white"><div class="max-w-7xl mx-auto px-6 py-8"><div class="quick-answer"><p class="qa-label">Respuesta rápida</p><p>Si te has quedado sin luz, salta el diferencial o huele a quemado en Santa Coloma de Gramenet, llama al 677 654 821: te responde un electricista de la zona, no un call center, y sale enseguida, de día, de noche o en festivo. Antes, mira si tus vecinos también están sin luz: si es así, es un corte de e-distribución (averías 800 760 706); si solo eres tú, es una avería tuya y la reparamos casi siempre en la primera visita, con precio cerrado antes de tocar nada.</p></div></div></section>
 
 <section id="sintomas" class="py-20 bg-surface">
   <div class="max-w-7xl mx-auto px-6">
     <div class="text-center max-w-2xl mx-auto mb-12">
       <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> ¿QUÉ TE ESTÁ PASANDO AHORA MISMO?</p>
-      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Averías eléctricas que resolvemos en el día</h2>
+      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Qué averías eléctricas resolvemos en el día en Santa Coloma de Gramenet?</h2>
       <p class="text-mute mt-3">Identifica tu avería y llámanos. Te decimos qué hacer mientras llegamos a Santa Coloma de Gramenet.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
@@ -237,7 +466,7 @@
     <div class="relative order-2 lg:order-1"><img width="1400" height="934" decoding="async" loading="lazy" src="/img/electricista-instalacion-residencial-santa-coloma.webp" alt="Electricista autorizado de urgencias en una vivienda de Santa Coloma de Gramenet" class="rounded-sm w-full h-[380px] object-cover shadow-card" /></div>
     <div class="order-1 lg:order-2">
       <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> POR QUÉ NOSOTROS</p>
-      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">Un electricista de Santa Coloma de Gramenet, no un call center</h2>
+      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">¿Por qué un electricista de Santa Coloma de Gramenet y no un call center?</h2>
       <p class="text-mute leading-relaxed mb-6">Cuando tienes una urgencia necesitas a alguien rápido pero, sobre todo, profesional. Somos instaladores autorizados, con técnicos locales por Santa Coloma de Gramenet y el Barcelonès Nord, y te decimos el precio antes de empezar —también de noche y en festivo—.</p>
       <ul class="space-y-3">
         <li class="flex gap-3"><span class="size-6 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-mute"><strong class="text-ink">Presupuesto cerrado sin compromiso</strong>, sin recargos sorpresa.</span></li>
@@ -269,14 +498,16 @@
   </div>
 </section>
 
+
+<section class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="max-w-3xl mb-8"><p class="eyebrow text-gold font-700 mb-2">DIAGNÓSTICO</p><h2 class="font-display font-900 text-ink text-3xl lg:text-4xl mb-4">¿Qué le pasa a mi instalación? Síntoma, causa y qué hacer</h2><p class="text-mute leading-relaxed">Lo que más nos encontramos en Santa Coloma de Gramenet y qué hacer mientras llega el electricista de guardia.</p></div><div class="table-wrap"><table class="data-table"><thead><tr><th scope="col">Síntoma</th><th scope="col">Causa más probable</th><th scope="col">Qué hacer mientras llegamos</th></tr></thead><tbody><tr><td>Toda la casa sin luz y los vecinos también</td><td>Corte de la distribuidora</td><td>Consultar averías de e-distribución (800 760 706) y esperar; no hace falta electricista</td></tr><tr><td>Toda la casa sin luz y los vecinos con luz</td><td>Automático general o ICP disparado, avería en el cuadro o en la acometida</td><td>Mirar el cuadro una vez; si no sube, no forzarlo y llamar</td></tr><tr><td>Salta el diferencial y no vuelve a subir</td><td>Fuga de corriente en un aparato o en un circuito</td><td>Desenchufar todo, subirlo y conectar aparatos de uno en uno</td></tr><tr><td>Se va la luz solo en una zona</td><td>Circuito concreto (cocina, baño, enchufes)</td><td>Dejar ese automático bajado y usar el resto de la casa</td></tr><tr><td>Olor a quemado, chispas o enchufe negro</td><td>Cortocircuito o mal contacto con riesgo de incendio</td><td>Cortar la corriente general, no tocar, ventilar y llamar de inmediato</td></tr></tbody></table></div></div></section>
 <section id="faqs" class="py-20 bg-surface">
   <div class="max-w-3xl mx-auto px-6">
     <div class="text-center mb-10"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Preguntas frecuentes sobre urgencias eléctricas en Santa Coloma de Gramenet</h2></div>
     <div class="space-y-4">
-      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">En urgencias salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord. Tenemos técnicos locales en movimiento por la zona, así que solemos llegar rápido. Al llamar te damos una estimación real según dónde estés y, mientras vamos, te guiamos por teléfono para que la situación sea segura hasta que lleguemos.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta un electricista de urgencias 24 horas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende del tipo de avería y del horario (diurno, nocturno o festivo). Trabajamos con precio cerrado: una vez vemos la avería en tu casa de Santa Coloma de Gramenet te decimos el coste antes de empezar, sin recargos sorpresa. La llamada y el diagnóstico inicial no te comprometen a nada.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>Se ha ido la luz en toda la casa, ¿qué hago antes de que lleguéis?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Mira si tus vecinos también están sin luz: si es de toda la finca o la calle, puede ser un corte de la compañía. Si es solo tuyo, no subas el automático una y otra vez. Llámanos y te guiamos por teléfono mientras vamos hacia tu domicilio en Santa Coloma de Gramenet.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Por qué salta el diferencial una y otra vez?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">El diferencial salta para protegerte de una fuga de corriente o una sobrecarga. Las causas más habituales son un electrodoméstico averiado, humedad, un cable deteriorado o un cuadro antiguo. Desenchufa los aparatos uno a uno para aislar el circuito y, si aun así salta, llámanos: localizamos la fuga con un medidor de aislamiento.</p></div></div>
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">En urgencias salimos en cuanto llamas hacia cualquier punto de Santa Coloma de Gramenet (Centre, Singuerlín, Fondo, Santa Rosa, Can Mariner, Riu Nord, Riu Sud, Raval, Les Oliveres) y el Barcelonès Nord. Tenemos técnicos locales en movimiento por la zona, así que solemos llegar rápido; al llamar al 677 654 821 te damos una estimación real según dónde estés. Antes de salir te hacemos tres preguntas rápidas (si tus vecinos tienen luz, si salta el diferencial, si hay olor a quemado) para llegar con la idea clara y el material adecuado, y mientras vamos te guiamos por teléfono para que la situación sea segura. De noche y en festivo el tiempo es el mismo, porque la guardia es real las 24 horas. Si la urgencia es un edificio entero sin luz, tiene prioridad sobre cualquier otro aviso.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta un electricista de urgencias 24 horas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende del tipo de avería y del horario (diurno, nocturno o festivo). Trabajamos con precio cerrado: una vez vemos la avería en tu casa de Santa Coloma de Gramenet te decimos el coste antes de empezar, sin recargos sorpresa, y la llamada y el diagnóstico inicial no te comprometen a nada. Lo que más encarece una reparación es el material de marca (un diferencial, un magnetotérmico, un cuadro) y las averías que obligan a abrir cajas o pasar cable nuevo; lo que no la encarece es el diagnóstico, porque medimos con instrumentos y localizamos la causa rápido. Si hay recargo por noche o festivo, lo sabes por teléfono antes de que salgamos. La mayoría de urgencias se resuelven en la primera visita, con factura en regla y garantía por escrito en materiales y mano de obra. Pedir presupuesto es gratuito y decidir es cosa tuya.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>Se ha ido la luz en toda la casa, ¿qué hago antes de que lleguéis?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Lo primero: mira si tus vecinos también están sin luz. Si el portal, las farolas o la calle están a oscuras, es un corte de e-distribución (averías 800 760 706) y lo restablecen ellos; en Santa Coloma de Gramenet pasa de vez en cuando por obras o sobrecargas de la red. Si solo es tu casa, ve al cuadro: si ha saltado el automático general o el ICP, súbelo una sola vez; si vuelve a saltar, no insistas, porque hay una fuga, una sobrecarga o un cortocircuito que hay que localizar. Si el diferencial no sube, desenchufa todo e inténtalo; si sube, conecta los aparatos de uno en uno hasta dar con el culpable. Si hueles a quemado, corta la corriente general y ventila. Llámanos y te guiamos por teléfono mientras vamos hacia tu domicilio; llevamos el material habitual para dejarlo resuelto en la primera visita. <a href="/cuadros-electricos-santa-coloma/" class="text-gold font-700 hover:underline">Ver cuadros eléctricos en Santa Coloma →</a></p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Por qué salta el diferencial una y otra vez?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">El diferencial salta para protegerte de una fuga de corriente o una sobrecarga, así que cuando salta está haciendo su trabajo; el reto es encontrar qué lo provoca. Las causas más habituales en Santa Coloma de Gramenet son un electrodoméstico averiado (termo, lavadora, horno), humedad en cajas o mecanismos, un cable deteriorado en una instalación antigua, o un diferencial gastado que salta de forma intempestiva, sobre todo de noche o con tormentas. Desenchufa los aparatos uno a uno para aislar el circuito; si aun así salta, no lo fuerces y llámanos: localizamos la fuga con un medidor de aislamiento y la eliminamos. Si el diferencial está gastado o es demasiado sensible, lo sustituimos por uno superinmunizado, que aguanta los saltos sin motivo. Todo con precio cerrado antes de tocar nada y garantía por escrito.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Es urgente si huele a quemado o saltan chispas?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, es lo más serio: hay riesgo de incendio. Corta la corriente en el cuadro general, no toques el punto afectado y ventila. Si ves fuego, llama a emergencias. Después llámanos: es de los avisos a los que antes salimos en Santa Coloma de Gramenet.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Atendéis fines de semana y festivos?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. El servicio de urgencias está activo las 24 horas, los 365 días del año, con guardias los fines de semana y festivos en Santa Coloma de Gramenet y el Barcelonès Nord. Los cortes de luz y las averías peligrosas no esperan a un día laborable, y nosotros tampoco.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>La luz se va pero no salta el diferencial, ¿qué pasa?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Suele estar en el contador, en la acometida de la compañía o en una conexión floja que se calienta. Sin aparatos de medida es difícil de localizar. Lo medimos con instrumentos en tu domicilio de Santa Coloma de Gramenet y restablecemos el suministro con seguridad.</p></div></div>
@@ -285,6 +516,7 @@
     </div>
   </div>
 </section>
+<section class="bg-surface"><div class="max-w-7xl mx-auto px-6 py-6"><p class="content-date">Contenido revisado el 14 de septiembre de 2026 por el equipo de ElectroGramenet, instaladores autorizados de baja tensión en Santa Coloma de Gramenet.</p></div></section>
 
 <section class="bg-gold">
   <div class="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
@@ -364,7 +596,116 @@
   });
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Electricista de urgencias y averías 24h","name":"Averías y urgencias eléctricas 24h en Santa Coloma de Gramenet","provider":{"@type":"Electrician","name":"ElectroGramenet","telephone":"+34677654821","areaServed":"Santa Coloma de Gramenet"},"areaServed":{"@type":"City","name":"Santa Coloma de Gramenet"},"url":"https://electrogramenet.es/averias-electricas-santa-coloma/","description":"Electricista de urgencia 24h en Santa Coloma de Gramenet para averías eléctricas: sin luz, salta el diferencial, huele a quemado o cortocircuito. Llegamos rápido, presupuesto cerrado. Llama ahora.","hoursAvailable":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?","acceptedAnswer":{"@type":"Answer","text":"En urgencias salimos lo antes posible hacia cualquier punto de Santa Coloma de Gramenet y el Barcelonès Nord. Tenemos técnicos locales en movimiento por la zona, así que solemos llegar rápido. Al llamar te damos una estimación real según dónde estés y, mientras vamos, te guiamos por teléfono para que la situación sea segura hasta que lleguemos."}},{"@type":"Question","name":"¿Cuánto cuesta un electricista de urgencias 24 horas?","acceptedAnswer":{"@type":"Answer","text":"Depende del tipo de avería y del horario (diurno, nocturno o festivo). Trabajamos con precio cerrado: una vez vemos la avería en tu casa de Santa Coloma de Gramenet te decimos el coste antes de empezar, sin recargos sorpresa. La llamada y el diagnóstico inicial no te comprometen a nada."}},{"@type":"Question","name":"Se ha ido la luz en toda la casa, ¿qué hago antes de que lleguéis?","acceptedAnswer":{"@type":"Answer","text":"Mira si tus vecinos también están sin luz: si es de toda la finca o la calle, puede ser un corte de la compañía. Si es solo tuyo, no subas el automático una y otra vez. Llámanos y te guiamos por teléfono mientras vamos hacia tu domicilio en Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Por qué salta el diferencial una y otra vez?","acceptedAnswer":{"@type":"Answer","text":"El diferencial salta para protegerte de una fuga de corriente o una sobrecarga. Las causas más habituales son un electrodoméstico averiado, humedad, un cable deteriorado o un cuadro antiguo. Desenchufa los aparatos uno a uno para aislar el circuito y, si aun así salta, llámanos: localizamos la fuga con un medidor de aislamiento."}},{"@type":"Question","name":"¿Es urgente si huele a quemado o saltan chispas?","acceptedAnswer":{"@type":"Answer","text":"Sí, es lo más serio: hay riesgo de incendio. Corta la corriente en el cuadro general, no toques el punto afectado y ventila. Si ves fuego, llama a emergencias. Después llámanos: es de los avisos a los que antes salimos en Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Atendéis fines de semana y festivos?","acceptedAnswer":{"@type":"Answer","text":"Sí. El servicio de urgencias está activo las 24 horas, los 365 días del año, con guardias los fines de semana y festivos en Santa Coloma de Gramenet y el Barcelonès Nord. Los cortes de luz y las averías peligrosas no esperan a un día laborable, y nosotros tampoco."}},{"@type":"Question","name":"La luz se va pero no salta el diferencial, ¿qué pasa?","acceptedAnswer":{"@type":"Answer","text":"Suele estar en el contador, en la acometida de la compañía o en una conexión floja que se calienta. Sin aparatos de medida es difícil de localizar. Lo medimos con instrumentos en tu domicilio de Santa Coloma de Gramenet y restablecemos el suministro con seguridad."}},{"@type":"Question","name":"¿Me dais presupuesto antes de reparar?","acceptedAnswer":{"@type":"Answer","text":"Siempre. Tras localizar la avería te decimos qué hay que hacer y cuánto cuesta, con precio cerrado. Si lo aceptas, reparamos en el momento; si no, no hay compromiso. Nada de empezar a trabajar sin que sepas lo que vas a pagar."}},{"@type":"Question","name":"¿Trabajáis en mi barrio de Santa Coloma de Gramenet?","acceptedAnswer":{"@type":"Answer","text":"Sí. Cubrimos todos los barrios del término municipal —Centre, Fondo, Santa Rosa, el Raval, Riu Nord, Riu Sud, Singuerlín, Les Oliveres, Can Franquesa y la Guinardera— además de zonas colindantes del Barcelonès Nord. Tenemos técnicos en ruta por la zona, así que llegamos rápido."}}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Electricista de urgencias y averías 24h",
+ "name": "Averías y urgencias eléctricas 24h en Santa Coloma de Gramenet",
+ "provider": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Santa Coloma de Gramenet"
+ },
+ "url": "https://electrogramenet.es/averias-electricas-santa-coloma/",
+ "description": "Electricista de urgencia 24h en Santa Coloma de Gramenet para averías eléctricas: sin luz, salta el diferencial, huele a quemado o cortocircuito. Llegamos rápido, presupuesto cerrado. Llama ahora.",
+ "hoursAvailable": {
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday",
+   "Saturday",
+   "Sunday"
+  ],
+  "opens": "00:00",
+  "closes": "23:59"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Cuánto tardáis en llegar a mi domicilio en Santa Coloma de Gramenet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En urgencias salimos en cuanto llamas hacia cualquier punto de Santa Coloma de Gramenet (Centre, Singuerlín, Fondo, Santa Rosa, Can Mariner, Riu Nord, Riu Sud, Raval, Les Oliveres) y el Barcelonès Nord. Tenemos técnicos locales en movimiento por la zona, así que solemos llegar rápido; al llamar al 677 654 821 te damos una estimación real según dónde estés. Antes de salir te hacemos tres preguntas rápidas (si tus vecinos tienen luz, si salta el diferencial, si hay olor a quemado) para llegar con la idea clara y el material adecuado, y mientras vamos te guiamos por teléfono para que la situación sea segura. De noche y en festivo el tiempo es el mismo, porque la guardia es real las 24 horas. Si la urgencia es un edificio entero sin luz, tiene prioridad sobre cualquier otro aviso."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cuánto cuesta un electricista de urgencias 24 horas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Depende del tipo de avería y del horario (diurno, nocturno o festivo). Trabajamos con precio cerrado: una vez vemos la avería en tu casa de Santa Coloma de Gramenet te decimos el coste antes de empezar, sin recargos sorpresa, y la llamada y el diagnóstico inicial no te comprometen a nada. Lo que más encarece una reparación es el material de marca (un diferencial, un magnetotérmico, un cuadro) y las averías que obligan a abrir cajas o pasar cable nuevo; lo que no la encarece es el diagnóstico, porque medimos con instrumentos y localizamos la causa rápido. Si hay recargo por noche o festivo, lo sabes por teléfono antes de que salgamos. La mayoría de urgencias se resuelven en la primera visita, con factura en regla y garantía por escrito en materiales y mano de obra. Pedir presupuesto es gratuito y decidir es cosa tuya."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Se ha ido la luz en toda la casa, ¿qué hago antes de que lleguéis?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Lo primero: mira si tus vecinos también están sin luz. Si el portal, las farolas o la calle están a oscuras, es un corte de e-distribución (averías 800 760 706) y lo restablecen ellos; en Santa Coloma de Gramenet pasa de vez en cuando por obras o sobrecargas de la red. Si solo es tu casa, ve al cuadro: si ha saltado el automático general o el ICP, súbelo una sola vez; si vuelve a saltar, no insistas, porque hay una fuga, una sobrecarga o un cortocircuito que hay que localizar. Si el diferencial no sube, desenchufa todo e inténtalo; si sube, conecta los aparatos de uno en uno hasta dar con el culpable. Si hueles a quemado, corta la corriente general y ventila. Llámanos y te guiamos por teléfono mientras vamos hacia tu domicilio; llevamos el material habitual para dejarlo resuelto en la primera visita. Ver cuadros eléctricos en Santa Coloma →"
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Por qué salta el diferencial una y otra vez?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "El diferencial salta para protegerte de una fuga de corriente o una sobrecarga, así que cuando salta está haciendo su trabajo; el reto es encontrar qué lo provoca. Las causas más habituales en Santa Coloma de Gramenet son un electrodoméstico averiado (termo, lavadora, horno), humedad en cajas o mecanismos, un cable deteriorado en una instalación antigua, o un diferencial gastado que salta de forma intempestiva, sobre todo de noche o con tormentas. Desenchufa los aparatos uno a uno para aislar el circuito; si aun así salta, no lo fuerces y llámanos: localizamos la fuga con un medidor de aislamiento y la eliminamos. Si el diferencial está gastado o es demasiado sensible, lo sustituimos por uno superinmunizado, que aguanta los saltos sin motivo. Todo con precio cerrado antes de tocar nada y garantía por escrito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Es urgente si huele a quemado o saltan chispas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, es lo más serio: hay riesgo de incendio. Corta la corriente en el cuadro general, no toques el punto afectado y ventila. Si ves fuego, llama a emergencias. Después llámanos: es de los avisos a los que antes salimos en Santa Coloma de Gramenet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Atendéis fines de semana y festivos?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. El servicio de urgencias está activo las 24 horas, los 365 días del año, con guardias los fines de semana y festivos en Santa Coloma de Gramenet y el Barcelonès Nord. Los cortes de luz y las averías peligrosas no esperan a un día laborable, y nosotros tampoco."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "La luz se va pero no salta el diferencial, ¿qué pasa?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Suele estar en el contador, en la acometida de la compañía o en una conexión floja que se calienta. Sin aparatos de medida es difícil de localizar. Lo medimos con instrumentos en tu domicilio de Santa Coloma de Gramenet y restablecemos el suministro con seguridad."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Me dais presupuesto antes de reparar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Siempre. Tras localizar la avería te decimos qué hay que hacer y cuánto cuesta, con precio cerrado. Si lo aceptas, reparamos en el momento; si no, no hay compromiso. Nada de empezar a trabajar sin que sepas lo que vas a pagar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Trabajáis en mi barrio de Santa Coloma de Gramenet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Cubrimos todos los barrios del término municipal —Centre, Fondo, Santa Rosa, el Raval, Riu Nord, Riu Sud, Singuerlín, Les Oliveres, Can Franquesa y la Guinardera— además de zonas colindantes del Barcelonès Nord. Tenemos técnicos en ruta por la zona, así que llegamos rápido."
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>

@@ -47,6 +47,234 @@
   .live-dot { animation:pulseDot 2s infinite; }
 </style>
 <script defer src="/track.js"></script>
+<style>
+  .quick-answer { max-width: 56rem; margin: 0 auto; background: #f6f7fb; border: 1px solid rgba(212,160,23,.35); border-left: 4px solid #d4a017; border-radius: .25rem; padding: 1.1rem 1.35rem; }
+  .quick-answer .qa-label { font-weight:700; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:#b8860b; margin:0 0 .4rem; }
+  .quick-answer p:last-child { margin:0; color:#111827; font-size:1.02rem; line-height:1.65; }
+  .table-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; max-width:58rem; margin:1.5rem auto 0; }
+  .data-table { width:100%; min-width:560px; border-collapse:collapse; font-size:.95rem; text-align:left; }
+  .data-table th, .data-table td { padding:.75rem .85rem; border-bottom:1px solid #e5e7eb; vertical-align:top; line-height:1.5; }
+  .data-table th { font-size:.76rem; letter-spacing:.07em; text-transform:uppercase; color:#b8860b; }
+  .data-table td { color:#4b5563; }
+  .data-table td:first-child { color:#111827; font-weight:600; }
+  .data-table tbody tr:last-child td { border-bottom:none; }
+  .content-date { max-width:56rem; margin:0 auto; font-size:.82rem; color:#6b7280; text-align:center; }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Electrician",
+ "@id": "https://electrogramenet.es/#business",
+ "name": "ElectroGramenet",
+ "alternateName": "Electricista Santa Coloma de Gramenet",
+ "description": "Electricista autorizado 24 h en Santa Coloma de Gramenet: averías y urgencias, boletines (CIE/BRIE), cuadros eléctricos, instalaciones, cargador de coche eléctrico, placas solares, climatización y domótica.",
+ "image": "https://electrogramenet.es/og.jpg",
+ "logo": "https://electrogramenet.es/icon-512.png",
+ "url": "https://electrogramenet.es/",
+ "telephone": "+34677654821",
+ "sameAs": [
+  "https://www.hotfrog.es/company/d6c430729e4b4e007e152ebfd8ddd975",
+  "https://www.cylex.es/santa-coloma-de-gramenet/electrogramenet-14667329.html",
+  "https://encuentre-abierto.es/santa-coloma-de-gramenet/electrogramenet-1944541",
+  "https://firmania.es/santa-coloma-de-gramenet/electrogramenet-2733776",
+  "https://www.facebook.com/electrogramenet/",
+  "https://santa-coloma-de-gramenet.infoisinfo.es/ficha/electrogramenet/3803874"
+ ],
+ "email": "info@electrogramenet.es",
+ "priceRange": "€€",
+ "currenciesAccepted": "EUR",
+ "paymentAccepted": "Efectivo, Tarjeta, Bizum, Transferencia",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Carrer de Wagner, 41",
+  "postalCode": "08923",
+  "addressLocality": "Santa Coloma de Gramenet",
+  "addressRegion": "Barcelona",
+  "addressCountry": "ES"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 41.4515,
+  "longitude": 2.208
+ },
+ "areaServed": [
+  {
+   "@type": "City",
+   "name": "Santa Coloma de Gramenet"
+  },
+  {
+   "@type": "City",
+   "name": "Badalona"
+  },
+  {
+   "@type": "City",
+   "name": "Sant Adrià de Besòs"
+  },
+  {
+   "@type": "City",
+   "name": "Montcada i Reixac"
+  },
+  {
+   "@type": "City",
+   "name": "Barcelona"
+  },
+  {
+   "@type": "AdministrativeArea",
+   "name": "Barcelonès Nord"
+  }
+ ],
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "00:00",
+   "closes": "23:59"
+  }
+ ],
+ "hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Servicios de electricista en Santa Coloma de Gramenet",
+  "itemListElement": [
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Averías y urgencias eléctricas 24h",
+     "url": "https://electrogramenet.es/averias-electricas-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Instalación eléctrica de viviendas",
+     "url": "https://electrogramenet.es/instalacion-electrica-vivienda-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Boletines eléctricos (CIE/BRIE)",
+     "url": "https://electrogramenet.es/boletin-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cuadros eléctricos",
+     "url": "https://electrogramenet.es/cuadros-electricos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Enchufes e iluminación",
+     "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Aumento de potencia",
+     "url": "https://electrogramenet.es/aumento-de-potencia-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para comunidades de vecinos",
+     "url": "https://electrogramenet.es/comunidades-vecinos-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Electricista para locales y negocios",
+     "url": "https://electrogramenet.es/locales-negocios-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Cargador de coche eléctrico (punto de recarga)",
+     "url": "https://electrogramenet.es/cargador-coche-electrico-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Placas solares y autoconsumo",
+     "url": "https://electrogramenet.es/placas-solares-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Climatización y aire acondicionado",
+     "url": "https://electrogramenet.es/climatizacion-aire-acondicionado-santa-coloma/"
+    }
+   },
+   {
+    "@type": "Offer",
+    "itemOffered": {
+     "@type": "Service",
+     "name": "Domótica y hogar conectado",
+     "url": "https://electrogramenet.es/domotica-santa-coloma/"
+    }
+   }
+  ]
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/#webpage",
+ "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/",
+ "name": "Enchufes e Iluminación en Santa Coloma de Gramenet | Puntos de Luz, LED y Mecanismos",
+ "description": "Instalación de enchufes, puntos de luz e iluminación LED en Santa Coloma de Gramenet: mecanismos, tomas estancas y focos, rápido y sin obra. Electricista autorizado, precio cerrado.",
+ "inLanguage": "es-ES",
+ "datePublished": "2026-07-05",
+ "dateModified": "2026-09-14",
+ "isPartOf": {
+  "@type": "WebSite",
+  "@id": "https://electrogramenet.es/#website",
+  "name": "ElectroGramenet",
+  "url": "https://electrogramenet.es/"
+ },
+ "about": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "publisher": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "speakable": {
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+   "h1",
+   ".quick-answer"
+  ]
+ }
+}
+</script>
 </head>
 <body class="bg-white antialiased">
 
@@ -132,13 +360,14 @@
     <nav class="text-sm text-white/50 mb-5 flex items-center gap-2 flex-wrap"><a href="/" class="hover:text-gold transition-colors">Inicio</a><span>/</span><a href="/#servicios" class="hover:text-gold transition-colors">Servicios</a><span>/</span><span class="text-gold">Enchufes e iluminación</span></nav>
     <p class="eyebrow text-gold font-display font-700 text-xs mb-4 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PUNTOS DE LUZ · ENCHUFES · LED</p>
     <h1 class="font-display font-800 text-white text-4xl lg:text-6xl leading-[1.04] max-w-3xl mb-5">Enchufes e iluminación en Santa Coloma de Gramenet</h1>
-    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Nuevos enchufes, puntos de luz, iluminación LED de bajo consumo y cambio de mecanismos estropeados. Trabajo rápido, limpio y muchas veces sin obra. Electricista autorizado en Santa Coloma de Gramenet, con precio cerrado.</p>
+    <p class="text-lg text-white/80 leading-relaxed max-w-xl mb-8">Nuevos enchufes, puntos de luz, iluminación LED de bajo consumo y cambio de mecanismos estropeados. Trabajo rápido, limpio y muchas veces sin obra. Electricista autorizado en Santa Coloma de Gramenet, con precio cerrado. Presupuesto gratuito y garantía por escrito en todos los trabajos.</p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="tel:+34677654821" class="bg-gold hover:bg-gold-dark transition-colors text-white font-display font-700 text-sm tracking-wide px-8 py-4 rounded-md shadow-gold flex items-center gap-2.5"><svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> LLAMAR AL 677 654 821</a>
       <a href="#presupuesto" class="inline-flex items-center gap-2.5 text-white font-600 border border-white/25 hover:border-gold hover:text-gold transition-colors px-7 py-4 rounded-md text-sm">Pedir presupuesto →</a>
     </div>
   </div>
 </section>
+<section class="bg-white"><div class="max-w-7xl mx-auto px-6 py-8"><div class="quick-answer"><p class="qa-label">Respuesta rápida</p><p>Instalamos y reparamos enchufes, puntos de luz, mecanismos y focos LED en Santa Coloma de Gramenet, casi siempre sin obra y en el mismo día. Precio cerrado antes de empezar y presupuesto gratuito: mándanos una foto por WhatsApp al 677 654 821 y te orientamos sin ir.</p></div></div></section>
 
 <section class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-6">
@@ -161,7 +390,7 @@
     <div class="relative"><img width="1400" height="934" decoding="async" loading="lazy" src="/img/electricista-montando-cuadro-electrico-santa-coloma.webp" alt="Electricista cambiando mecanismos y enchufes en Santa Coloma de Gramenet" class="rounded-sm w-full h-[420px] object-cover shadow-card" /></div>
     <div>
       <p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> QUÉ HACEMOS</p>
-      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">Todo lo que da luz y corriente en tu casa</h2>
+      <h2 class="font-display font-800 text-ink text-3xl lg:text-4xl mb-5">¿Qué instalamos: enchufes, puntos de luz, LED y mecanismos?</h2>
       <p class="text-mute leading-relaxed mb-6">Trabajos pequeños que marcan el día a día: más enchufes donde te hacen falta, luz donde estás a oscuras y mecanismos que funcionen bien y seguros.</p>
       <ul class="space-y-3">
         <li class="flex gap-3"><span class="size-6 shrink-0 rounded-full bg-gold/12 grid place-items-center text-gold mt-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M5 13l4 4L19 7"/></svg></span><span class="text-mute">Puntos de luz nuevos, focos y downlights empotrados.</span></li>
@@ -185,7 +414,7 @@
 
 <section class="py-20 bg-surface">
   <div class="max-w-7xl mx-auto px-6">
-    <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Cómo trabajamos</h2></div>
+    <div class="text-center max-w-2xl mx-auto mb-14"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> PASO A PASO</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">¿Cómo trabajamos los enchufes y la iluminación?</h2></div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
       <div class="relative bg-white rounded-sm p-8 pt-12 shadow-card"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">01</span><h3 class="font-display font-700 text-lg text-ink mb-2">Nos cuentas qué quieres</h3><p class="text-mute text-sm">Por teléfono o WhatsApp, con una foto si quieres, para orientarte rápido.</p></div>
       <div class="relative bg-white rounded-sm p-8 pt-12 shadow-card"><span class="absolute -top-5 left-8 size-12 rounded-sm bg-ink text-white font-display font-800 text-lg grid place-items-center">02</span><h3 class="font-display font-700 text-lg text-ink mb-2">Presupuesto claro</h3><p class="text-mute text-sm">Precio cerrado por el trabajo, sin sorpresas ni mínimos abusivos.</p></div>
@@ -238,16 +467,17 @@
   <div class="max-w-3xl mx-auto px-6">
     <div class="text-center mb-10"><p class="eyebrow text-gold font-display font-700 text-xs mb-3 flex items-center justify-center gap-2"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3.5 h-3.5"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg> DUDAS HABITUALES</p><h2 class="font-display font-800 text-ink text-3xl lg:text-4xl">Preguntas frecuentes sobre enchufes e iluminación en Santa Coloma de Gramenet</h2></div>
     <div class="space-y-4">
-      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta poner un enchufe o un punto de luz?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende de dónde vaya y de si se puede aprovechar una canalización existente o hay que llevar línea nueva. Trabajamos con precio cerrado por el trabajo, sin mínimos abusivos: nos cuentas qué necesitas (una foto ayuda) y te damos el importe antes de empezar. En Santa Coloma de Gramenet solemos resolver estos trabajos el mismo día.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Hay que hacer obra para añadir enchufes o luces?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">No siempre. Muchas veces se resuelve sin picar, aprovechando registros existentes, con canaleta discreta o pasando por falso techo. Buscamos siempre la solución con la menor obra posible y te lo explicamos antes. Si tu caso en Santa Coloma de Gramenet requiere algo más, te lo decimos claro con el presupuesto.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Lo hacéis el mismo día?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">En trabajos pequeños (un enchufe, cambiar mecanismos, un punto de luz) normalmente sí, el mismo día. Para instalaciones más grandes (renovar toda la iluminación) cerramos día y te damos plazo. Llámanos y te decimos según lo que necesites en Santa Coloma de Gramenet.</p></div></div>
-      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cambiáis toda la casa a iluminación LED?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Sustituimos halógenos y fluorescentes por LED de bajo consumo, cambiamos focos y downlights y ponemos luz regulable si quieres. El ahorro en la factura se nota y la luz es mejor. Te asesoramos sobre la temperatura de luz (cálida o fría) según cada estancia.</p></div></div>
+      <div class="faq-item open bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cuánto cuesta poner un enchufe o un punto de luz?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Depende de dónde vaya y de si se puede aprovechar una canalización existente o hay que llevar línea nueva desde el cuadro. Trabajamos con precio cerrado por el trabajo, sin mínimos abusivos: nos cuentas qué necesitas (una foto por WhatsApp al 677 654 821 ayuda) y te damos el importe antes de empezar, gratis. Si haces varios puntos en la misma visita el precio por unidad baja, porque el desplazamiento se reparte. Incluimos mecanismo de marca, la conexión con toma de tierra, la comprobación con instrumentos de que la línea aguanta lo que vas a enchufar, y la garantía por escrito. Lo que encarece un enchufe es necesitar un circuito propio (lavadora, horno, aire) o no tener tubo por donde pasar el cable. En Santa Coloma de Gramenet solemos resolver estos trabajos el mismo día.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Hay que hacer obra para añadir enchufes o luces?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">No siempre. Muchas veces se resuelve sin picar, y las opciones por orden de limpieza son: sacar el enchufe nuevo de uno cercano en la misma pared, pasar el cable por el tubo existente hasta una caja de registro, ir por el rodapié, poner canaleta discreta o pasar por falso techo. Solo cuando no hay tubo ni recorrido posible, o cuando el enchufe necesita un circuito propio (lavadora, horno, aire), hace falta abrir una roza pequeña, y te lo decimos antes con el presupuesto. En pisos de Santa Coloma de Gramenet con instalación de los años 80 o posteriores casi siempre hay tubo corrugado y se puede trabajar sin obra; en fincas más antiguas del Centre o del Fondo lo comprobamos en la visita. Siempre conectamos la toma de tierra y comprobamos que la línea aguanta el aparato.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Lo hacéis el mismo día?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">En trabajos pequeños (un enchufe, cambiar mecanismos, un punto de luz, colgar una lámpara, sustituir un foco) normalmente sí, el mismo día, porque llevamos en el vehículo mecanismos, cable, cajas y luminarias de las marcas habituales y lo resolvemos en una sola visita. Para instalaciones más grandes (renovar toda la iluminación de la casa, varios circuitos nuevos) cerramos día y te damos plazo, normalmente en la misma semana. Si no es urgencia, lo cuadramos a la hora que mejor te venga, incluidos sábados; si corre prisa (un enchufe que echa chispas, una zona sin luz), lo tratamos como urgencia y salimos cuanto antes. Llámanos al 677 654 821 y te decimos según lo que necesites en Santa Coloma de Gramenet, con precio cerrado antes de empezar.</p></div></div>
+      <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Cambiáis toda la casa a iluminación LED?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, y es de los cambios que antes se amortizan. Un downlight halógeno de 50 W se sustituye por un LED de 5 a 7 W con la misma luz, así que en una casa con veinte focos el consumo de iluminación baja alrededor de un 85 %. Sustituimos halógenos y fluorescentes por LED de bajo consumo, cambiamos focos y downlights, plafones, tiras bajo los muebles de cocina y apliques, y ponemos luz regulable si quieres, eligiendo temperatura de color cálida para salón y dormitorios y neutra para cocina y zonas de trabajo. Te decimos qué merece la pena cambiar ya (los puntos que más horas están encendidos) y qué puede esperar. En Santa Coloma de Gramenet lo hacemos en una sola visita en la mayoría de viviendas, sin obra, con material que no parpadea ni cambia de tono, y con garantía por escrito.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Ponéis enchufes y luces en el baño o la cocina?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí, con mecanismos y tomas estancas adecuadas a las zonas húmedas, respetando las distancias de seguridad al agua que exige la normativa. Es justo donde no conviene improvisar, así que lo hacemos con el material correcto en tu vivienda de Santa Coloma de Gramenet.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Tenéis un trabajo mínimo?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">No trabajamos con mínimos abusivos. Entendemos que a veces solo necesitas un enchufe o cambiar un interruptor, y también lo hacemos. Te damos un precio justo y cerrado para el trabajo, sea pequeño o grande, en Santa Coloma de Gramenet y alrededores.</p></div></div>
       <div class="faq-item bg-white rounded-sm shadow-card overflow-hidden"><button class="faq-q w-full flex items-center justify-between gap-4 text-left px-6 py-5 font-display font-700 text-ink"><span>¿Podéis dejar la luz preparada para domótica?</span><span class="faq-ic text-gold text-2xl transition-transform">+</span></button><div class="faq-a"><p class="px-6 pb-6 text-mute text-sm">Sí. Si quieres controlar luces y persianas desde el móvil o por voz, dejamos la instalación preparada o montamos mecanismos inteligentes. Lo puedes ver en nuestra página de domótica; lo integramos con el resto de la instalación eléctrica de tu casa en Santa Coloma de Gramenet.</p></div></div>
     </div>
   </div>
 </section>
+<section class="bg-surface"><div class="max-w-7xl mx-auto px-6 py-6"><p class="content-date">Contenido revisado el 14 de septiembre de 2026 por el equipo de ElectroGramenet, instaladores autorizados de baja tensión en Santa Coloma de Gramenet.</p></div></section>
 
 <section class="bg-ink-deep">
   <div class="max-w-7xl mx-auto px-6 py-14 flex flex-col lg:flex-row items-center gap-6 lg:justify-between">
@@ -327,7 +557,86 @@
   });
 </script>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","serviceType":"Enchufes e iluminación","name":"Enchufes e iluminación en Santa Coloma de Gramenet","provider":{"@type":"Electrician","name":"ElectroGramenet","telephone":"+34677654821","areaServed":"Santa Coloma de Gramenet"},"areaServed":{"@type":"City","name":"Santa Coloma de Gramenet"},"url":"https://electrogramenet.es/enchufes-iluminacion-santa-coloma/","description":"Instalación de enchufes, puntos de luz e iluminación LED en Santa Coloma de Gramenet: mecanismos, tomas estancas y focos, rápido y sin obra. Electricista autorizado, precio cerrado."}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuánto cuesta poner un enchufe o un punto de luz?","acceptedAnswer":{"@type":"Answer","text":"Depende de dónde vaya y de si se puede aprovechar una canalización existente o hay que llevar línea nueva. Trabajamos con precio cerrado por el trabajo, sin mínimos abusivos: nos cuentas qué necesitas (una foto ayuda) y te damos el importe antes de empezar. En Santa Coloma de Gramenet solemos resolver estos trabajos el mismo día."}},{"@type":"Question","name":"¿Hay que hacer obra para añadir enchufes o luces?","acceptedAnswer":{"@type":"Answer","text":"No siempre. Muchas veces se resuelve sin picar, aprovechando registros existentes, con canaleta discreta o pasando por falso techo. Buscamos siempre la solución con la menor obra posible y te lo explicamos antes. Si tu caso en Santa Coloma de Gramenet requiere algo más, te lo decimos claro con el presupuesto."}},{"@type":"Question","name":"¿Lo hacéis el mismo día?","acceptedAnswer":{"@type":"Answer","text":"En trabajos pequeños (un enchufe, cambiar mecanismos, un punto de luz) normalmente sí, el mismo día. Para instalaciones más grandes (renovar toda la iluminación) cerramos día y te damos plazo. Llámanos y te decimos según lo que necesites en Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Cambiáis toda la casa a iluminación LED?","acceptedAnswer":{"@type":"Answer","text":"Sí. Sustituimos halógenos y fluorescentes por LED de bajo consumo, cambiamos focos y downlights y ponemos luz regulable si quieres. El ahorro en la factura se nota y la luz es mejor. Te asesoramos sobre la temperatura de luz (cálida o fría) según cada estancia."}},{"@type":"Question","name":"¿Ponéis enchufes y luces en el baño o la cocina?","acceptedAnswer":{"@type":"Answer","text":"Sí, con mecanismos y tomas estancas adecuadas a las zonas húmedas, respetando las distancias de seguridad al agua que exige la normativa. Es justo donde no conviene improvisar, así que lo hacemos con el material correcto en tu vivienda de Santa Coloma de Gramenet."}},{"@type":"Question","name":"¿Tenéis un trabajo mínimo?","acceptedAnswer":{"@type":"Answer","text":"No trabajamos con mínimos abusivos. Entendemos que a veces solo necesitas un enchufe o cambiar un interruptor, y también lo hacemos. Te damos un precio justo y cerrado para el trabajo, sea pequeño o grande, en Santa Coloma de Gramenet y alrededores."}},{"@type":"Question","name":"¿Podéis dejar la luz preparada para domótica?","acceptedAnswer":{"@type":"Answer","text":"Sí. Si quieres controlar luces y persianas desde el móvil o por voz, dejamos la instalación preparada o montamos mecanismos inteligentes. Lo puedes ver en nuestra página de domótica; lo integramos con el resto de la instalación eléctrica de tu casa en Santa Coloma de Gramenet."}}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Service",
+ "serviceType": "Enchufes e iluminación",
+ "name": "Enchufes e iluminación en Santa Coloma de Gramenet",
+ "provider": {
+  "@id": "https://electrogramenet.es/#business"
+ },
+ "areaServed": {
+  "@type": "City",
+  "name": "Santa Coloma de Gramenet"
+ },
+ "url": "https://electrogramenet.es/enchufes-iluminacion-santa-coloma/",
+ "description": "Instalación de enchufes, puntos de luz e iluminación LED en Santa Coloma de Gramenet: mecanismos, tomas estancas y focos, rápido y sin obra. Electricista autorizado, precio cerrado."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Cuánto cuesta poner un enchufe o un punto de luz?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Depende de dónde vaya y de si se puede aprovechar una canalización existente o hay que llevar línea nueva desde el cuadro. Trabajamos con precio cerrado por el trabajo, sin mínimos abusivos: nos cuentas qué necesitas (una foto por WhatsApp al 677 654 821 ayuda) y te damos el importe antes de empezar, gratis. Si haces varios puntos en la misma visita el precio por unidad baja, porque el desplazamiento se reparte. Incluimos mecanismo de marca, la conexión con toma de tierra, la comprobación con instrumentos de que la línea aguanta lo que vas a enchufar, y la garantía por escrito. Lo que encarece un enchufe es necesitar un circuito propio (lavadora, horno, aire) o no tener tubo por donde pasar el cable. En Santa Coloma de Gramenet solemos resolver estos trabajos el mismo día."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Hay que hacer obra para añadir enchufes o luces?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No siempre. Muchas veces se resuelve sin picar, y las opciones por orden de limpieza son: sacar el enchufe nuevo de uno cercano en la misma pared, pasar el cable por el tubo existente hasta una caja de registro, ir por el rodapié, poner canaleta discreta o pasar por falso techo. Solo cuando no hay tubo ni recorrido posible, o cuando el enchufe necesita un circuito propio (lavadora, horno, aire), hace falta abrir una roza pequeña, y te lo decimos antes con el presupuesto. En pisos de Santa Coloma de Gramenet con instalación de los años 80 o posteriores casi siempre hay tubo corrugado y se puede trabajar sin obra; en fincas más antiguas del Centre o del Fondo lo comprobamos en la visita. Siempre conectamos la toma de tierra y comprobamos que la línea aguanta el aparato."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Lo hacéis el mismo día?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "En trabajos pequeños (un enchufe, cambiar mecanismos, un punto de luz, colgar una lámpara, sustituir un foco) normalmente sí, el mismo día, porque llevamos en el vehículo mecanismos, cable, cajas y luminarias de las marcas habituales y lo resolvemos en una sola visita. Para instalaciones más grandes (renovar toda la iluminación de la casa, varios circuitos nuevos) cerramos día y te damos plazo, normalmente en la misma semana. Si no es urgencia, lo cuadramos a la hora que mejor te venga, incluidos sábados; si corre prisa (un enchufe que echa chispas, una zona sin luz), lo tratamos como urgencia y salimos cuanto antes. Llámanos al 677 654 821 y te decimos según lo que necesites en Santa Coloma de Gramenet, con precio cerrado antes de empezar."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cambiáis toda la casa a iluminación LED?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, y es de los cambios que antes se amortizan. Un downlight halógeno de 50 W se sustituye por un LED de 5 a 7 W con la misma luz, así que en una casa con veinte focos el consumo de iluminación baja alrededor de un 85 %. Sustituimos halógenos y fluorescentes por LED de bajo consumo, cambiamos focos y downlights, plafones, tiras bajo los muebles de cocina y apliques, y ponemos luz regulable si quieres, eligiendo temperatura de color cálida para salón y dormitorios y neutra para cocina y zonas de trabajo. Te decimos qué merece la pena cambiar ya (los puntos que más horas están encendidos) y qué puede esperar. En Santa Coloma de Gramenet lo hacemos en una sola visita en la mayoría de viviendas, sin obra, con material que no parpadea ni cambia de tono, y con garantía por escrito."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Ponéis enchufes y luces en el baño o la cocina?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí, con mecanismos y tomas estancas adecuadas a las zonas húmedas, respetando las distancias de seguridad al agua que exige la normativa. Es justo donde no conviene improvisar, así que lo hacemos con el material correcto en tu vivienda de Santa Coloma de Gramenet."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Tenéis un trabajo mínimo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No trabajamos con mínimos abusivos. Entendemos que a veces solo necesitas un enchufe o cambiar un interruptor, y también lo hacemos. Te damos un precio justo y cerrado para el trabajo, sea pequeño o grande, en Santa Coloma de Gramenet y alrededores."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Podéis dejar la luz preparada para domótica?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Si quieres controlar luces y persianas desde el móvil o por voz, dejamos la instalación preparada o montamos mecanismos inteligentes. Lo puedes ver en nuestra página de domótica; lo integramos con el resto de la instalación eléctrica de tu casa en Santa Coloma de Gramenet."
+   }
+  }
+ ]
+}
+</script>
 </body>
 </html>
