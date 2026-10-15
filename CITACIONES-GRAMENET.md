@@ -19,7 +19,7 @@ Horario:    24 horas, todos los días
 Zona:       Santa Coloma de Gramenet y alrededores (Badalona, Sant Adrià, Barcelona)
 ```
 - **Dirección definitiva (usar en todas partes):** Carrer de Wagner, 41 · 08923 Santa Coloma de Gramenet · Barcelona
-- **Coordenadas:** 41.4515, 2.2080 (zona Centre-Fondo)
+- **Coordenadas:** 41.45122, 2.22081 (Carrer de Wagner 41, barrio Fondo — geocodificado OSM)
 
 ---
 
